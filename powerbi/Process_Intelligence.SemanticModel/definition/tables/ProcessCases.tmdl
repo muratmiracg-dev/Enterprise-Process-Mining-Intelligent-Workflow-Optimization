@@ -1,0 +1,60 @@
+table ProcessCases
+	lineageTag: 9c8ec5e5-3287-4473-b050-86fc869fb58e
+
+	column case_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: case_id
+
+	column business_unit
+		dataType: string
+		summarizeBy: none
+		sourceColumn: business_unit
+
+	column vendor_tier
+		dataType: string
+		summarizeBy: none
+		sourceColumn: vendor_tier
+
+	column amount_usd
+		dataType: double
+		formatString: "$"#,0.00
+		summarizeBy: sum
+		sourceColumn: amount_usd
+
+	column cycle_time_hours
+		dataType: double
+		formatString: 0.00
+		summarizeBy: average
+		sourceColumn: cycle_time_hours
+
+	column sla_breached
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: sla_breached
+
+	column fitness
+		dataType: double
+		formatString: 0.0%
+		summarizeBy: average
+		sourceColumn: fitness
+
+	column conformant
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: conformant
+
+	column automation_rate
+		dataType: double
+		formatString: 0.0%
+		summarizeBy: average
+		sourceColumn: automation_rate
+
+	partition ProcessCases = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("../reports/tables/case_performance.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+				in
+				    Promoted

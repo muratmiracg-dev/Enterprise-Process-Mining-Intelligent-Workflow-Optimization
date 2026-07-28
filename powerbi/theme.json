@@ -1,0 +1,15 @@
+{
+  "name": "Enterprise Process Intelligence",
+  "dataColors": ["#165DFF", "#00A878", "#F59E0B", "#DC2626", "#64748B", "#7C3AED"],
+  "background": "#F5F7FA",
+  "foreground": "#111827",
+  "tableAccent": "#165DFF",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "title": [{"fontFamily": "Segoe UI Semibold", "fontColor": {"solid": {"color": "#111827"}}}],
+        "background": [{"color": {"solid": {"color": "#FFFFFF"}}, "transparency": 0}]
+      }
+    }
+  }
+}

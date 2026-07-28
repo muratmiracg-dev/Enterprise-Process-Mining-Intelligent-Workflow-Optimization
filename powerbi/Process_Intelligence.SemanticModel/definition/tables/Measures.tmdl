@@ -1,0 +1,30 @@
+table Measures
+	measure 'Cases' = DISTINCTCOUNT(ProcessCases[case_id])
+		formatString: #,0
+	measure 'Total Spend' = SUM(ProcessCases[amount_usd])
+		formatString: "$"#,0
+	measure 'Median Cycle Hours' = MEDIAN(ProcessCases[cycle_time_hours])
+		formatString: 0.0
+	measure 'SLA Adherence %' = 1 - DIVIDE(CALCULATE([Cases], ProcessCases[sla_breached] = TRUE()), [Cases])
+		formatString: 0.0%
+	measure 'Conformance Fitness %' = AVERAGE(ProcessCases[fitness])
+		formatString: 0.0%
+	measure 'Straight Through %' = DIVIDE(CALCULATE([Cases], ProcessCases[conformant] = TRUE()), [Cases])
+		formatString: 0.0%
+	measure 'Automation %' = AVERAGE(ProcessCases[automation_rate])
+		formatString: 0.0%
+	measure 'High Risk Cases' = CALCULATE(DISTINCTCOUNT(RiskPredictions[case_id]), RiskPredictions[risk_band] IN {"High", "Critical"})
+		formatString: #,0
+	measure 'Annual Value' = MAX(SimulationScenarios[estimated_annual_value_usd])
+		formatString: "$"#,0
+	measure 'First-Year ROI' = MAX(SimulationScenarios[first_year_roi])
+		formatString: 0.0x
+
+	column MeasureGroup
+		dataType: string
+		isHidden
+		sourceColumn: MeasureGroup
+
+	partition Measures = calculated
+		mode: import
+		source = ROW("MeasureGroup", "Enterprise Process Intelligence")

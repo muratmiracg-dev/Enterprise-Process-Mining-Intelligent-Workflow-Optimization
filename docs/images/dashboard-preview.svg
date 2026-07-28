@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="8" flood-color="#0F172A" flood-opacity="0.08"/>
+    </filter>
+    <style>
+      .title{font:700 34px 'Segoe UI',Arial,sans-serif;fill:#111827}
+      .subtitle{font:400 16px 'Segoe UI',Arial,sans-serif;fill:#64748B}
+      .label{font:600 15px 'Segoe UI',Arial,sans-serif;fill:#475569}
+      .metric{font:700 34px 'Segoe UI',Arial,sans-serif;fill:#111827}
+      .small{font:400 13px 'Segoe UI',Arial,sans-serif;fill:#64748B}
+      .panelTitle{font:700 19px 'Segoe UI',Arial,sans-serif;fill:#111827}
+      .axis{font:400 12px 'Segoe UI',Arial,sans-serif;fill:#64748B}
+    </style>
+  </defs>
+  <rect width="1920" height="1080" fill="#F4F7FB"/>
+  <rect x="0" y="0" width="1920" height="82" fill="#FFFFFF"/>
+  <rect x="0" y="0" width="12" height="82" fill="#165DFF"/>
+  <text x="42" y="39" class="title">Enterprise Process Intelligence</text>
+  <text x="42" y="65" class="subtitle">Purchase-to-Pay · Executive Command Center · Synthetic benchmark</text>
+  <rect x="1558" y="22" width="326" height="40" rx="20" fill="#EEF4FF"/>
+  <circle cx="1584" cy="42" r="7" fill="#00A878"/>
+  <text x="1602" y="47" class="label" fill="#165DFF">Model &amp; data controls passed</text>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="110" width="280" height="130" rx="14" fill="#FFFFFF"/>
+    <rect x="332" y="110" width="280" height="130" rx="14" fill="#FFFFFF"/>
+    <rect x="632" y="110" width="280" height="130" rx="14" fill="#FFFFFF"/>
+    <rect x="932" y="110" width="280" height="130" rx="14" fill="#FFFFFF"/>
+    <rect x="1232" y="110" width="280" height="130" rx="14" fill="#FFFFFF"/>
+    <rect x="1532" y="110" width="356" height="130" rx="14" fill="#13213C"/>
+  </g>
+  <rect x="32" y="110" width="6" height="130" rx="3" fill="#165DFF"/>
+  <rect x="332" y="110" width="6" height="130" rx="3" fill="#7C3AED"/>
+  <rect x="632" y="110" width="6" height="130" rx="3" fill="#F59E0B"/>
+  <rect x="932" y="110" width="6" height="130" rx="3" fill="#DC2626"/>
+  <rect x="1232" y="110" width="6" height="130" rx="3" fill="#00A878"/>
+  <text x="58" y="145" class="label">PROCESS CASES</text><text x="58" y="194" class="metric">12,000</text><text x="58" y="220" class="small">166,551 events</text>
+  <text x="358" y="145" class="label">MEDIAN CYCLE</text><text x="358" y="194" class="metric">205.57 h</text><text x="358" y="220" class="small">P90 307.54 h</text>
+  <text x="658" y="145" class="label">SLA ADHERENCE</text><text x="658" y="194" class="metric" fill="#D97706">62.08%</text><text x="658" y="220" class="small">37.92% breach rate</text>
+  <text x="958" y="145" class="label">STRAIGHT-THROUGH</text><text x="958" y="194" class="metric">42.32%</text><text x="958" y="220" class="small">14 variants observed</text>
+  <text x="1258" y="145" class="label">SLA MODEL</text><text x="1258" y="194" class="metric">0.822</text><text x="1258" y="220" class="small">Temporal ROC AUC</text>
+  <text x="1558" y="145" class="label" style="fill:#9DB8EF">RECOMMENDED VALUE</text><text x="1558" y="194" class="metric" style="fill:#FFFFFF">$2.21M</text><text x="1558" y="220" class="small" style="fill:#B8C6E4">8.84x first-year ROI · modeled</text>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="268" width="770" height="354" rx="14" fill="#FFFFFF"/>
+    <rect x="822" y="268" width="478" height="354" rx="14" fill="#FFFFFF"/>
+    <rect x="1320" y="268" width="568" height="354" rx="14" fill="#FFFFFF"/>
+  </g>
+  <text x="58" y="306" class="panelTitle">Scenario performance</text>
+  <text x="58" y="330" class="small">Mean cycle hours ↓ and SLA adherence ↑</text>
+  <line x1="94" y1="556" x2="740" y2="556" stroke="#CBD5E1"/>
+  <line x1="94" y1="356" x2="94" y2="556" stroke="#CBD5E1"/>
+  <line x1="94" y1="506" x2="740" y2="506" stroke="#E2E8F0"/><line x1="94" y1="456" x2="740" y2="456" stroke="#E2E8F0"/><line x1="94" y1="406" x2="740" y2="406" stroke="#E2E8F0"/>
+  <text x="66" y="560" class="axis">0</text><text x="59" y="510" class="axis">60</text><text x="52" y="460" class="axis">120</text><text x="52" y="410" class="axis">180</text><text x="52" y="360" class="axis">240</text>
+  <rect x="130" y="384" width="72" height="172" rx="5" fill="#AFC6FA"/><text x="141" y="377" class="label">206.6</text>
+  <rect x="282" y="389" width="72" height="167" rx="5" fill="#8CB0F6"/><text x="293" y="382" class="label">200.1</text>
+  <rect x="434" y="387" width="72" height="169" rx="5" fill="#6A99F1"/><text x="445" y="380" class="label">203.0</text>
+  <rect x="586" y="417" width="72" height="139" rx="5" fill="#165DFF"/><text x="597" y="410" class="label">166.5</text>
+  <text x="121" y="584" class="axis">Baseline</text><text x="268" y="584" class="axis">Approval</text><text x="435" y="584" class="axis">AP Capacity</text><text x="573" y="584" class="axis">Combined</text>
+  <circle cx="166" cy="432" r="7" fill="#F59E0B"/><circle cx="318" cy="412" r="7" fill="#F59E0B"/><circle cx="470" cy="421" r="7" fill="#F59E0B"/><circle cx="622" cy="350" r="9" fill="#00A878"/>
+  <polyline points="166,432 318,412 470,421 622,350" fill="none" stroke="#00A878" stroke-width="4"/>
+  <text x="674" y="355" class="label" fill="#008663">77.64% SLA</text>
+
+  <text x="848" y="306" class="panelTitle">Top bottlenecks</text><text x="848" y="330" class="small">Composite score: total wait, p90 wait, reach</text>
+  <text x="848" y="372" class="label">Goods Received</text><rect x="1010" y="355" width="236" height="22" rx="5" fill="#E7EEFD"/><rect x="1010" y="355" width="218" height="22" rx="5" fill="#165DFF"/><text x="1253" y="372" class="axis">0.924</text>
+  <text x="848" y="421" class="label">Invoice Received</text><rect x="1010" y="404" width="236" height="22" rx="5" fill="#E7EEFD"/><rect x="1010" y="404" width="108" height="22" rx="5" fill="#5B8DEF"/><text x="1253" y="421" class="axis">0.457</text>
+  <text x="848" y="470" class="label">Delivery Delayed</text><rect x="1010" y="453" width="236" height="22" rx="5" fill="#E7EEFD"/><rect x="1010" y="453" width="99" height="22" rx="5" fill="#F59E0B"/><text x="1253" y="470" class="axis">0.418</text>
+  <text x="848" y="519" class="label">Payment Executed</text><rect x="1010" y="502" width="236" height="22" rx="5" fill="#E7EEFD"/><rect x="1010" y="502" width="88" height="22" rx="5" fill="#7C3AED"/><text x="1253" y="519" class="axis">0.373</text>
+  <rect x="848" y="552" width="408" height="44" rx="8" fill="#FFF7E6"/><text x="864" y="579" class="label" fill="#9A6700">98.40% of cycle time is estimated wait</text>
+
+  <text x="1346" y="306" class="panelTitle">SLA review queue</text><text x="1346" y="330" class="small">2,400 temporal holdout cases</text>
+  <circle cx="1464" cy="454" r="100" fill="none" stroke="#E5E7EB" stroke-width="38"/>
+  <circle cx="1464" cy="454" r="100" fill="none" stroke="#165DFF" stroke-width="38" stroke-dasharray="230 628" transform="rotate(-90 1464 454)"/>
+  <circle cx="1464" cy="454" r="100" fill="none" stroke="#00A878" stroke-width="38" stroke-dasharray="185 628" stroke-dashoffset="-230" transform="rotate(-90 1464 454)"/>
+  <circle cx="1464" cy="454" r="100" fill="none" stroke="#F59E0B" stroke-width="38" stroke-dasharray="117 628" stroke-dashoffset="-415" transform="rotate(-90 1464 454)"/>
+  <circle cx="1464" cy="454" r="100" fill="none" stroke="#DC2626" stroke-width="38" stroke-dasharray="96 628" stroke-dashoffset="-532" transform="rotate(-90 1464 454)"/>
+  <text x="1410" y="448" class="metric">812</text><text x="1409" y="475" class="small">high + critical</text>
+  <circle cx="1624" cy="386" r="7" fill="#165DFF"/><text x="1642" y="391" class="label">Low · 880</text>
+  <circle cx="1624" cy="430" r="7" fill="#00A878"/><text x="1642" y="435" class="label">Medium · 708</text>
+  <circle cx="1624" cy="474" r="7" fill="#F59E0B"/><text x="1642" y="479" class="label">High · 446</text>
+  <circle cx="1624" cy="518" r="7" fill="#DC2626"/><text x="1642" y="523" class="label">Critical · 366</text>
+  <rect x="1604" y="552" width="232" height="44" rx="8" fill="#FEECEC"/><text x="1621" y="579" class="label" fill="#B91C1C">Human review required</text>
+
+  <g filter="url(#shadow)">
+    <rect x="32" y="642" width="1120" height="400" rx="14" fill="#FFFFFF"/>
+    <rect x="1172" y="642" width="716" height="400" rx="14" fill="#FFFFFF"/>
+  </g>
+  <text x="58" y="680" class="panelTitle">Discovered Purchase-to-Pay flow</text><text x="58" y="704" class="small">Top path covers 42.32% of cases · exception volume shown below</text>
+  <g>
+    <rect x="66" y="755" width="126" height="58" rx="10" fill="#EAF1FF"/><text x="86" y="780" class="label">Request</text><text x="86" y="800" class="small">12,000</text>
+    <line x1="192" y1="784" x2="226" y2="784" stroke="#165DFF" stroke-width="4"/><polygon points="226,778 238,784 226,790" fill="#165DFF"/>
+    <rect x="238" y="755" width="126" height="58" rx="10" fill="#EAF1FF"/><text x="258" y="780" class="label">Approval</text><text x="258" y="800" class="small">10,464</text>
+    <line x1="364" y1="784" x2="398" y2="784" stroke="#165DFF" stroke-width="4"/><polygon points="398,778 410,784 398,790" fill="#165DFF"/>
+    <rect x="410" y="755" width="126" height="58" rx="10" fill="#EAF1FF"/><text x="430" y="780" class="label">PO Created</text><text x="430" y="800" class="small">12,000</text>
+    <line x1="536" y1="784" x2="570" y2="784" stroke="#165DFF" stroke-width="4"/><polygon points="570,778 582,784 570,790" fill="#165DFF"/>
+    <rect x="582" y="755" width="126" height="58" rx="10" fill="#EAF1FF"/><text x="602" y="780" class="label">Goods</text><text x="602" y="800" class="small">12,000</text>
+    <line x1="708" y1="784" x2="742" y2="784" stroke="#165DFF" stroke-width="4"/><polygon points="742,778 754,784 742,790" fill="#165DFF"/>
+    <rect x="754" y="755" width="126" height="58" rx="10" fill="#EAF1FF"/><text x="774" y="780" class="label">Invoice</text><text x="774" y="800" class="small">12,000</text>
+    <line x1="880" y1="784" x2="914" y2="784" stroke="#165DFF" stroke-width="4"/><polygon points="914,778 926,784 914,790" fill="#165DFF"/>
+    <rect x="926" y="755" width="166" height="58" rx="10" fill="#13213C"/><text x="946" y="780" class="label" style="fill:#FFFFFF">Pay &amp; Close</text><text x="946" y="800" class="small" style="fill:#B8C6E4">12,000</text>
+  </g>
+  <rect x="66" y="856" width="1012" height="138" rx="12" fill="#F8FAFC"/>
+  <text x="88" y="888" class="label">KEY DEVIATIONS</text>
+  <rect x="88" y="912" width="216" height="42" rx="7" fill="#FFF1F1"/><text x="106" y="938" class="label" fill="#B91C1C">Delivery delay · 1,551</text>
+  <rect x="320" y="912" width="224" height="42" rx="7" fill="#FFF7E6"/><text x="338" y="938" class="label" fill="#9A6700">Missing approval · 1,536</text>
+  <rect x="560" y="912" width="236" height="42" rx="7" fill="#F4EEFF"/><text x="578" y="938" class="label" fill="#6D28D9">Approval rework · 1,259</text>
+  <rect x="812" y="912" width="242" height="42" rx="7" fill="#EAF8F3"/><text x="830" y="938" class="label" fill="#047857">Invoice blocked · 1,159</text>
+
+  <text x="1198" y="680" class="panelTitle">Decision brief</text><text x="1198" y="704" class="small">Evidence → intervention → controlled outcome</text>
+  <rect x="1198" y="738" width="640" height="76" rx="12" fill="#EEF4FF"/><circle cx="1232" cy="776" r="18" fill="#165DFF"/><text x="1226" y="783" font-family="Segoe UI" font-weight="700" font-size="19" fill="#FFFFFF">1</text><text x="1264" y="768" class="label">Automate low-risk approval routing</text><text x="1264" y="791" class="small">Retain accountable human control and exception review.</text>
+  <rect x="1198" y="832" width="640" height="76" rx="12" fill="#EAF8F3"/><circle cx="1232" cy="870" r="18" fill="#00A878"/><text x="1226" y="877" font-family="Segoe UI" font-weight="700" font-size="19" fill="#FFFFFF">2</text><text x="1264" y="862" class="label">Add targeted AP and treasury capacity</text><text x="1264" y="885" class="small">Pilot against invoice-match and authorization queues.</text>
+  <rect x="1198" y="926" width="640" height="76" rx="12" fill="#FFF7E6"/><circle cx="1232" cy="964" r="18" fill="#F59E0B"/><text x="1226" y="971" font-family="Segoe UI" font-weight="700" font-size="19" fill="#FFFFFF">3</text><text x="1264" y="956" class="label">Reduce supplier lead-time variance</text><text x="1264" y="979" class="small">Calibrate cost assumptions before a controlled pilot.</text>
+</svg>

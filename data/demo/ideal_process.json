@@ -1,0 +1,24 @@
+{
+  "process": "Purchase-to-Pay",
+  "version": "1.0.0",
+  "activities": [
+    "Purchase Request Created",
+    "Manager Approval",
+    "Procurement Review",
+    "Purchase Order Created",
+    "Purchase Order Sent",
+    "Supplier Confirmation",
+    "Goods Received",
+    "Invoice Received",
+    "Invoice Duplicate Check",
+    "Invoice Matched",
+    "Payment Authorized",
+    "Payment Executed",
+    "Case Closed"
+  ],
+  "sla_targets_hours": {
+    "Urgent": 120,
+    "Standard": 240,
+    "Strategic": 336
+  }
+}

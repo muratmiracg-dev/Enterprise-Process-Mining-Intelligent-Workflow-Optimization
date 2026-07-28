@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    env:
+      MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - run: python -m pip install --upgrade pip
+      - run: python -m pip install -e ".[dev]"
+      - run: ruff format --check src tests scripts
+      - run: ruff check src tests scripts
+      - name: Tests with branch coverage
+        run: pytest --cov=process_optimizer --cov-report=term-missing --cov-report=xml
+      - name: Repository acceptance
+        if: matrix.python-version == '3.12'
+        run: python scripts/verify_repository.py --skip-office-render
+
+  deterministic-data:
+    runs-on: ubuntu-latest
+    env:
+      MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -e .
+      - run: python scripts/generate_demo_data.py --output "${{ runner.temp }}/regenerated"
+      - name: Verify byte-for-byte data reproducibility
+        run: |
+          sha256sum data/demo/p2p_event_log.csv.gz "${{ runner.temp }}/regenerated/p2p_event_log.csv.gz"
+          cmp data/demo/p2p_event_log.csv.gz "${{ runner.temp }}/regenerated/p2p_event_log.csv.gz"
+          cmp data/demo/case_master.csv.gz "${{ runner.temp }}/regenerated/case_master.csv.gz"

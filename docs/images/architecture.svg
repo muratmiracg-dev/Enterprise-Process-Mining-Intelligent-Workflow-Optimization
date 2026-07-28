@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <filter id="s"><feDropShadow dx="0" dy="5" stdDeviation="7" flood-opacity=".10"/></filter>
+    <style>
+      .h{font:700 32px 'Segoe UI',Arial;fill:#111827}.t{font:700 18px 'Segoe UI',Arial;fill:#111827}.b{font:400 14px 'Segoe UI',Arial;fill:#475569}.w{font:700 18px 'Segoe UI',Arial;fill:#fff}.ws{font:400 13px 'Segoe UI',Arial;fill:#dbe7ff}
+    </style>
+  </defs>
+  <rect width="1600" height="900" fill="#F4F7FB"/>
+  <text x="70" y="72" class="h">Enterprise Process Intelligence Architecture</text>
+  <text x="70" y="104" class="b">Reproducible evidence, governed analytics, read-only decision delivery</text>
+  <rect x="70" y="150" width="300" height="610" rx="20" fill="#13213C" filter="url(#s)"/>
+  <text x="104" y="198" class="w">1 · Evidence layer</text>
+  <rect x="104" y="232" width="232" height="104" rx="12" fill="#243A63"/><text x="128" y="267" class="w">Synthetic P2P log</text><text x="128" y="294" class="ws">166,551 events</text><text x="128" y="316" class="ws">12,000 cases · fixed seed</text>
+  <rect x="104" y="362" width="232" height="104" rx="12" fill="#243A63"/><text x="128" y="397" class="w">Case master</text><text x="128" y="424" class="ws">SLA, cycle, amount</text><text x="128" y="446" class="ws">14 ground-truth variants</text>
+  <rect x="104" y="492" width="232" height="104" rx="12" fill="#243A63"/><text x="128" y="527" class="w">BPMN target</text><text x="128" y="554" class="ws">13 governed activities</text><text x="128" y="576" class="ws">Human control points</text>
+  <rect x="104" y="622" width="232" height="104" rx="12" fill="#243A63"/><text x="128" y="657" class="w">Data contracts</text><text x="128" y="684" class="ws">Types · keys · ordering</text><text x="128" y="706" class="ws">Event/case reconciliation</text>
+
+  <line x1="370" y1="455" x2="430" y2="455" stroke="#165DFF" stroke-width="5"/><polygon points="430,447 446,455 430,463" fill="#165DFF"/>
+  <rect x="446" y="150" width="524" height="610" rx="20" fill="#FFFFFF" filter="url(#s)"/>
+  <text x="480" y="198" class="t">2 · Analytical engines</text>
+  <rect x="480" y="232" width="210" height="132" rx="14" fill="#EEF4FF"/><circle cx="513" cy="269" r="17" fill="#165DFF"/><text x="507" y="276" class="w">A</text><text x="542" y="270" class="t">Discovery</text><text x="504" y="306" class="b">PM4Py DFG &amp; tree</text><text x="504" y="330" class="b">Variants · activities</text>
+  <rect x="726" y="232" width="210" height="132" rx="14" fill="#F4EEFF"/><circle cx="759" cy="269" r="17" fill="#7C3AED"/><text x="753" y="276" class="w">B</text><text x="788" y="270" class="t">Conformance</text><text x="750" y="306" class="b">Fitness · deviations</text><text x="750" y="330" class="b">Missing · repeated</text>
+  <rect x="480" y="398" width="210" height="132" rx="14" fill="#FFF7E6"/><circle cx="513" cy="435" r="17" fill="#F59E0B"/><text x="507" y="442" class="w">C</text><text x="542" y="436" class="t">Performance</text><text x="504" y="472" class="b">Wait · rework</text><text x="504" y="496" class="b">Resource workload</text>
+  <rect x="726" y="398" width="210" height="132" rx="14" fill="#FFF1F1"/><circle cx="759" cy="435" r="17" fill="#DC2626"/><text x="753" y="442" class="w">D</text><text x="788" y="436" class="t">SLA risk</text><text x="750" y="472" class="b">Temporal holdout</text><text x="750" y="496" class="b">Explainable scoring</text>
+  <rect x="480" y="564" width="456" height="154" rx="14" fill="#EAF8F3"/><circle cx="513" cy="603" r="17" fill="#00A878"/><text x="507" y="610" class="w">E</text><text x="542" y="604" class="t">Capacity simulation</text><text x="504" y="642" class="b">24 replications × 900 cases × 4 scenarios</text><text x="504" y="668" class="b">Cycle · SLA · throughput · value · ROI</text><text x="504" y="694" class="b">Shared seeds and explicit assumptions</text>
+
+  <line x1="970" y1="455" x2="1030" y2="455" stroke="#165DFF" stroke-width="5"/><polygon points="1030,447 1046,455 1030,463" fill="#165DFF"/>
+  <rect x="1046" y="150" width="484" height="610" rx="20" fill="#FFFFFF" filter="url(#s)"/>
+  <text x="1080" y="198" class="t">3 · Decision delivery</text>
+  <rect x="1080" y="232" width="190" height="106" rx="13" fill="#EEF4FF"/><text x="1104" y="272" class="t">FastAPI</text><text x="1104" y="300" class="b">Read-only endpoints</text><text x="1104" y="321" class="b">OpenAPI + metrics</text>
+  <rect x="1304" y="232" width="190" height="106" rx="13" fill="#EEF4FF"/><text x="1328" y="272" class="t">PostgreSQL</text><text x="1328" y="300" class="b">Governed schema</text><text x="1328" y="321" class="b">Analytical views</text>
+  <rect x="1080" y="372" width="190" height="106" rx="13" fill="#F4EEFF"/><text x="1104" y="412" class="t">Power BI</text><text x="1104" y="440" class="b">PBIP · TMDL · DAX</text><text x="1104" y="461" class="b">8-page build spec</text>
+  <rect x="1304" y="372" width="190" height="106" rx="13" fill="#F4EEFF"/><text x="1328" y="412" class="t">Excel</text><text x="1328" y="440" class="b">Decision workbook</text><text x="1328" y="461" class="b">Editable assumptions</text>
+  <rect x="1080" y="512" width="190" height="106" rx="13" fill="#EAF8F3"/><text x="1104" y="552" class="t">Executives</text><text x="1104" y="580" class="b">Bilingual report</text><text x="1104" y="601" class="b">20-slide deck</text>
+  <rect x="1304" y="512" width="190" height="106" rx="13" fill="#EAF8F3"/><text x="1328" y="552" class="t">Operations</text><text x="1328" y="580" class="b">Prometheus</text><text x="1328" y="601" class="b">Grafana + runbooks</text>
+  <rect x="1080" y="652" width="414" height="72" rx="13" fill="#13213C"/><text x="1108" y="684" class="w">Human-in-the-loop boundary</text><text x="1108" y="708" class="ws">No approval, rejection, or payment mutation</text>
+  <rect x="70" y="800" width="1460" height="52" rx="12" fill="#E7EEFD"/>
+  <text x="94" y="832" class="t" fill="#165DFF">Control plane:</text><text x="245" y="832" class="b">58 tests · 96.97% coverage · CI · CodeQL · Trivy · deterministic drift check · model and simulation governance</text>
+</svg>

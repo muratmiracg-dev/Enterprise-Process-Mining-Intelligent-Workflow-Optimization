@@ -1,0 +1,5 @@
+activity,affected_cases,repeat_events,mean_occurrences
+Manager Approval,1259,1259,2.0
+Invoice Duplicate Check,744,744,2.0
+Invoice Matched,634,634,2.0
+Payment Authorized,634,634,2.0

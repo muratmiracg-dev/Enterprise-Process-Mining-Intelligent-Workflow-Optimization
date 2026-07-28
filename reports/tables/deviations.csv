@@ -1,0 +1,15 @@
+deviation_type,activity,case_count
+unexpected,Delivery Delayed,1551
+missing,Manager Approval,1536
+repeated,Manager Approval,1259
+unexpected,Request Reworked,1259
+unexpected,Invoice Blocked,1159
+unexpected,Invoice Corrected,1159
+unexpected,Three-Way Match Failed,822
+repeated,Invoice Duplicate Check,744
+unexpected,Corrected Invoice Received,744
+unexpected,Duplicate Check Failed,744
+unexpected,Invoice Rejected,744
+repeated,Invoice Matched,634
+repeated,Payment Authorized,634
+unexpected,Payment Rejected,634

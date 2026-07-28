@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/definition/model/1.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Enterprise Process Intelligence Model"
+  },
+  "config": {
+    "version": "1.0",
+    "logicalId": "caab33ad-31fd-44e3-97df-a29760cbbf38"
+  }
+}

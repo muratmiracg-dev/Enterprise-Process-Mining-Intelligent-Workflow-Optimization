@@ -1,0 +1,72 @@
+resource_id,resource_role,team,fte_capacity,hourly_cost_usd
+R-01,Requester,Requester,1,34
+R-02,Requester,Requester,1,34
+R-03,Requester,Requester,1,34
+R-04,Requester,Requester,1,34
+R-05,Requester,Requester,1,34
+R-06,Requester,Requester,1,34
+R-07,Requester,Requester,1,34
+R-08,Requester,Requester,1,34
+R-09,Requester,Requester,1,34
+R-10,Requester,Requester,1,34
+R-11,Requester,Requester,1,34
+R-12,Requester,Requester,1,34
+R-13,Requester,Requester,1,34
+R-14,Requester,Requester,1,34
+R-15,Requester,Requester,1,34
+R-16,Requester,Requester,1,34
+R-17,Requester,Requester,1,34
+R-18,Requester,Requester,1,34
+A-01,Approver,Approver,1,46
+A-02,Approver,Approver,1,46
+A-03,Approver,Approver,1,46
+A-04,Approver,Approver,1,46
+A-05,Approver,Approver,1,46
+A-06,Approver,Approver,1,46
+A-07,Approver,Approver,1,46
+A-08,Approver,Approver,1,46
+A-09,Approver,Approver,1,46
+A-10,Approver,Approver,1,46
+A-11,Approver,Approver,1,46
+A-12,Approver,Approver,1,46
+B-01,Buyer,Buyer,1,46
+B-02,Buyer,Buyer,1,46
+B-03,Buyer,Buyer,1,46
+B-04,Buyer,Buyer,1,46
+B-05,Buyer,Buyer,1,46
+B-06,Buyer,Buyer,1,46
+B-07,Buyer,Buyer,1,46
+B-08,Buyer,Buyer,1,46
+B-09,Buyer,Buyer,1,46
+B-10,Buyer,Buyer,1,46
+EB-01,ERP Bot,Automation,0,0
+EB-02,ERP Bot,Automation,0,0
+S-01,Supplier,External,0,0
+RC-01,Receiving Clerk,Receiving Clerk,1,34
+RC-02,Receiving Clerk,Receiving Clerk,1,34
+RC-03,Receiving Clerk,Receiving Clerk,1,34
+RC-04,Receiving Clerk,Receiving Clerk,1,34
+RC-05,Receiving Clerk,Receiving Clerk,1,34
+RC-06,Receiving Clerk,Receiving Clerk,1,34
+RC-07,Receiving Clerk,Receiving Clerk,1,34
+RC-08,Receiving Clerk,Receiving Clerk,1,34
+AP-01,Accounts Payable,Accounts Payable,1,34
+AP-02,Accounts Payable,Accounts Payable,1,34
+AP-03,Accounts Payable,Accounts Payable,1,34
+AP-04,Accounts Payable,Accounts Payable,1,34
+AP-05,Accounts Payable,Accounts Payable,1,34
+AP-06,Accounts Payable,Accounts Payable,1,34
+AP-07,Accounts Payable,Accounts Payable,1,34
+AP-08,Accounts Payable,Accounts Payable,1,34
+AP-09,Accounts Payable,Accounts Payable,1,34
+AP-10,Accounts Payable,Accounts Payable,1,34
+AB-01,AP Bot,Automation,0,0
+AB-02,AP Bot,Automation,0,0
+TA-01,Treasury Analyst,Treasury Analyst,1,34
+TA-02,Treasury Analyst,Treasury Analyst,1,34
+TA-03,Treasury Analyst,Treasury Analyst,1,34
+TA-04,Treasury Analyst,Treasury Analyst,1,34
+TA-05,Treasury Analyst,Treasury Analyst,1,34
+TA-06,Treasury Analyst,Treasury Analyst,1,34
+PB-01,Payment Bot,Automation,0,0
+PB-02,Payment Bot,Automation,0,0

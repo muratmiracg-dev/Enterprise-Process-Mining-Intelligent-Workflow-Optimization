@@ -1,0 +1,1134 @@
+{
+  "project": {
+    "name": "Enterprise Process Mining & Intelligent Workflow Optimization",
+    "process": "Purchase-to-Pay",
+    "dataset": "Northstar Manufacturing Group synthetic portfolio data",
+    "currency": "USD",
+    "generated_with_seed": 20260728,
+    "disclaimer": "All organizations, resources, vendors, transactions, events, predictions, and business-impact estimates are synthetic."
+  },
+  "data_quality": {
+    "event_count": 166551,
+    "case_count": 12000,
+    "activity_count": 22,
+    "resource_count": 150,
+    "variant_count": 14,
+    "start_timestamp": "2025-01-01T07:02:39+00:00",
+    "end_timestamp": "2026-07-17T14:59:13+00:00",
+    "event_case_reconciliation": true,
+    "duplicate_case_event_keys": 0,
+    "null_required_fields": 0
+  },
+  "kpis": {
+    "median_cycle_hours": 205.57,
+    "p90_cycle_hours": 307.54,
+    "p95_cycle_hours": 351.4,
+    "sla_adherence": 0.6208,
+    "straight_through_rate": 0.4232,
+    "mean_conformance_fitness": 0.9162,
+    "rework_case_rate": 0.2198,
+    "automation_event_rate": 0.3647,
+    "wait_time_share": 0.984,
+    "annualized_case_volume": 8000
+  },
+  "process_discovery": {
+    "ideal_path": [
+      "Purchase Request Created",
+      "Manager Approval",
+      "Procurement Review",
+      "Purchase Order Created",
+      "Purchase Order Sent",
+      "Supplier Confirmation",
+      "Goods Received",
+      "Invoice Received",
+      "Invoice Duplicate Check",
+      "Invoice Matched",
+      "Payment Authorized",
+      "Payment Executed",
+      "Case Closed"
+    ],
+    "top_variants": [
+      {
+        "variant_rank": 1,
+        "variant": "Purchase Request Created > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 13,
+        "case_count": 5078,
+        "case_share": 0.4231666667
+      },
+      {
+        "variant_rank": 2,
+        "variant": "Purchase Request Created > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 12,
+        "case_count": 1325,
+        "case_share": 0.1104166667
+      },
+      {
+        "variant_rank": 3,
+        "variant": "Purchase Request Created > Manager Approval > Request Reworked > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 15,
+        "case_count": 1108,
+        "case_share": 0.0923333333
+      },
+      {
+        "variant_rank": 4,
+        "variant": "Purchase Request Created > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Blocked > Invoice Corrected > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 15,
+        "case_count": 987,
+        "case_share": 0.08225
+      },
+      {
+        "variant_rank": 5,
+        "variant": "Purchase Request Created > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Delivery Delayed > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 14,
+        "case_count": 768,
+        "case_share": 0.064
+      },
+      {
+        "variant_rank": 6,
+        "variant": "Purchase Request Created > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Invoice Received > Invoice Duplicate Check > Three-Way Match Failed > Goods Received > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 14,
+        "case_count": 738,
+        "case_share": 0.0615
+      },
+      {
+        "variant_rank": 7,
+        "variant": "Purchase Request Created > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Goods Received > Invoice Received > Invoice Duplicate Check > Duplicate Check Failed > Invoice Rejected > Corrected Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 17,
+        "case_count": 650,
+        "case_share": 0.0541666667
+      },
+      {
+        "variant_rank": 8,
+        "variant": "Purchase Request Created > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Rejected > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 16,
+        "case_count": 563,
+        "case_share": 0.0469166667
+      },
+      {
+        "variant_rank": 9,
+        "variant": "Purchase Request Created > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Delivery Delayed > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 13,
+        "case_count": 211,
+        "case_share": 0.0175833333
+      },
+      {
+        "variant_rank": 10,
+        "variant": "Purchase Request Created > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Delivery Delayed > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Blocked > Invoice Corrected > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 16,
+        "case_count": 172,
+        "case_share": 0.0143333333
+      },
+      {
+        "variant_rank": 11,
+        "variant": "Purchase Request Created > Manager Approval > Request Reworked > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Delivery Delayed > Goods Received > Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 16,
+        "case_count": 151,
+        "case_share": 0.0125833333
+      },
+      {
+        "variant_rank": 12,
+        "variant": "Purchase Request Created > Manager Approval > Procurement Review > Purchase Order Created > Purchase Order Sent > Supplier Confirmation > Delivery Delayed > Goods Received > Invoice Received > Invoice Duplicate Check > Duplicate Check Failed > Invoice Rejected > Corrected Invoice Received > Invoice Duplicate Check > Invoice Matched > Payment Authorized > Payment Executed > Case Closed",
+        "activity_count": 18,
+        "case_count": 94,
+        "case_share": 0.0078333333
+      }
+    ],
+    "top_transitions": [
+      {
+        "source": "Invoice Matched",
+        "target": "Payment Authorized",
+        "transition_count": 12634,
+        "mean_wait_hours": 14.0359999692,
+        "median_wait_hours": 12.6806944444,
+        "p90_wait_hours": 22.676,
+        "case_coverage": 1.0528333333
+      },
+      {
+        "source": "Invoice Received",
+        "target": "Invoice Duplicate Check",
+        "transition_count": 12000,
+        "mean_wait_hours": 0.2881424537,
+        "median_wait_hours": 0.2638888889,
+        "p90_wait_hours": 0.4583333333,
+        "case_coverage": 1.0
+      },
+      {
+        "source": "Payment Authorized",
+        "target": "Payment Executed",
+        "transition_count": 12000,
+        "mean_wait_hours": 21.0875489583,
+        "median_wait_hours": 19.2991666667,
+        "p90_wait_hours": 33.5253055556,
+        "case_coverage": 1.0
+      },
+      {
+        "source": "Payment Executed",
+        "target": "Case Closed",
+        "transition_count": 12000,
+        "mean_wait_hours": 1.9203646296,
+        "median_wait_hours": 1.7565277778,
+        "p90_wait_hours": 3.0447222222,
+        "case_coverage": 1.0
+      },
+      {
+        "source": "Procurement Review",
+        "target": "Purchase Order Created",
+        "transition_count": 12000,
+        "mean_wait_hours": 6.6987430324,
+        "median_wait_hours": 6.1205555556,
+        "p90_wait_hours": 10.6728055556,
+        "case_coverage": 1.0
+      },
+      {
+        "source": "Purchase Order Created",
+        "target": "Purchase Order Sent",
+        "transition_count": 12000,
+        "mean_wait_hours": 0.3846739352,
+        "median_wait_hours": 0.3541666667,
+        "p90_wait_hours": 0.6055833333,
+        "case_coverage": 1.0
+      },
+      {
+        "source": "Purchase Order Sent",
+        "target": "Supplier Confirmation",
+        "transition_count": 12000,
+        "mean_wait_hours": 11.5446507407,
+        "median_wait_hours": 10.28875,
+        "p90_wait_hours": 19.1899166667,
+        "case_coverage": 1.0
+      },
+      {
+        "source": "Goods Received",
+        "target": "Invoice Received",
+        "transition_count": 11178,
+        "mean_wait_hours": 28.9924703286,
+        "median_wait_hours": 26.3808333333,
+        "p90_wait_hours": 45.7782777778,
+        "case_coverage": 0.9315
+      },
+      {
+        "source": "Manager Approval",
+        "target": "Procurement Review",
+        "transition_count": 10464,
+        "mean_wait_hours": 12.1026242355,
+        "median_wait_hours": 11.0030555556,
+        "p90_wait_hours": 19.4499444444,
+        "case_coverage": 0.872
+      },
+      {
+        "source": "Purchase Request Created",
+        "target": "Manager Approval",
+        "transition_count": 10464,
+        "mean_wait_hours": 14.1915894442,
+        "median_wait_hours": 12.84,
+        "p90_wait_hours": 22.8389166667,
+        "case_coverage": 0.872
+      },
+      {
+        "source": "Invoice Duplicate Check",
+        "target": "Invoice Matched",
+        "transition_count": 10019,
+        "mean_wait_hours": 9.0586725777,
+        "median_wait_hours": 8.2152777778,
+        "p90_wait_hours": 14.6182777778,
+        "case_coverage": 0.8349166667
+      },
+      {
+        "source": "Supplier Confirmation",
+        "target": "Goods Received",
+        "transition_count": 9711,
+        "mean_wait_hours": 71.8115700981,
+        "median_wait_hours": 63.6819444444,
+        "p90_wait_hours": 119.8630555556,
+        "case_coverage": 0.80925
+      },
+      {
+        "source": "Supplier Confirmation",
+        "target": "Delivery Delayed",
+        "transition_count": 1551,
+        "mean_wait_hours": 100.4648633498,
+        "median_wait_hours": 90.1972222222,
+        "p90_wait_hours": 160.8219444444,
+        "case_coverage": 0.12925
+      },
+      {
+        "source": "Purchase Request Created",
+        "target": "Procurement Review",
+        "transition_count": 1536,
+        "mean_wait_hours": 11.9696826172,
+        "median_wait_hours": 10.9701388889,
+        "p90_wait_hours": 19.0348611111,
+        "case_coverage": 0.128
+      },
+      {
+        "source": "Delivery Delayed",
+        "target": "Goods Received",
+        "transition_count": 1467,
+        "mean_wait_hours": 74.6554252821,
+        "median_wait_hours": 66.5586111111,
+        "p90_wait_hours": 123.2273888889,
+        "case_coverage": 0.12225
+      },
+      {
+        "source": "Manager Approval",
+        "target": "Request Reworked",
+        "transition_count": 1259,
+        "mean_wait_hours": 19.0823799753,
+        "median_wait_hours": 17.6194444444,
+        "p90_wait_hours": 29.6911111111,
+        "case_coverage": 0.1049166667
+      },
+      {
+        "source": "Request Reworked",
+        "target": "Manager Approval",
+        "transition_count": 1259,
+        "mean_wait_hours": 14.2383759156,
+        "median_wait_hours": 13.1647222222,
+        "p90_wait_hours": 22.4891666667,
+        "case_coverage": 0.1049166667
+      },
+      {
+        "source": "Invoice Blocked",
+        "target": "Invoice Corrected",
+        "transition_count": 1159,
+        "mean_wait_hours": 26.9051169591,
+        "median_wait_hours": 24.8369444444,
+        "p90_wait_hours": 41.3443888889,
+        "case_coverage": 0.0965833333
+      },
+      {
+        "source": "Invoice Corrected",
+        "target": "Invoice Matched",
+        "transition_count": 1159,
+        "mean_wait_hours": 9.0466978238,
+        "median_wait_hours": 8.1838888889,
+        "p90_wait_hours": 14.5511666667,
+        "case_coverage": 0.0965833333
+      },
+      {
+        "source": "Invoice Duplicate Check",
+        "target": "Invoice Blocked",
+        "transition_count": 1159,
+        "mean_wait_hours": 18.1810972102,
+        "median_wait_hours": 16.1233333333,
+        "p90_wait_hours": 29.8212777778,
+        "case_coverage": 0.0965833333
+      }
+    ],
+    "activities": [
+      {
+        "activity": "Invoice Duplicate Check",
+        "event_count": 12744,
+        "case_count": 12000,
+        "automation_rate": 1.0,
+        "mean_processing_minutes": 0.99923258,
+        "median_processing_minutes": 0.96,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Invoice Matched",
+        "event_count": 12634,
+        "case_count": 12000,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 34.2449881273,
+        "median_processing_minutes": 32.69,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Payment Authorized",
+        "event_count": 12634,
+        "case_count": 12000,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 18.1335048282,
+        "median_processing_minutes": 17.37,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Case Closed",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 1.0,
+        "mean_processing_minutes": 1.0007308333,
+        "median_processing_minutes": 0.96,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Goods Received",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 22.177705,
+        "median_processing_minutes": 21.22,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Invoice Received",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 11.073225,
+        "median_processing_minutes": 10.6,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Payment Executed",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 1.0,
+        "mean_processing_minutes": 2.0011558333,
+        "median_processing_minutes": 1.92,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Procurement Review",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 38.4475483333,
+        "median_processing_minutes": 36.81,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Purchase Order Created",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 24.1353908333,
+        "median_processing_minutes": 23.0,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Purchase Order Sent",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 1.0,
+        "mean_processing_minutes": 2.0020191667,
+        "median_processing_minutes": 1.92,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Purchase Request Created",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 1.0,
+        "mean_processing_minutes": 8.0004766667,
+        "median_processing_minutes": 7.65,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Supplier Confirmation",
+        "event_count": 12000,
+        "case_count": 12000,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 12.0549941667,
+        "median_processing_minutes": 11.5,
+        "case_coverage": 1.0
+      },
+      {
+        "activity": "Manager Approval",
+        "event_count": 11723,
+        "case_count": 10464,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 16.1786053058,
+        "median_processing_minutes": 15.44,
+        "case_coverage": 0.872
+      },
+      {
+        "activity": "Delivery Delayed",
+        "event_count": 1551,
+        "case_count": 1551,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 18.1708897485,
+        "median_processing_minutes": 17.59,
+        "case_coverage": 0.12925
+      },
+      {
+        "activity": "Request Reworked",
+        "event_count": 1259,
+        "case_count": 1259,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 28.2780222399,
+        "median_processing_minutes": 27.19,
+        "case_coverage": 0.1049166667
+      },
+      {
+        "activity": "Invoice Blocked",
+        "event_count": 1159,
+        "case_count": 1159,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 26.3114236411,
+        "median_processing_minutes": 25.1,
+        "case_coverage": 0.0965833333
+      },
+      {
+        "activity": "Invoice Corrected",
+        "event_count": 1159,
+        "case_count": 1159,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 20.4466695427,
+        "median_processing_minutes": 19.63,
+        "case_coverage": 0.0965833333
+      },
+      {
+        "activity": "Three-Way Match Failed",
+        "event_count": 822,
+        "case_count": 822,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 29.9728223844,
+        "median_processing_minutes": 28.765,
+        "case_coverage": 0.0685
+      },
+      {
+        "activity": "Corrected Invoice Received",
+        "event_count": 744,
+        "case_count": 744,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 13.2182392473,
+        "median_processing_minutes": 12.585,
+        "case_coverage": 0.062
+      },
+      {
+        "activity": "Duplicate Check Failed",
+        "event_count": 744,
+        "case_count": 744,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 13.9410215054,
+        "median_processing_minutes": 13.13,
+        "case_coverage": 0.062
+      },
+      {
+        "activity": "Invoice Rejected",
+        "event_count": 744,
+        "case_count": 744,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 16.147405914,
+        "median_processing_minutes": 15.41,
+        "case_coverage": 0.062
+      },
+      {
+        "activity": "Payment Rejected",
+        "event_count": 634,
+        "case_count": 634,
+        "automation_rate": 0.0,
+        "mean_processing_minutes": 24.1145741325,
+        "median_processing_minutes": 23.05,
+        "case_coverage": 0.0528333333
+      }
+    ],
+    "pm4py_reference": {
+      "pm4py_version": "2.7.22",
+      "sample_cases": 2000,
+      "dfg_edges": 31,
+      "start_activities": {
+        "Purchase Request Created": 2000
+      },
+      "end_activities": {
+        "Case Closed": 2000
+      },
+      "process_tree": "->( 'Purchase Request Created', X( tau, *( 'Manager Approval', 'Request Reworked' ) ), 'Procurement Review', 'Purchase Order Created', 'Purchase Order Sent', 'Supplier Confirmation', X( tau, 'Delivery Delayed' ), +( 'Goods Received', ->( 'Invoice Received', *( 'Invoice Duplicate Check', ->( 'Duplicate Check Failed', 'Invoice Rejected', 'Corrected Invoice Received' ) ), X( tau, 'Three-Way Match Failed' ) ) ), X( tau, ->( 'Invoice Blocked', 'Invoice Corrected' ) ), *( ->( 'Invoice Matched', 'Payment Authorized' ), 'Payment Rejected' ), 'Payment Executed', 'Case Closed' )"
+    }
+  },
+  "conformance": {
+    "conformant_cases": 5078,
+    "nonconformant_cases": 6922,
+    "deviations": [
+      {
+        "deviation_type": "unexpected",
+        "activity": "Delivery Delayed",
+        "case_count": 1551
+      },
+      {
+        "deviation_type": "missing",
+        "activity": "Manager Approval",
+        "case_count": 1536
+      },
+      {
+        "deviation_type": "repeated",
+        "activity": "Manager Approval",
+        "case_count": 1259
+      },
+      {
+        "deviation_type": "unexpected",
+        "activity": "Request Reworked",
+        "case_count": 1259
+      },
+      {
+        "deviation_type": "unexpected",
+        "activity": "Invoice Blocked",
+        "case_count": 1159
+      },
+      {
+        "deviation_type": "unexpected",
+        "activity": "Invoice Corrected",
+        "case_count": 1159
+      },
+      {
+        "deviation_type": "unexpected",
+        "activity": "Three-Way Match Failed",
+        "case_count": 822
+      },
+      {
+        "deviation_type": "repeated",
+        "activity": "Invoice Duplicate Check",
+        "case_count": 744
+      },
+      {
+        "deviation_type": "unexpected",
+        "activity": "Corrected Invoice Received",
+        "case_count": 744
+      },
+      {
+        "deviation_type": "unexpected",
+        "activity": "Duplicate Check Failed",
+        "case_count": 744
+      },
+      {
+        "deviation_type": "unexpected",
+        "activity": "Invoice Rejected",
+        "case_count": 744
+      },
+      {
+        "deviation_type": "repeated",
+        "activity": "Invoice Matched",
+        "case_count": 634
+      },
+      {
+        "deviation_type": "repeated",
+        "activity": "Payment Authorized",
+        "case_count": 634
+      },
+      {
+        "deviation_type": "unexpected",
+        "activity": "Payment Rejected",
+        "case_count": 634
+      }
+    ]
+  },
+  "performance": {
+    "top_bottlenecks": [
+      {
+        "activity": "Goods Received",
+        "case_count": 12000,
+        "transition_count": 12000,
+        "total_wait_hours": 865100.2425,
+        "mean_wait_hours": 72.091686875,
+        "median_wait_hours": 64.02125,
+        "p90_wait_hours": 120.1800833333,
+        "p95_wait_hours": 143.9332222222,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.9241859786
+      },
+      {
+        "activity": "Invoice Received",
+        "case_count": 12000,
+        "transition_count": 12000,
+        "total_wait_hours": 348031.5563888889,
+        "mean_wait_hours": 29.0026296991,
+        "median_wait_hours": 26.3794444444,
+        "p90_wait_hours": 45.7935,
+        "p95_wait_hours": 53.8689722222,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.4566900756
+      },
+      {
+        "activity": "Delivery Delayed",
+        "case_count": 1551,
+        "transition_count": 1551,
+        "total_wait_hours": 155821.0030555555,
+        "mean_wait_hours": 100.4648633498,
+        "median_wait_hours": 90.1972222222,
+        "p90_wait_hours": 160.8219444444,
+        "p95_wait_hours": 192.1159722222,
+        "case_coverage": 0.12925,
+        "bottleneck_score": 0.4184529579
+      },
+      {
+        "activity": "Payment Executed",
+        "case_count": 12000,
+        "transition_count": 12000,
+        "total_wait_hours": 253050.5875,
+        "mean_wait_hours": 21.0875489583,
+        "median_wait_hours": 19.2991666667,
+        "p90_wait_hours": 33.5253055556,
+        "p95_wait_hours": 38.8695972222,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.3734192507
+      },
+      {
+        "activity": "Payment Authorized",
+        "case_count": 12000,
+        "transition_count": 12634,
+        "total_wait_hours": 177330.8236111111,
+        "mean_wait_hours": 14.0359999692,
+        "median_wait_hours": 12.6806944444,
+        "p90_wait_hours": 22.676,
+        "p95_wait_hours": 26.6927083333,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.3050408351
+      },
+      {
+        "activity": "Manager Approval",
+        "case_count": 10464,
+        "transition_count": 11723,
+        "total_wait_hours": 166426.9072222222,
+        "mean_wait_hours": 14.1966141109,
+        "median_wait_hours": 12.8602777778,
+        "p90_wait_hours": 22.7925555556,
+        "p95_wait_hours": 26.6368888889,
+        "case_coverage": 0.872,
+        "bottleneck_score": 0.2791259372
+      },
+      {
+        "activity": "Procurement Review",
+        "case_count": 12000,
+        "transition_count": 12000,
+        "total_wait_hours": 145027.2925,
+        "mean_wait_hours": 12.0856077083,
+        "median_wait_hours": 10.9976388889,
+        "p90_wait_hours": 19.3898333333,
+        "p95_wait_hours": 22.7133888889,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.2783733263
+      },
+      {
+        "activity": "Supplier Confirmation",
+        "case_count": 12000,
+        "transition_count": 12000,
+        "total_wait_hours": 138535.8088888889,
+        "mean_wait_hours": 11.5446507407,
+        "median_wait_hours": 10.28875,
+        "p90_wait_hours": 19.1899166667,
+        "p95_wait_hours": 22.8000694444,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.2738733436
+      },
+      {
+        "activity": "Invoice Matched",
+        "case_count": 12000,
+        "transition_count": 12634,
+        "total_wait_hours": 114351.5144444444,
+        "mean_wait_hours": 9.0510934339,
+        "median_wait_hours": 8.2193055556,
+        "p90_wait_hours": 14.6107222222,
+        "p95_wait_hours": 17.1021111111,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.249955721
+      },
+      {
+        "activity": "Purchase Order Created",
+        "case_count": 12000,
+        "transition_count": 12000,
+        "total_wait_hours": 80384.9163888889,
+        "mean_wait_hours": 6.6987430324,
+        "median_wait_hours": 6.1205555556,
+        "p90_wait_hours": 10.6728055556,
+        "p95_wait_hours": 12.2951805556,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.2210151077
+      },
+      {
+        "activity": "Case Closed",
+        "case_count": 12000,
+        "transition_count": 12000,
+        "total_wait_hours": 23044.3755555556,
+        "mean_wait_hours": 1.9203646296,
+        "median_wait_hours": 1.7565277778,
+        "p90_wait_hours": 3.0447222222,
+        "p95_wait_hours": 3.5536805556,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.1703304721
+      },
+      {
+        "activity": "Purchase Order Sent",
+        "case_count": 12000,
+        "transition_count": 12000,
+        "total_wait_hours": 4616.0872222222,
+        "mean_wait_hours": 0.3846739352,
+        "median_wait_hours": 0.3541666667,
+        "p90_wait_hours": 0.6055833333,
+        "p95_wait_hours": 0.7011111111,
+        "case_coverage": 1.0,
+        "bottleneck_score": 0.1540644097
+      }
+    ],
+    "rework": [
+      {
+        "activity": "Manager Approval",
+        "affected_cases": 1259,
+        "repeat_events": 1259,
+        "mean_occurrences": 2.0
+      },
+      {
+        "activity": "Invoice Duplicate Check",
+        "affected_cases": 744,
+        "repeat_events": 744,
+        "mean_occurrences": 2.0
+      },
+      {
+        "activity": "Invoice Matched",
+        "affected_cases": 634,
+        "repeat_events": 634,
+        "mean_occurrences": 2.0
+      },
+      {
+        "activity": "Payment Authorized",
+        "affected_cases": 634,
+        "repeat_events": 634,
+        "mean_occurrences": 2.0
+      }
+    ],
+    "resource_workload": [
+      {
+        "resource_id": "B-08",
+        "resource_role": "Buyer",
+        "event_count": 2482,
+        "case_count": 2364,
+        "processing_hours": 1292.9145,
+        "automated_rate": 0.0,
+        "workload_share": 0.0309681478
+      },
+      {
+        "resource_id": "B-07",
+        "resource_role": "Buyer",
+        "event_count": 2492,
+        "case_count": 2366,
+        "processing_hours": 1289.7048333333,
+        "automated_rate": 0.0,
+        "workload_share": 0.0308912693
+      },
+      {
+        "resource_id": "B-01",
+        "resource_role": "Buyer",
+        "event_count": 2454,
+        "case_count": 2308,
+        "processing_hours": 1287.024,
+        "automated_rate": 0.0,
+        "workload_share": 0.0308270574
+      },
+      {
+        "resource_id": "B-06",
+        "resource_role": "Buyer",
+        "event_count": 2457,
+        "case_count": 2324,
+        "processing_hours": 1277.9553333333,
+        "automated_rate": 0.0,
+        "workload_share": 0.0306098429
+      },
+      {
+        "resource_id": "B-03",
+        "resource_role": "Buyer",
+        "event_count": 2401,
+        "case_count": 2272,
+        "processing_hours": 1255.884,
+        "automated_rate": 0.0,
+        "workload_share": 0.0300811859
+      },
+      {
+        "resource_id": "B-10",
+        "resource_role": "Buyer",
+        "event_count": 2388,
+        "case_count": 2268,
+        "processing_hours": 1246.0555,
+        "automated_rate": 0.0,
+        "workload_share": 0.0298457717
+      },
+      {
+        "resource_id": "B-02",
+        "resource_role": "Buyer",
+        "event_count": 2352,
+        "case_count": 2210,
+        "processing_hours": 1230.697,
+        "automated_rate": 0.0,
+        "workload_share": 0.0294779018
+      },
+      {
+        "resource_id": "B-04",
+        "resource_role": "Buyer",
+        "event_count": 2343,
+        "case_count": 2225,
+        "processing_hours": 1219.9945,
+        "automated_rate": 0.0,
+        "workload_share": 0.0292215534
+      },
+      {
+        "resource_id": "B-09",
+        "resource_role": "Buyer",
+        "event_count": 2350,
+        "case_count": 2234,
+        "processing_hours": 1215.801,
+        "automated_rate": 0.0,
+        "workload_share": 0.0291211098
+      },
+      {
+        "resource_id": "B-05",
+        "resource_role": "Buyer",
+        "event_count": 2281,
+        "case_count": 2163,
+        "processing_hours": 1200.5571666667,
+        "automated_rate": 0.0,
+        "workload_share": 0.0287559864
+      },
+      {
+        "resource_id": "AP-05",
+        "resource_role": "Accounts Payable",
+        "event_count": 2906,
+        "case_count": 2685,
+        "processing_hours": 1103.7415,
+        "automated_rate": 0.0,
+        "workload_share": 0.0264370381
+      },
+      {
+        "resource_id": "AP-09",
+        "resource_role": "Accounts Payable",
+        "event_count": 2866,
+        "case_count": 2657,
+        "processing_hours": 1093.1468333333,
+        "automated_rate": 0.0,
+        "workload_share": 0.0261832726
+      },
+      {
+        "resource_id": "AP-04",
+        "resource_role": "Accounts Payable",
+        "event_count": 2796,
+        "case_count": 2590,
+        "processing_hours": 1085.531,
+        "automated_rate": 0.0,
+        "workload_share": 0.0260008566
+      },
+      {
+        "resource_id": "AP-06",
+        "resource_role": "Accounts Payable",
+        "event_count": 2855,
+        "case_count": 2641,
+        "processing_hours": 1073.8321666667,
+        "automated_rate": 0.0,
+        "workload_share": 0.0257206438
+      },
+      {
+        "resource_id": "AP-03",
+        "resource_role": "Accounts Payable",
+        "event_count": 2880,
+        "case_count": 2675,
+        "processing_hours": 1070.6758333333,
+        "automated_rate": 0.0,
+        "workload_share": 0.0256450427
+      }
+    ]
+  },
+  "sla_prediction": {
+    "metrics": {
+      "model": "LogisticRegression",
+      "validation": "temporal_holdout",
+      "train_cases": 9600,
+      "holdout_cases": 2400,
+      "positive_rate_holdout": 0.36916666666666664,
+      "roc_auc": 0.8220036618349132,
+      "average_precision": 0.7546884528983372,
+      "accuracy": 0.7558333333333334,
+      "precision": 0.6616379310344828,
+      "recall": 0.6930022573363431,
+      "f1": 0.6769570011025359,
+      "brier_score": 0.16932450616108782,
+      "confusion_matrix": {
+        "true_negative": 1200,
+        "false_positive": 314,
+        "false_negative": 272,
+        "true_positive": 614
+      }
+    },
+    "risk_distribution": [
+      {
+        "risk_band": "Low",
+        "case_count": 880,
+        "case_share": 0.3667
+      },
+      {
+        "risk_band": "Medium",
+        "case_count": 708,
+        "case_share": 0.295
+      },
+      {
+        "risk_band": "High",
+        "case_count": 446,
+        "case_share": 0.1858
+      },
+      {
+        "risk_band": "Critical",
+        "case_count": 366,
+        "case_share": 0.1525
+      }
+    ],
+    "top_drivers": [
+      {
+        "feature": "priority_Urgent",
+        "coefficient": 2.3773871283,
+        "absolute_importance": 2.3773871283,
+        "direction": "higher_risk"
+      },
+      {
+        "feature": "priority_Strategic",
+        "coefficient": -1.9813836466,
+        "absolute_importance": 1.9813836466,
+        "direction": "lower_risk"
+      },
+      {
+        "feature": "vendor_tier_C",
+        "coefficient": 1.348277081,
+        "absolute_importance": 1.348277081,
+        "direction": "higher_risk"
+      },
+      {
+        "feature": "vendor_tier_A",
+        "coefficient": -1.0810894519,
+        "absolute_importance": 1.0810894519,
+        "direction": "lower_risk"
+      },
+      {
+        "feature": "elapsed_to_po_hours",
+        "coefficient": 0.5170010904,
+        "absolute_importance": 0.5170010904,
+        "direction": "higher_risk"
+      },
+      {
+        "feature": "priority_Standard",
+        "coefficient": -0.3755821907,
+        "absolute_importance": 0.3755821907,
+        "direction": "lower_risk"
+      },
+      {
+        "feature": "early_rework_count",
+        "coefficient": -0.2811352861,
+        "absolute_importance": 0.2811352861,
+        "direction": "lower_risk"
+      },
+      {
+        "feature": "vendor_tier_B",
+        "coefficient": -0.2467663382,
+        "absolute_importance": 0.2467663382,
+        "direction": "lower_risk"
+      },
+      {
+        "feature": "country_Poland",
+        "coefficient": -0.2330622902,
+        "absolute_importance": 0.2330622902,
+        "direction": "lower_risk"
+      },
+      {
+        "feature": "country_Netherlands",
+        "coefficient": 0.2129757472,
+        "absolute_importance": 0.2129757472,
+        "direction": "higher_risk"
+      },
+      {
+        "feature": "country_Germany",
+        "coefficient": 0.2077168803,
+        "absolute_importance": 0.2077168803,
+        "direction": "higher_risk"
+      },
+      {
+        "feature": "approval_count",
+        "coefficient": 0.2020575876,
+        "absolute_importance": 0.2020575876,
+        "direction": "higher_risk"
+      },
+      {
+        "feature": "country_Türkiye",
+        "coefficient": -0.1672090464,
+        "absolute_importance": 0.1672090464,
+        "direction": "lower_risk"
+      },
+      {
+        "feature": "channel_Email Intake",
+        "coefficient": 0.1141740369,
+        "absolute_importance": 0.1141740369,
+        "direction": "higher_risk"
+      },
+      {
+        "feature": "material_category_MRO",
+        "coefficient": 0.0746973081,
+        "absolute_importance": 0.0746973081,
+        "direction": "higher_risk"
+      }
+    ]
+  },
+  "capacity_simulation": {
+    "method": "Replicated queue-network simulation: 24 replications x 900 cases per scenario with fixed seed and explicit capacity assumptions.",
+    "scenarios": [
+      {
+        "scenario": "Baseline",
+        "description": "Observed staffing, manual approval, and invoice rework assumptions.",
+        "one_time_investment_usd": 0.0,
+        "mean_cycle_hours": 206.6048536586,
+        "median_cycle_hours": 191.3120657028,
+        "p90_cycle_hours": 313.4451382217,
+        "sla_adherence": 0.6400462963,
+        "manual_hours_per_case": 7.2099168402,
+        "throughput_cases_per_8h": 8.4112263298,
+        "cycle_time_reduction_pct": 0.0,
+        "sla_adherence_uplift_pp": 0.0,
+        "manual_hours_saved_per_case": 0.0,
+        "estimated_annual_value_usd": 0.0,
+        "first_year_roi": 0.0
+      },
+      {
+        "scenario": "Approval Automation",
+        "description": "Rules-based low-risk approvals and faster purchase-order preparation.",
+        "one_time_investment_usd": 95000.0,
+        "mean_cycle_hours": 200.1196977885,
+        "median_cycle_hours": 185.3460848619,
+        "p90_cycle_hours": 303.7879198251,
+        "sla_adherence": 0.663287037,
+        "manual_hours_per_case": 6.2787534702,
+        "throughput_cases_per_8h": 8.5968537451,
+        "cycle_time_reduction_pct": 0.0313891748,
+        "sla_adherence_uplift_pp": 2.3240740741,
+        "manual_hours_saved_per_case": 0.93116337,
+        "estimated_annual_value_usd": 539528.384697785,
+        "first_year_roi": 4.6792461547
+      },
+      {
+        "scenario": "AP Capacity",
+        "description": "Two additional invoice-match seats and one treasury seat.",
+        "one_time_investment_usd": 150000.0,
+        "mean_cycle_hours": 203.0352200934,
+        "median_cycle_hours": 187.1945009266,
+        "p90_cycle_hours": 309.154054777,
+        "sla_adherence": 0.6521759259,
+        "manual_hours_per_case": 7.1319467429,
+        "throughput_cases_per_8h": 8.4115997107,
+        "cycle_time_reduction_pct": 0.0172775881,
+        "sla_adherence_uplift_pp": 1.212962963,
+        "manual_hours_saved_per_case": 0.0779700973,
+        "estimated_annual_value_usd": 185272.3699284395,
+        "first_year_roi": 0.2351491329
+      },
+      {
+        "scenario": "Combined Optimization",
+        "description": "Approval automation, AP capacity, and supplier lead-time intervention.",
+        "one_time_investment_usd": 225000.0,
+        "mean_cycle_hours": 166.484485467,
+        "median_cycle_hours": 153.445222542,
+        "p90_cycle_hours": 253.5669496344,
+        "sla_adherence": 0.7763888889,
+        "manual_hours_per_case": 5.8230892722,
+        "throughput_cases_per_8h": 9.6168065489,
+        "cycle_time_reduction_pct": 0.1941888948,
+        "sla_adherence_uplift_pp": 13.6342592593,
+        "manual_hours_saved_per_case": 1.386827568,
+        "estimated_annual_value_usd": 2213037.020799549,
+        "first_year_roi": 8.8357200924
+      }
+    ],
+    "recommended_scenario": "Combined Optimization",
+    "recommended_cycle_reduction_pct": 0.1942,
+    "recommended_sla_uplift_pp": 13.63,
+    "estimated_annual_value_usd": 2213037.02,
+    "first_year_roi": 8.8357
+  },
+  "governance": {
+    "decision_mode": "human-in-the-loop",
+    "production_mutations": false,
+    "prediction_use": "Prioritize analyst review; never approve, reject, or pay an invoice without an authorized business control.",
+    "model_validation": "Temporal holdout; synthetic data; not production calibrated."
+  }
+}

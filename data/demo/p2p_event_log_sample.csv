@@ -1,0 +1,751 @@
+case_id,event_index,activity,timestamp,resource_id,resource_role,business_unit,department,country,vendor_id,vendor_tier,material_category,amount_usd,priority,channel,automated,processing_minutes,source_system
+P2P-000001,1,Purchase Request Created,2025-03-30T01:25:34Z,R-02,Requester,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,true,6.06,Workflow Orchestrator
+P2P-000001,2,Manager Approval,2025-03-30T17:24:38Z,A-06,Approver,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,false,13.60,Enterprise ERP
+P2P-000001,3,Procurement Review,2025-03-31T06:15:30Z,B-09,Buyer,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,false,53.68,Enterprise ERP
+P2P-000001,4,Purchase Order Created,2025-03-31T14:30:09Z,B-10,Buyer,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,false,27.85,Enterprise ERP
+P2P-000001,5,Purchase Order Sent,2025-03-31T14:47:00Z,EB-02,ERP Bot,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,true,2.27,Workflow Orchestrator
+P2P-000001,6,Supplier Confirmation,2025-04-01T00:37:45Z,V-020,Supplier,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,false,8.85,Supplier Network
+P2P-000001,7,Goods Received,2025-04-03T16:25:09Z,RC-05,Receiving Clerk,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,false,26.65,Enterprise ERP
+P2P-000001,8,Invoice Received,2025-04-04T11:18:21Z,AP-09,Accounts Payable,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,false,9.96,Enterprise ERP
+P2P-000001,9,Invoice Duplicate Check,2025-04-04T11:33:12Z,AB-02,AP Bot,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,true,0.82,Workflow Orchestrator
+P2P-000001,10,Invoice Matched,2025-04-04T22:11:14Z,AP-03,Accounts Payable,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,false,31.61,Enterprise ERP
+P2P-000001,11,Payment Authorized,2025-04-05T17:14:03Z,TA-02,Treasury Analyst,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,false,17.60,Enterprise ERP
+P2P-000001,12,Payment Executed,2025-04-06T21:52:09Z,PB-02,Payment Bot,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,true,2.00,Workflow Orchestrator
+P2P-000001,13,Case Closed,2025-04-07T01:53:09Z,EB-02,ERP Bot,Corporate Services,Finance,Türkiye,V-020,B,Professional Services,13227.27,Standard,ERP Portal,true,0.74,Workflow Orchestrator
+P2P-000002,1,Purchase Request Created,2025-07-08T11:40:11Z,R-11,Requester,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,true,10.36,Workflow Orchestrator
+P2P-000002,2,Manager Approval,2025-07-09T12:12:35Z,A-05,Approver,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,false,20.25,Enterprise ERP
+P2P-000002,3,Procurement Review,2025-07-09T23:41:04Z,B-09,Buyer,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,false,25.88,Enterprise ERP
+P2P-000002,4,Purchase Order Created,2025-07-10T06:06:05Z,B-06,Buyer,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,false,22.62,Enterprise ERP
+P2P-000002,5,Purchase Order Sent,2025-07-10T06:18:38Z,EB-01,ERP Bot,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,true,2.36,Workflow Orchestrator
+P2P-000002,6,Supplier Confirmation,2025-07-10T18:32:37Z,V-021,Supplier,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,false,11.63,Supplier Network
+P2P-000002,7,Goods Received,2025-07-14T04:45:53Z,RC-07,Receiving Clerk,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,false,16.40,Enterprise ERP
+P2P-000002,8,Invoice Received,2025-07-15T12:59:52Z,AP-03,Accounts Payable,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,false,11.65,Enterprise ERP
+P2P-000002,9,Invoice Duplicate Check,2025-07-15T13:10:42Z,AB-02,AP Bot,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,true,1.01,Workflow Orchestrator
+P2P-000002,10,Invoice Matched,2025-07-15T21:21:37Z,AP-06,Accounts Payable,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,false,20.92,Enterprise ERP
+P2P-000002,11,Payment Authorized,2025-07-16T02:40:58Z,TA-06,Treasury Analyst,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,false,13.00,Enterprise ERP
+P2P-000002,12,Payment Executed,2025-07-16T17:20:23Z,PB-02,Payment Bot,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,true,2.55,Workflow Orchestrator
+P2P-000002,13,Case Closed,2025-07-16T18:33:03Z,EB-02,ERP Bot,Consumer Products,Operations,Germany,V-021,B,Direct Materials,71004.49,Standard,ERP Portal,true,0.78,Workflow Orchestrator
+P2P-000003,1,Purchase Request Created,2026-06-24T12:58:33Z,R-18,Requester,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,true,9.19,Workflow Orchestrator
+P2P-000003,2,Manager Approval,2026-06-25T07:10:24Z,A-06,Approver,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,10.98,Enterprise ERP
+P2P-000003,3,Request Reworked,2026-06-26T12:32:36Z,R-10,Requester,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,29.10,Enterprise ERP
+P2P-000003,4,Manager Approval,2026-06-27T13:24:39Z,A-01,Approver,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,18.39,Enterprise ERP
+P2P-000003,5,Procurement Review,2026-06-27T21:57:33Z,B-03,Buyer,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,33.65,Enterprise ERP
+P2P-000003,6,Purchase Order Created,2026-06-28T03:07:37Z,B-09,Buyer,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,24.22,Enterprise ERP
+P2P-000003,7,Purchase Order Sent,2026-06-28T03:39:44Z,EB-01,ERP Bot,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,true,2.69,Workflow Orchestrator
+P2P-000003,8,Supplier Confirmation,2026-06-28T18:23:39Z,V-077,Supplier,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,14.83,Supplier Network
+P2P-000003,9,Goods Received,2026-07-01T00:02:50Z,RC-03,Receiving Clerk,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,24.80,Enterprise ERP
+P2P-000003,10,Invoice Received,2026-07-01T22:25:06Z,AP-10,Accounts Payable,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,12.12,Enterprise ERP
+P2P-000003,11,Invoice Duplicate Check,2026-07-01T22:34:26Z,AB-02,AP Bot,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,true,0.87,Workflow Orchestrator
+P2P-000003,12,Invoice Matched,2026-07-02T14:38:27Z,AP-01,Accounts Payable,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,51.75,Enterprise ERP
+P2P-000003,13,Payment Authorized,2026-07-03T17:16:43Z,TA-01,Treasury Analyst,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,false,18.87,Enterprise ERP
+P2P-000003,14,Payment Executed,2026-07-04T05:01:12Z,PB-01,Payment Bot,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,true,1.55,Workflow Orchestrator
+P2P-000003,15,Case Closed,2026-07-04T06:44:31Z,EB-02,ERP Bot,Industrial Systems,Operations,Germany,V-077,C,IT Equipment,13409.03,Standard,ERP Portal,true,0.87,Workflow Orchestrator
+P2P-000004,1,Purchase Request Created,2025-06-20T21:32:30Z,R-11,Requester,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,true,5.41,Workflow Orchestrator
+P2P-000004,2,Manager Approval,2025-06-21T12:14:41Z,A-03,Approver,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,13.38,Enterprise ERP
+P2P-000004,3,Request Reworked,2025-06-22T08:27:14Z,R-15,Requester,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,29.79,Enterprise ERP
+P2P-000004,4,Manager Approval,2025-06-22T20:28:09Z,A-07,Approver,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,13.26,Enterprise ERP
+P2P-000004,5,Procurement Review,2025-06-23T06:23:48Z,B-03,Buyer,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,32.65,Enterprise ERP
+P2P-000004,6,Purchase Order Created,2025-06-23T18:41:13Z,B-04,Buyer,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,28.16,Enterprise ERP
+P2P-000004,7,Purchase Order Sent,2025-06-23T18:59:04Z,EB-02,ERP Bot,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,true,1.98,Workflow Orchestrator
+P2P-000004,8,Supplier Confirmation,2025-06-24T10:16:13Z,V-017,Supplier,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,9.27,Supplier Network
+P2P-000004,9,Goods Received,2025-06-27T09:52:26Z,RC-06,Receiving Clerk,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,18.90,Enterprise ERP
+P2P-000004,10,Invoice Received,2025-06-28T06:45:09Z,AP-05,Accounts Payable,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,10.36,Enterprise ERP
+P2P-000004,11,Invoice Duplicate Check,2025-06-28T07:11:17Z,AB-02,AP Bot,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,true,0.56,Workflow Orchestrator
+P2P-000004,12,Invoice Matched,2025-06-28T14:04:58Z,AP-01,Accounts Payable,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,33.98,Enterprise ERP
+P2P-000004,13,Payment Authorized,2025-06-29T03:09:29Z,TA-05,Treasury Analyst,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,false,18.23,Enterprise ERP
+P2P-000004,14,Payment Executed,2025-06-30T01:51:23Z,PB-01,Payment Bot,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,true,3.04,Workflow Orchestrator
+P2P-000004,15,Case Closed,2025-06-30T04:53:29Z,EB-01,ERP Bot,Industrial Systems,Operations,Netherlands,V-017,A,Direct Materials,25197.42,Standard,Catalog,true,1.31,Workflow Orchestrator
+P2P-000005,1,Purchase Request Created,2025-12-08T15:47:32Z,R-09,Requester,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,true,5.56,Workflow Orchestrator
+P2P-000005,2,Manager Approval,2025-12-09T00:14:49Z,A-03,Approver,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,8.42,Enterprise ERP
+P2P-000005,3,Procurement Review,2025-12-09T14:20:09Z,B-07,Buyer,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,41.79,Enterprise ERP
+P2P-000005,4,Purchase Order Created,2025-12-09T19:39:19Z,B-04,Buyer,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,24.46,Enterprise ERP
+P2P-000005,5,Purchase Order Sent,2025-12-09T20:35:58Z,EB-01,ERP Bot,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,true,1.99,Workflow Orchestrator
+P2P-000005,6,Supplier Confirmation,2025-12-10T15:06:51Z,V-064,Supplier,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,15.78,Supplier Network
+P2P-000005,7,Delivery Delayed,2025-12-19T10:56:49Z,V-064,Supplier,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,18.02,Supplier Network
+P2P-000005,8,Goods Received,2025-12-23T05:40:12Z,RC-04,Receiving Clerk,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,21.08,Enterprise ERP
+P2P-000005,9,Invoice Received,2025-12-24T09:46:39Z,AP-06,Accounts Payable,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,7.94,Enterprise ERP
+P2P-000005,10,Invoice Duplicate Check,2025-12-24T10:07:48Z,AB-02,AP Bot,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,true,1.19,Workflow Orchestrator
+P2P-000005,11,Invoice Matched,2025-12-24T16:19:41Z,AP-10,Accounts Payable,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,33.14,Enterprise ERP
+P2P-000005,12,Payment Authorized,2025-12-25T03:42:00Z,TA-02,Treasury Analyst,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,false,16.03,Enterprise ERP
+P2P-000005,13,Payment Executed,2025-12-26T07:17:26Z,PB-01,Payment Bot,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,true,3.44,Workflow Orchestrator
+P2P-000005,14,Case Closed,2025-12-26T08:42:38Z,EB-01,ERP Bot,Industrial Systems,Information Technology,Poland,V-064,C,MRO,12341.74,Standard,ERP Portal,true,1.27,Workflow Orchestrator
+P2P-000006,1,Purchase Request Created,2026-03-29T22:35:01Z,R-13,Requester,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,true,4.47,Workflow Orchestrator
+P2P-000006,2,Manager Approval,2026-03-30T08:58:37Z,A-04,Approver,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,false,10.48,Enterprise ERP
+P2P-000006,3,Procurement Review,2026-03-31T01:40:25Z,B-03,Buyer,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,false,47.86,Enterprise ERP
+P2P-000006,4,Purchase Order Created,2026-03-31T07:38:03Z,B-10,Buyer,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,false,25.66,Enterprise ERP
+P2P-000006,5,Purchase Order Sent,2026-03-31T07:59:12Z,EB-02,ERP Bot,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,true,1.64,Workflow Orchestrator
+P2P-000006,6,Supplier Confirmation,2026-03-31T17:23:21Z,V-042,Supplier,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,false,8.67,Supplier Network
+P2P-000006,7,Goods Received,2026-04-02T03:05:41Z,RC-01,Receiving Clerk,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,false,15.67,Enterprise ERP
+P2P-000006,8,Invoice Received,2026-04-03T20:30:17Z,AP-05,Accounts Payable,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,false,13.78,Enterprise ERP
+P2P-000006,9,Invoice Duplicate Check,2026-04-03T20:42:35Z,AB-01,AP Bot,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,true,0.80,Workflow Orchestrator
+P2P-000006,10,Invoice Matched,2026-04-04T02:09:08Z,AP-09,Accounts Payable,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,false,45.38,Enterprise ERP
+P2P-000006,11,Payment Authorized,2026-04-04T17:05:30Z,TA-05,Treasury Analyst,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,false,27.53,Enterprise ERP
+P2P-000006,12,Payment Executed,2026-04-05T16:04:27Z,PB-01,Payment Bot,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,true,1.85,Workflow Orchestrator
+P2P-000006,13,Case Closed,2026-04-05T18:32:59Z,EB-01,ERP Bot,Consumer Products,Information Technology,Germany,V-042,B,MRO,10202.92,Standard,Catalog,true,0.95,Workflow Orchestrator
+P2P-000007,1,Purchase Request Created,2025-02-20T20:05:47Z,R-03,Requester,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,true,8.42,Workflow Orchestrator
+P2P-000007,2,Procurement Review,2025-02-21T03:00:48Z,B-09,Buyer,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,false,40.60,Enterprise ERP
+P2P-000007,3,Purchase Order Created,2025-02-21T06:23:18Z,B-05,Buyer,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,false,24.12,Enterprise ERP
+P2P-000007,4,Purchase Order Sent,2025-02-21T06:36:27Z,EB-02,ERP Bot,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,true,1.59,Workflow Orchestrator
+P2P-000007,5,Supplier Confirmation,2025-02-21T14:03:03Z,V-065,Supplier,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,false,15.89,Supplier Network
+P2P-000007,6,Goods Received,2025-02-26T04:24:22Z,RC-07,Receiving Clerk,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,false,16.94,Enterprise ERP
+P2P-000007,7,Invoice Received,2025-02-28T02:09:25Z,AP-01,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,false,6.03,Enterprise ERP
+P2P-000007,8,Invoice Duplicate Check,2025-02-28T02:16:48Z,AB-01,AP Bot,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,true,0.99,Workflow Orchestrator
+P2P-000007,9,Invoice Matched,2025-02-28T09:29:25Z,AP-02,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,false,60.59,Enterprise ERP
+P2P-000007,10,Payment Authorized,2025-03-01T03:47:20Z,TA-01,Treasury Analyst,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,false,18.99,Enterprise ERP
+P2P-000007,11,Payment Executed,2025-03-01T12:58:07Z,PB-02,Payment Bot,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,true,1.90,Workflow Orchestrator
+P2P-000007,12,Case Closed,2025-03-01T13:29:40Z,EB-01,ERP Bot,Industrial Systems,Engineering,Türkiye,V-065,C,Direct Materials,15753.35,Urgent,Catalog,true,0.66,Workflow Orchestrator
+P2P-000008,1,Purchase Request Created,2026-05-01T15:45:45Z,R-15,Requester,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,true,8.24,Workflow Orchestrator
+P2P-000008,2,Manager Approval,2026-05-02T11:20:48Z,A-02,Approver,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,false,9.36,Enterprise ERP
+P2P-000008,3,Procurement Review,2026-05-03T08:34:52Z,B-03,Buyer,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,false,27.65,Enterprise ERP
+P2P-000008,4,Purchase Order Created,2026-05-03T23:47:53Z,B-05,Buyer,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,false,25.52,Enterprise ERP
+P2P-000008,5,Purchase Order Sent,2026-05-04T00:07:52Z,EB-02,ERP Bot,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,true,2.60,Workflow Orchestrator
+P2P-000008,6,Supplier Confirmation,2026-05-04T15:17:48Z,V-056,Supplier,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,false,6.80,Supplier Network
+P2P-000008,7,Goods Received,2026-05-06T22:50:55Z,RC-05,Receiving Clerk,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,false,16.75,Enterprise ERP
+P2P-000008,8,Invoice Received,2026-05-09T06:55:04Z,AP-09,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,false,11.53,Enterprise ERP
+P2P-000008,9,Invoice Duplicate Check,2026-05-09T07:38:43Z,AB-01,AP Bot,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,true,1.69,Workflow Orchestrator
+P2P-000008,10,Invoice Matched,2026-05-09T12:47:31Z,AP-08,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,false,29.52,Enterprise ERP
+P2P-000008,11,Payment Authorized,2026-05-09T20:37:36Z,TA-02,Treasury Analyst,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,false,15.28,Enterprise ERP
+P2P-000008,12,Payment Executed,2026-05-10T22:28:26Z,PB-02,Payment Bot,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,true,1.43,Workflow Orchestrator
+P2P-000008,13,Case Closed,2026-05-11T00:02:22Z,EB-01,ERP Bot,Industrial Systems,Engineering,Türkiye,V-056,B,IT Equipment,4117.28,Standard,ERP Portal,true,1.39,Workflow Orchestrator
+P2P-000009,1,Purchase Request Created,2025-08-29T22:11:30Z,R-09,Requester,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,true,7.15,Workflow Orchestrator
+P2P-000009,2,Manager Approval,2025-08-31T01:48:55Z,A-10,Approver,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,false,13.18,Enterprise ERP
+P2P-000009,3,Procurement Review,2025-08-31T10:07:51Z,B-03,Buyer,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,false,23.03,Enterprise ERP
+P2P-000009,4,Purchase Order Created,2025-08-31T19:21:54Z,B-06,Buyer,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,false,33.64,Enterprise ERP
+P2P-000009,5,Purchase Order Sent,2025-08-31T19:50:29Z,EB-01,ERP Bot,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,true,1.80,Workflow Orchestrator
+P2P-000009,6,Supplier Confirmation,2025-09-01T13:40:17Z,V-066,Supplier,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,false,20.05,Supplier Network
+P2P-000009,7,Goods Received,2025-09-04T08:02:54Z,RC-07,Receiving Clerk,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,false,21.43,Enterprise ERP
+P2P-000009,8,Invoice Received,2025-09-05T16:01:01Z,AP-01,Accounts Payable,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,false,8.84,Enterprise ERP
+P2P-000009,9,Invoice Duplicate Check,2025-09-05T16:24:36Z,AB-01,AP Bot,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,true,0.58,Workflow Orchestrator
+P2P-000009,10,Invoice Matched,2025-09-06T04:30:48Z,AP-10,Accounts Payable,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,false,23.29,Enterprise ERP
+P2P-000009,11,Payment Authorized,2025-09-06T22:47:23Z,TA-04,Treasury Analyst,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,false,13.20,Enterprise ERP
+P2P-000009,12,Payment Executed,2025-09-07T18:35:39Z,PB-02,Payment Bot,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,true,1.47,Workflow Orchestrator
+P2P-000009,13,Case Closed,2025-09-07T20:53:06Z,EB-02,ERP Bot,Industrial Systems,Engineering,Poland,V-066,C,MRO,19323.60,Standard,ERP Portal,true,1.33,Workflow Orchestrator
+P2P-000010,1,Purchase Request Created,2025-01-01T14:31:09Z,R-12,Requester,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,true,12.16,Workflow Orchestrator
+P2P-000010,2,Manager Approval,2025-01-02T05:27:38Z,A-10,Approver,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,false,14.16,Enterprise ERP
+P2P-000010,3,Procurement Review,2025-01-02T13:25:24Z,B-06,Buyer,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,false,38.14,Enterprise ERP
+P2P-000010,4,Purchase Order Created,2025-01-02T19:15:54Z,B-08,Buyer,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,false,25.55,Enterprise ERP
+P2P-000010,5,Purchase Order Sent,2025-01-02T19:39:14Z,EB-01,ERP Bot,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,true,1.69,Workflow Orchestrator
+P2P-000010,6,Supplier Confirmation,2025-01-03T01:56:01Z,V-002,Supplier,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,false,12.14,Supplier Network
+P2P-000010,7,Goods Received,2025-01-04T06:34:26Z,RC-05,Receiving Clerk,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,false,25.59,Enterprise ERP
+P2P-000010,8,Invoice Received,2025-01-05T03:12:49Z,AP-05,Accounts Payable,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,false,7.53,Enterprise ERP
+P2P-000010,9,Invoice Duplicate Check,2025-01-05T03:30:53Z,AB-01,AP Bot,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,true,1.32,Workflow Orchestrator
+P2P-000010,10,Invoice Matched,2025-01-05T16:26:20Z,AP-03,Accounts Payable,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,false,40.45,Enterprise ERP
+P2P-000010,11,Payment Authorized,2025-01-06T12:26:28Z,TA-02,Treasury Analyst,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,false,19.32,Enterprise ERP
+P2P-000010,12,Payment Executed,2025-01-08T22:53:31Z,PB-02,Payment Bot,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,true,2.44,Workflow Orchestrator
+P2P-000010,13,Case Closed,2025-01-09T00:56:34Z,EB-02,ERP Bot,Consumer Products,Finance,Poland,V-002,A,Facilities,25477.91,Strategic,ERP Portal,true,0.82,Workflow Orchestrator
+P2P-000011,1,Purchase Request Created,2025-10-13T16:40:24Z,R-02,Requester,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,true,7.70,Workflow Orchestrator
+P2P-000011,2,Manager Approval,2025-10-13T23:38:49Z,A-11,Approver,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,12.02,Enterprise ERP
+P2P-000011,3,Procurement Review,2025-10-14T07:55:47Z,B-05,Buyer,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,43.07,Enterprise ERP
+P2P-000011,4,Purchase Order Created,2025-10-14T09:40:16Z,B-06,Buyer,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,28.97,Enterprise ERP
+P2P-000011,5,Purchase Order Sent,2025-10-14T10:02:07Z,EB-02,ERP Bot,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,true,2.73,Workflow Orchestrator
+P2P-000011,6,Supplier Confirmation,2025-10-14T16:30:05Z,V-043,Supplier,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,12.16,Supplier Network
+P2P-000011,7,Goods Received,2025-10-16T06:31:45Z,RC-08,Receiving Clerk,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,27.09,Enterprise ERP
+P2P-000011,8,Invoice Received,2025-10-16T20:21:58Z,AP-06,Accounts Payable,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,10.04,Enterprise ERP
+P2P-000011,9,Invoice Duplicate Check,2025-10-16T20:29:54Z,AB-02,AP Bot,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,true,0.76,Workflow Orchestrator
+P2P-000011,10,Duplicate Check Failed,2025-10-16T21:42:25Z,AP-10,Accounts Payable,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,17.18,Enterprise ERP
+P2P-000011,11,Invoice Rejected,2025-10-17T06:02:25Z,AP-01,Accounts Payable,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,23.14,Enterprise ERP
+P2P-000011,12,Corrected Invoice Received,2025-10-18T03:44:44Z,V-043,Supplier,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,9.84,Supplier Network
+P2P-000011,13,Invoice Duplicate Check,2025-10-18T03:56:26Z,AB-02,AP Bot,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,true,1.01,Workflow Orchestrator
+P2P-000011,14,Invoice Matched,2025-10-18T08:01:24Z,AP-07,Accounts Payable,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,19.62,Enterprise ERP
+P2P-000011,15,Payment Authorized,2025-10-18T19:11:10Z,TA-03,Treasury Analyst,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,false,26.10,Enterprise ERP
+P2P-000011,16,Payment Executed,2025-10-19T03:36:30Z,PB-02,Payment Bot,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,true,2.02,Workflow Orchestrator
+P2P-000011,17,Case Closed,2025-10-19T05:05:43Z,EB-02,ERP Bot,Consumer Products,Operations,Poland,V-043,B,Professional Services,8584.63,Urgent,ERP Portal,true,0.90,Workflow Orchestrator
+P2P-000012,1,Purchase Request Created,2025-03-05T17:24:13Z,R-14,Requester,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,true,11.05,Workflow Orchestrator
+P2P-000012,2,Manager Approval,2025-03-06T05:22:15Z,A-09,Approver,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,13.73,Enterprise ERP
+P2P-000012,3,Request Reworked,2025-03-06T19:05:42Z,R-03,Requester,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,26.60,Enterprise ERP
+P2P-000012,4,Manager Approval,2025-03-07T05:11:24Z,A-02,Approver,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,9.84,Enterprise ERP
+P2P-000012,5,Procurement Review,2025-03-08T01:51:05Z,B-04,Buyer,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,40.03,Enterprise ERP
+P2P-000012,6,Purchase Order Created,2025-03-08T07:09:58Z,B-07,Buyer,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,22.63,Enterprise ERP
+P2P-000012,7,Purchase Order Sent,2025-03-08T07:32:34Z,EB-01,ERP Bot,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,true,1.34,Workflow Orchestrator
+P2P-000012,8,Supplier Confirmation,2025-03-08T12:23:16Z,V-038,Supplier,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,23.90,Supplier Network
+P2P-000012,9,Goods Received,2025-03-12T00:25:01Z,RC-05,Receiving Clerk,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,14.67,Enterprise ERP
+P2P-000012,10,Invoice Received,2025-03-13T09:02:34Z,AP-08,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,11.16,Enterprise ERP
+P2P-000012,11,Invoice Duplicate Check,2025-03-13T09:13:21Z,AB-02,AP Bot,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,true,0.75,Workflow Orchestrator
+P2P-000012,12,Invoice Matched,2025-03-13T21:48:00Z,AP-03,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,32.89,Enterprise ERP
+P2P-000012,13,Payment Authorized,2025-03-14T06:09:58Z,TA-05,Treasury Analyst,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,false,23.48,Enterprise ERP
+P2P-000012,14,Payment Executed,2025-03-15T12:14:36Z,PB-01,Payment Bot,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,true,1.32,Workflow Orchestrator
+P2P-000012,15,Case Closed,2025-03-15T13:52:26Z,EB-02,ERP Bot,Industrial Systems,Engineering,Türkiye,V-038,B,Professional Services,3815.38,Standard,Catalog,true,1.34,Workflow Orchestrator
+P2P-000013,1,Purchase Request Created,2026-01-01T15:00:49Z,R-06,Requester,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,true,7.76,Workflow Orchestrator
+P2P-000013,2,Manager Approval,2026-01-02T02:56:21Z,A-09,Approver,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,16.92,Enterprise ERP
+P2P-000013,3,Procurement Review,2026-01-02T12:47:08Z,B-04,Buyer,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,25.38,Enterprise ERP
+P2P-000013,4,Purchase Order Created,2026-01-02T20:33:34Z,B-06,Buyer,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,21.61,Enterprise ERP
+P2P-000013,5,Purchase Order Sent,2026-01-02T20:56:49Z,EB-01,ERP Bot,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,true,1.66,Workflow Orchestrator
+P2P-000013,6,Supplier Confirmation,2026-01-03T05:23:19Z,V-009,Supplier,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,11.03,Supplier Network
+P2P-000013,7,Goods Received,2026-01-07T07:37:14Z,RC-01,Receiving Clerk,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,15.38,Enterprise ERP
+P2P-000013,8,Invoice Received,2026-01-08T19:44:21Z,AP-01,Accounts Payable,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,12.88,Enterprise ERP
+P2P-000013,9,Invoice Duplicate Check,2026-01-08T19:52:07Z,AB-01,AP Bot,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,true,0.71,Workflow Orchestrator
+P2P-000013,10,Invoice Blocked,2026-01-09T03:51:17Z,AP-01,Accounts Payable,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,18.53,Enterprise ERP
+P2P-000013,11,Invoice Corrected,2026-01-10T00:05:20Z,V-009,Supplier,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,30.82,Supplier Network
+P2P-000013,12,Invoice Matched,2026-01-10T15:49:56Z,AP-02,Accounts Payable,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,36.36,Enterprise ERP
+P2P-000013,13,Payment Authorized,2026-01-11T03:08:15Z,TA-06,Treasury Analyst,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,false,15.42,Enterprise ERP
+P2P-000013,14,Payment Executed,2026-01-11T18:28:35Z,PB-01,Payment Bot,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,true,1.60,Workflow Orchestrator
+P2P-000013,15,Case Closed,2026-01-11T20:11:19Z,EB-01,ERP Bot,Industrial Systems,Finance,Poland,V-009,A,Direct Materials,7522.48,Strategic,ERP Portal,true,1.28,Workflow Orchestrator
+P2P-000014,1,Purchase Request Created,2025-03-05T13:59:48Z,R-04,Requester,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,true,5.72,Workflow Orchestrator
+P2P-000014,2,Manager Approval,2025-03-06T09:05:34Z,A-11,Approver,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,16.67,Enterprise ERP
+P2P-000014,3,Procurement Review,2025-03-06T16:01:12Z,B-01,Buyer,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,64.67,Enterprise ERP
+P2P-000014,4,Purchase Order Created,2025-03-06T21:10:00Z,B-01,Buyer,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,17.71,Enterprise ERP
+P2P-000014,5,Purchase Order Sent,2025-03-06T21:22:00Z,EB-01,ERP Bot,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,true,2.11,Workflow Orchestrator
+P2P-000014,6,Supplier Confirmation,2025-03-07T01:52:16Z,V-030,Supplier,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,14.78,Supplier Network
+P2P-000014,7,Goods Received,2025-03-08T12:04:29Z,RC-05,Receiving Clerk,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,25.95,Enterprise ERP
+P2P-000014,8,Invoice Received,2025-03-09T08:12:13Z,AP-06,Accounts Payable,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,11.07,Enterprise ERP
+P2P-000014,9,Invoice Duplicate Check,2025-03-09T08:25:53Z,AB-02,AP Bot,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,true,0.93,Workflow Orchestrator
+P2P-000014,10,Invoice Blocked,2025-03-09T17:44:33Z,AP-09,Accounts Payable,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,19.03,Enterprise ERP
+P2P-000014,11,Invoice Corrected,2025-03-11T05:15:29Z,V-030,Supplier,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,37.20,Supplier Network
+P2P-000014,12,Invoice Matched,2025-03-11T11:43:56Z,AP-04,Accounts Payable,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,35.51,Enterprise ERP
+P2P-000014,13,Payment Authorized,2025-03-11T16:51:06Z,TA-01,Treasury Analyst,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,false,19.75,Enterprise ERP
+P2P-000014,14,Payment Executed,2025-03-12T05:27:17Z,PB-01,Payment Bot,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,true,1.75,Workflow Orchestrator
+P2P-000014,15,Case Closed,2025-03-12T07:57:02Z,EB-01,ERP Bot,Consumer Products,Engineering,Germany,V-030,B,MRO,44501.26,Urgent,ERP Portal,true,0.91,Workflow Orchestrator
+P2P-000015,1,Purchase Request Created,2025-08-19T14:05:22Z,R-01,Requester,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,true,8.36,Workflow Orchestrator
+P2P-000015,2,Manager Approval,2025-08-20T02:55:01Z,A-10,Approver,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,false,7.59,Enterprise ERP
+P2P-000015,3,Procurement Review,2025-08-20T13:23:24Z,B-01,Buyer,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,false,55.04,Enterprise ERP
+P2P-000015,4,Purchase Order Created,2025-08-20T18:09:52Z,B-02,Buyer,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,false,24.68,Enterprise ERP
+P2P-000015,5,Purchase Order Sent,2025-08-20T18:27:26Z,EB-02,ERP Bot,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,true,1.82,Workflow Orchestrator
+P2P-000015,6,Supplier Confirmation,2025-08-21T00:43:46Z,V-018,Supplier,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,false,8.74,Supplier Network
+P2P-000015,7,Goods Received,2025-08-23T07:48:30Z,RC-01,Receiving Clerk,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,false,12.60,Enterprise ERP
+P2P-000015,8,Invoice Received,2025-08-24T22:38:34Z,AP-04,Accounts Payable,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,false,9.00,Enterprise ERP
+P2P-000015,9,Invoice Duplicate Check,2025-08-24T22:52:12Z,AB-01,AP Bot,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,true,0.58,Workflow Orchestrator
+P2P-000015,10,Invoice Matched,2025-08-25T03:18:09Z,AP-03,Accounts Payable,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,false,22.27,Enterprise ERP
+P2P-000015,11,Payment Authorized,2025-08-25T14:43:23Z,TA-03,Treasury Analyst,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,false,29.11,Enterprise ERP
+P2P-000015,12,Payment Executed,2025-08-26T07:11:34Z,PB-01,Payment Bot,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,true,2.21,Workflow Orchestrator
+P2P-000015,13,Case Closed,2025-08-26T08:43:15Z,EB-02,ERP Bot,Corporate Services,Engineering,Türkiye,V-018,A,Direct Materials,3607.60,Standard,Catalog,true,1.18,Workflow Orchestrator
+P2P-000016,1,Purchase Request Created,2026-06-18T02:20:45Z,R-10,Requester,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,true,5.20,Workflow Orchestrator
+P2P-000016,2,Manager Approval,2026-06-18T19:47:25Z,A-06,Approver,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,16.61,Enterprise ERP
+P2P-000016,3,Request Reworked,2026-06-19T12:11:03Z,R-18,Requester,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,46.17,Enterprise ERP
+P2P-000016,4,Manager Approval,2026-06-20T12:03:37Z,A-04,Approver,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,18.18,Enterprise ERP
+P2P-000016,5,Procurement Review,2026-06-20T18:47:44Z,B-03,Buyer,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,37.63,Enterprise ERP
+P2P-000016,6,Purchase Order Created,2026-06-21T00:46:44Z,B-06,Buyer,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,17.48,Enterprise ERP
+P2P-000016,7,Purchase Order Sent,2026-06-21T00:59:20Z,EB-01,ERP Bot,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,true,1.34,Workflow Orchestrator
+P2P-000016,8,Supplier Confirmation,2026-06-21T09:23:01Z,V-069,Supplier,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,13.72,Supplier Network
+P2P-000016,9,Goods Received,2026-06-23T11:41:53Z,RC-06,Receiving Clerk,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,18.76,Enterprise ERP
+P2P-000016,10,Invoice Received,2026-06-24T02:49:07Z,AP-02,Accounts Payable,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,8.40,Enterprise ERP
+P2P-000016,11,Invoice Duplicate Check,2026-06-24T03:13:32Z,AB-02,AP Bot,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,true,1.25,Workflow Orchestrator
+P2P-000016,12,Invoice Matched,2026-06-24T18:09:03Z,AP-10,Accounts Payable,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,21.16,Enterprise ERP
+P2P-000016,13,Payment Authorized,2026-06-25T06:38:45Z,TA-01,Treasury Analyst,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,false,7.30,Enterprise ERP
+P2P-000016,14,Payment Executed,2026-06-26T11:54:17Z,PB-02,Payment Bot,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,true,2.10,Workflow Orchestrator
+P2P-000016,15,Case Closed,2026-06-26T12:55:56Z,EB-02,ERP Bot,Consumer Products,Operations,Türkiye,V-069,C,Direct Materials,22099.00,Standard,Catalog,true,1.17,Workflow Orchestrator
+P2P-000017,1,Purchase Request Created,2025-01-21T16:33:11Z,R-04,Requester,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,true,9.35,Workflow Orchestrator
+P2P-000017,2,Manager Approval,2025-01-22T03:06:13Z,A-06,Approver,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,11.80,Enterprise ERP
+P2P-000017,3,Procurement Review,2025-01-22T16:25:52Z,B-02,Buyer,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,49.99,Enterprise ERP
+P2P-000017,4,Purchase Order Created,2025-01-22T23:53:26Z,B-05,Buyer,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,26.59,Enterprise ERP
+P2P-000017,5,Purchase Order Sent,2025-01-23T00:05:20Z,EB-01,ERP Bot,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,true,2.12,Workflow Orchestrator
+P2P-000017,6,Supplier Confirmation,2025-01-23T10:00:00Z,V-046,Supplier,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,17.88,Supplier Network
+P2P-000017,7,Invoice Received,2025-01-24T08:45:27Z,AP-01,Accounts Payable,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,13.23,Enterprise ERP
+P2P-000017,8,Invoice Duplicate Check,2025-01-24T08:58:43Z,AB-01,AP Bot,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,true,0.90,Workflow Orchestrator
+P2P-000017,9,Three-Way Match Failed,2025-01-24T17:45:57Z,AP-09,Accounts Payable,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,20.86,Enterprise ERP
+P2P-000017,10,Goods Received,2025-01-26T19:15:21Z,RC-05,Receiving Clerk,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,24.11,Enterprise ERP
+P2P-000017,11,Invoice Matched,2025-01-27T00:47:26Z,AP-10,Accounts Payable,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,32.25,Enterprise ERP
+P2P-000017,12,Payment Authorized,2025-01-27T08:55:40Z,TA-01,Treasury Analyst,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,false,20.41,Enterprise ERP
+P2P-000017,13,Payment Executed,2025-01-28T09:33:21Z,PB-01,Payment Bot,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,true,2.10,Workflow Orchestrator
+P2P-000017,14,Case Closed,2025-01-28T15:11:36Z,EB-01,ERP Bot,Industrial Systems,Operations,Türkiye,V-046,B,Professional Services,6475.60,Standard,ERP Portal,true,1.07,Workflow Orchestrator
+P2P-000018,1,Purchase Request Created,2025-01-24T19:45:15Z,R-08,Requester,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,true,7.32,Workflow Orchestrator
+P2P-000018,2,Manager Approval,2025-01-25T03:02:31Z,A-12,Approver,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,false,13.97,Enterprise ERP
+P2P-000018,3,Procurement Review,2025-01-25T12:04:24Z,B-04,Buyer,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,false,39.68,Enterprise ERP
+P2P-000018,4,Purchase Order Created,2025-01-25T18:27:48Z,B-05,Buyer,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,false,23.80,Enterprise ERP
+P2P-000018,5,Purchase Order Sent,2025-01-25T18:53:14Z,EB-02,ERP Bot,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,true,2.00,Workflow Orchestrator
+P2P-000018,6,Supplier Confirmation,2025-01-26T04:03:21Z,V-067,Supplier,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,false,10.01,Supplier Network
+P2P-000018,7,Goods Received,2025-01-27T20:58:55Z,RC-03,Receiving Clerk,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,false,26.03,Enterprise ERP
+P2P-000018,8,Invoice Received,2025-01-30T15:51:00Z,AP-07,Accounts Payable,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,false,8.36,Enterprise ERP
+P2P-000018,9,Invoice Duplicate Check,2025-01-30T16:06:31Z,AB-01,AP Bot,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,true,0.92,Workflow Orchestrator
+P2P-000018,10,Invoice Matched,2025-01-31T09:50:54Z,AP-03,Accounts Payable,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,false,36.18,Enterprise ERP
+P2P-000018,11,Payment Authorized,2025-02-01T02:42:48Z,TA-01,Treasury Analyst,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,false,8.65,Enterprise ERP
+P2P-000018,12,Payment Executed,2025-02-01T17:31:21Z,PB-01,Payment Bot,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,true,2.36,Workflow Orchestrator
+P2P-000018,13,Case Closed,2025-02-01T18:30:49Z,EB-01,ERP Bot,Corporate Services,Operations,Türkiye,V-067,C,Professional Services,10428.98,Strategic,ERP Portal,true,1.22,Workflow Orchestrator
+P2P-000019,1,Purchase Request Created,2025-05-08T05:38:55Z,R-02,Requester,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,true,6.43,Workflow Orchestrator
+P2P-000019,2,Manager Approval,2025-05-08T20:58:42Z,A-06,Approver,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,9.06,Enterprise ERP
+P2P-000019,3,Procurement Review,2025-05-09T12:42:26Z,B-08,Buyer,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,30.56,Enterprise ERP
+P2P-000019,4,Purchase Order Created,2025-05-09T16:29:53Z,B-02,Buyer,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,33.66,Enterprise ERP
+P2P-000019,5,Purchase Order Sent,2025-05-09T17:10:38Z,EB-02,ERP Bot,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,true,2.50,Workflow Orchestrator
+P2P-000019,6,Supplier Confirmation,2025-05-10T03:04:52Z,V-009,Supplier,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,13.80,Supplier Network
+P2P-000019,7,Delivery Delayed,2025-05-12T23:07:38Z,V-009,Supplier,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,8.36,Supplier Network
+P2P-000019,8,Goods Received,2025-05-14T09:18:01Z,RC-06,Receiving Clerk,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,26.05,Enterprise ERP
+P2P-000019,9,Invoice Received,2025-05-15T19:12:27Z,AP-04,Accounts Payable,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,8.37,Enterprise ERP
+P2P-000019,10,Invoice Duplicate Check,2025-05-15T19:23:53Z,AB-02,AP Bot,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,true,0.95,Workflow Orchestrator
+P2P-000019,11,Invoice Matched,2025-05-16T00:28:51Z,AP-04,Accounts Payable,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,31.75,Enterprise ERP
+P2P-000019,12,Payment Authorized,2025-05-16T18:04:01Z,TA-04,Treasury Analyst,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,false,13.81,Enterprise ERP
+P2P-000019,13,Payment Executed,2025-05-17T07:18:45Z,PB-01,Payment Bot,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,true,2.94,Workflow Orchestrator
+P2P-000019,14,Case Closed,2025-05-17T09:22:49Z,EB-02,ERP Bot,Industrial Systems,Operations,Poland,V-009,A,Professional Services,60957.27,Standard,ERP Portal,true,0.85,Workflow Orchestrator
+P2P-000020,1,Purchase Request Created,2025-08-30T06:41:45Z,R-17,Requester,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,true,10.04,Workflow Orchestrator
+P2P-000020,2,Manager Approval,2025-08-31T01:52:09Z,A-12,Approver,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,9.45,Enterprise ERP
+P2P-000020,3,Procurement Review,2025-08-31T07:08:22Z,B-06,Buyer,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,47.94,Enterprise ERP
+P2P-000020,4,Purchase Order Created,2025-08-31T13:36:29Z,B-01,Buyer,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,30.51,Enterprise ERP
+P2P-000020,5,Purchase Order Sent,2025-08-31T14:37:30Z,EB-01,ERP Bot,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,true,1.25,Workflow Orchestrator
+P2P-000020,6,Supplier Confirmation,2025-09-01T07:15:58Z,V-080,Supplier,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,13.74,Supplier Network
+P2P-000020,7,Goods Received,2025-09-09T10:35:11Z,RC-01,Receiving Clerk,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,31.16,Enterprise ERP
+P2P-000020,8,Invoice Received,2025-09-10T04:40:55Z,AP-07,Accounts Payable,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,10.83,Enterprise ERP
+P2P-000020,9,Invoice Duplicate Check,2025-09-10T04:52:37Z,AB-02,AP Bot,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,true,1.01,Workflow Orchestrator
+P2P-000020,10,Invoice Matched,2025-09-10T17:14:03Z,AP-10,Accounts Payable,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,28.88,Enterprise ERP
+P2P-000020,11,Payment Authorized,2025-09-11T19:50:05Z,TA-02,Treasury Analyst,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,33.78,Enterprise ERP
+P2P-000020,12,Payment Rejected,2025-09-13T03:57:23Z,TA-04,Treasury Analyst,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,20.94,Enterprise ERP
+P2P-000020,13,Invoice Matched,2025-09-14T00:04:37Z,AP-03,Accounts Payable,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,26.85,Enterprise ERP
+P2P-000020,14,Payment Authorized,2025-09-14T20:15:05Z,TA-06,Treasury Analyst,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,false,15.49,Enterprise ERP
+P2P-000020,15,Payment Executed,2025-09-15T20:22:18Z,PB-02,Payment Bot,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,true,1.41,Workflow Orchestrator
+P2P-000020,16,Case Closed,2025-09-15T23:23:26Z,EB-02,ERP Bot,Consumer Products,Finance,Germany,V-080,C,Facilities,5396.50,Standard,Catalog,true,0.96,Workflow Orchestrator
+P2P-000021,1,Purchase Request Created,2025-08-03T15:19:14Z,R-12,Requester,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,true,6.29,Workflow Orchestrator
+P2P-000021,2,Manager Approval,2025-08-04T08:29:30Z,A-09,Approver,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,11.05,Enterprise ERP
+P2P-000021,3,Procurement Review,2025-08-04T16:54:47Z,B-03,Buyer,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,39.88,Enterprise ERP
+P2P-000021,4,Purchase Order Created,2025-08-05T00:27:29Z,B-03,Buyer,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,44.72,Enterprise ERP
+P2P-000021,5,Purchase Order Sent,2025-08-05T00:51:05Z,EB-02,ERP Bot,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,true,1.58,Workflow Orchestrator
+P2P-000021,6,Supplier Confirmation,2025-08-05T11:16:26Z,V-022,Supplier,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,17.04,Supplier Network
+P2P-000021,7,Goods Received,2025-08-08T06:51:22Z,RC-08,Receiving Clerk,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,29.90,Enterprise ERP
+P2P-000021,8,Invoice Received,2025-08-09T19:07:54Z,AP-05,Accounts Payable,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,9.27,Enterprise ERP
+P2P-000021,9,Invoice Duplicate Check,2025-08-09T19:18:06Z,AB-01,AP Bot,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,true,1.78,Workflow Orchestrator
+P2P-000021,10,Invoice Blocked,2025-08-10T07:58:20Z,AP-07,Accounts Payable,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,23.30,Enterprise ERP
+P2P-000021,11,Invoice Corrected,2025-08-11T04:27:09Z,V-022,Supplier,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,26.05,Supplier Network
+P2P-000021,12,Invoice Matched,2025-08-11T08:45:53Z,AP-07,Accounts Payable,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,30.50,Enterprise ERP
+P2P-000021,13,Payment Authorized,2025-08-12T11:25:22Z,TA-01,Treasury Analyst,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,false,23.94,Enterprise ERP
+P2P-000021,14,Payment Executed,2025-08-13T00:09:45Z,PB-01,Payment Bot,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,true,2.56,Workflow Orchestrator
+P2P-000021,15,Case Closed,2025-08-13T03:08:30Z,EB-01,ERP Bot,Industrial Systems,Finance,Türkiye,V-022,B,MRO,7057.32,Standard,ERP Portal,true,1.56,Workflow Orchestrator
+P2P-000022,1,Purchase Request Created,2026-06-18T21:59:33Z,R-01,Requester,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,true,6.99,Workflow Orchestrator
+P2P-000022,2,Manager Approval,2026-06-19T06:36:51Z,A-09,Approver,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,false,13.11,Enterprise ERP
+P2P-000022,3,Procurement Review,2026-06-19T17:12:17Z,B-07,Buyer,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,false,38.00,Enterprise ERP
+P2P-000022,4,Purchase Order Created,2026-06-20T00:32:53Z,B-09,Buyer,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,false,25.63,Enterprise ERP
+P2P-000022,5,Purchase Order Sent,2026-06-20T00:53:55Z,EB-02,ERP Bot,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,true,1.78,Workflow Orchestrator
+P2P-000022,6,Supplier Confirmation,2026-06-20T12:07:45Z,V-031,Supplier,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,false,7.95,Supplier Network
+P2P-000022,7,Goods Received,2026-06-23T01:49:30Z,RC-06,Receiving Clerk,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,false,36.10,Enterprise ERP
+P2P-000022,8,Invoice Received,2026-06-23T22:49:00Z,AP-05,Accounts Payable,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,false,9.89,Enterprise ERP
+P2P-000022,9,Invoice Duplicate Check,2026-06-23T23:02:24Z,AB-02,AP Bot,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,true,0.93,Workflow Orchestrator
+P2P-000022,10,Invoice Matched,2026-06-24T08:26:27Z,AP-07,Accounts Payable,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,false,32.13,Enterprise ERP
+P2P-000022,11,Payment Authorized,2026-06-25T00:36:35Z,TA-03,Treasury Analyst,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,false,15.93,Enterprise ERP
+P2P-000022,12,Payment Executed,2026-06-26T14:44:39Z,PB-02,Payment Bot,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,true,3.01,Workflow Orchestrator
+P2P-000022,13,Case Closed,2026-06-26T16:18:53Z,EB-01,ERP Bot,Corporate Services,Information Technology,Netherlands,V-031,B,Facilities,9328.10,Strategic,Catalog,true,0.38,Workflow Orchestrator
+P2P-000023,1,Purchase Request Created,2026-04-17T20:43:52Z,R-09,Requester,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,true,6.82,Workflow Orchestrator
+P2P-000023,2,Manager Approval,2026-04-18T06:03:41Z,A-01,Approver,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,16.27,Enterprise ERP
+P2P-000023,3,Procurement Review,2026-04-18T11:04:09Z,B-09,Buyer,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,36.01,Enterprise ERP
+P2P-000023,4,Purchase Order Created,2026-04-18T13:08:09Z,B-05,Buyer,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,27.76,Enterprise ERP
+P2P-000023,5,Purchase Order Sent,2026-04-18T13:25:02Z,EB-02,ERP Bot,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,true,2.50,Workflow Orchestrator
+P2P-000023,6,Supplier Confirmation,2026-04-18T20:50:45Z,V-032,Supplier,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,9.09,Supplier Network
+P2P-000023,7,Invoice Received,2026-04-19T11:03:10Z,AP-03,Accounts Payable,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,9.87,Enterprise ERP
+P2P-000023,8,Invoice Duplicate Check,2026-04-19T11:11:35Z,AB-01,AP Bot,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,true,0.74,Workflow Orchestrator
+P2P-000023,9,Three-Way Match Failed,2026-04-19T20:01:23Z,AP-02,Accounts Payable,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,22.52,Enterprise ERP
+P2P-000023,10,Goods Received,2026-04-21T13:05:12Z,RC-01,Receiving Clerk,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,14.01,Enterprise ERP
+P2P-000023,11,Invoice Matched,2026-04-21T19:03:43Z,AP-01,Accounts Payable,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,26.27,Enterprise ERP
+P2P-000023,12,Payment Authorized,2026-04-22T04:05:10Z,TA-02,Treasury Analyst,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,false,10.07,Enterprise ERP
+P2P-000023,13,Payment Executed,2026-04-23T00:13:57Z,PB-01,Payment Bot,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,true,2.07,Workflow Orchestrator
+P2P-000023,14,Case Closed,2026-04-23T02:46:11Z,EB-01,ERP Bot,Corporate Services,Information Technology,Türkiye,V-032,B,MRO,13244.57,Urgent,ERP Portal,true,0.71,Workflow Orchestrator
+P2P-000024,1,Purchase Request Created,2025-11-01T17:58:02Z,R-16,Requester,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,true,10.65,Workflow Orchestrator
+P2P-000024,2,Manager Approval,2025-11-02T05:11:45Z,A-09,Approver,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,false,11.75,Enterprise ERP
+P2P-000024,3,Procurement Review,2025-11-02T18:40:50Z,B-01,Buyer,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,false,36.56,Enterprise ERP
+P2P-000024,4,Purchase Order Created,2025-11-02T22:58:35Z,B-06,Buyer,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,false,22.27,Enterprise ERP
+P2P-000024,5,Purchase Order Sent,2025-11-02T23:29:02Z,EB-02,ERP Bot,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,true,2.51,Workflow Orchestrator
+P2P-000024,6,Supplier Confirmation,2025-11-03T09:21:16Z,V-047,Supplier,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,false,11.48,Supplier Network
+P2P-000024,7,Goods Received,2025-11-06T02:21:18Z,RC-08,Receiving Clerk,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,false,25.81,Enterprise ERP
+P2P-000024,8,Invoice Received,2025-11-07T06:51:53Z,AP-05,Accounts Payable,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,false,9.47,Enterprise ERP
+P2P-000024,9,Invoice Duplicate Check,2025-11-07T07:05:25Z,AB-02,AP Bot,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,true,1.10,Workflow Orchestrator
+P2P-000024,10,Invoice Matched,2025-11-07T16:18:40Z,AP-03,Accounts Payable,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,false,63.01,Enterprise ERP
+P2P-000024,11,Payment Authorized,2025-11-08T10:57:37Z,TA-01,Treasury Analyst,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,false,29.15,Enterprise ERP
+P2P-000024,12,Payment Executed,2025-11-09T06:54:16Z,PB-01,Payment Bot,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,true,3.74,Workflow Orchestrator
+P2P-000024,13,Case Closed,2025-11-09T08:45:12Z,EB-01,ERP Bot,Consumer Products,Information Technology,Türkiye,V-047,B,Professional Services,4112.08,Standard,Catalog,true,1.28,Workflow Orchestrator
+P2P-000025,1,Purchase Request Created,2025-06-09T03:58:50Z,R-08,Requester,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,true,6.76,Workflow Orchestrator
+P2P-000025,2,Manager Approval,2025-06-09T16:51:25Z,A-07,Approver,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,false,12.58,Enterprise ERP
+P2P-000025,3,Procurement Review,2025-06-10T05:31:57Z,B-04,Buyer,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,false,16.94,Enterprise ERP
+P2P-000025,4,Purchase Order Created,2025-06-10T15:39:17Z,B-05,Buyer,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,false,20.23,Enterprise ERP
+P2P-000025,5,Purchase Order Sent,2025-06-10T15:54:37Z,EB-01,ERP Bot,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,true,2.19,Workflow Orchestrator
+P2P-000025,6,Supplier Confirmation,2025-06-10T23:19:31Z,V-074,Supplier,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,false,19.84,Supplier Network
+P2P-000025,7,Goods Received,2025-06-17T01:58:33Z,RC-06,Receiving Clerk,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,false,29.31,Enterprise ERP
+P2P-000025,8,Invoice Received,2025-06-18T02:24:45Z,AP-03,Accounts Payable,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,false,10.90,Enterprise ERP
+P2P-000025,9,Invoice Duplicate Check,2025-06-18T02:34:49Z,AB-01,AP Bot,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,true,0.84,Workflow Orchestrator
+P2P-000025,10,Invoice Matched,2025-06-18T17:11:33Z,AP-06,Accounts Payable,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,false,30.04,Enterprise ERP
+P2P-000025,11,Payment Authorized,2025-06-20T01:05:12Z,TA-02,Treasury Analyst,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,false,28.88,Enterprise ERP
+P2P-000025,12,Payment Executed,2025-06-20T23:25:03Z,PB-02,Payment Bot,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,true,1.83,Workflow Orchestrator
+P2P-000025,13,Case Closed,2025-06-21T05:11:13Z,EB-02,ERP Bot,Industrial Systems,Engineering,Poland,V-074,C,MRO,26296.69,Standard,ERP Portal,true,0.88,Workflow Orchestrator
+P2P-000026,1,Purchase Request Created,2026-02-22T18:23:09Z,R-02,Requester,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,true,6.89,Workflow Orchestrator
+P2P-000026,2,Manager Approval,2026-02-23T04:07:53Z,A-02,Approver,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,false,13.00,Enterprise ERP
+P2P-000026,3,Procurement Review,2026-02-23T19:54:27Z,B-04,Buyer,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,false,35.24,Enterprise ERP
+P2P-000026,4,Purchase Order Created,2026-02-23T22:54:01Z,B-05,Buyer,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,false,18.64,Enterprise ERP
+P2P-000026,5,Purchase Order Sent,2026-02-23T23:31:18Z,EB-02,ERP Bot,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,true,2.81,Workflow Orchestrator
+P2P-000026,6,Supplier Confirmation,2026-02-24T17:11:43Z,V-063,Supplier,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,false,9.46,Supplier Network
+P2P-000026,7,Goods Received,2026-02-27T00:51:08Z,RC-03,Receiving Clerk,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,false,14.16,Enterprise ERP
+P2P-000026,8,Invoice Received,2026-02-28T10:28:40Z,AP-04,Accounts Payable,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,false,14.00,Enterprise ERP
+P2P-000026,9,Invoice Duplicate Check,2026-02-28T10:41:16Z,AB-01,AP Bot,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,true,1.09,Workflow Orchestrator
+P2P-000026,10,Invoice Matched,2026-02-28T23:43:37Z,AP-04,Accounts Payable,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,false,33.61,Enterprise ERP
+P2P-000026,11,Payment Authorized,2026-03-01T17:35:36Z,TA-06,Treasury Analyst,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,false,18.22,Enterprise ERP
+P2P-000026,12,Payment Executed,2026-03-02T11:18:08Z,PB-01,Payment Bot,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,true,1.40,Workflow Orchestrator
+P2P-000026,13,Case Closed,2026-03-02T13:58:34Z,EB-01,ERP Bot,Consumer Products,Facilities,Poland,V-063,C,MRO,7172.84,Standard,ERP Portal,true,0.92,Workflow Orchestrator
+P2P-000027,1,Purchase Request Created,2025-11-15T12:14:31Z,R-05,Requester,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,true,5.50,Workflow Orchestrator
+P2P-000027,2,Manager Approval,2025-11-16T10:08:20Z,A-09,Approver,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,24.81,Enterprise ERP
+P2P-000027,3,Procurement Review,2025-11-16T19:27:42Z,B-08,Buyer,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,24.36,Enterprise ERP
+P2P-000027,4,Purchase Order Created,2025-11-17T02:43:09Z,B-04,Buyer,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,17.16,Enterprise ERP
+P2P-000027,5,Purchase Order Sent,2025-11-17T03:17:41Z,EB-02,ERP Bot,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,true,2.73,Workflow Orchestrator
+P2P-000027,6,Supplier Confirmation,2025-11-17T13:52:25Z,V-019,Supplier,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,8.61,Supplier Network
+P2P-000027,7,Delivery Delayed,2025-11-26T11:39:26Z,V-019,Supplier,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,19.09,Supplier Network
+P2P-000027,8,Goods Received,2025-11-29T03:10:38Z,RC-05,Receiving Clerk,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,17.17,Enterprise ERP
+P2P-000027,9,Invoice Received,2025-11-30T17:37:01Z,AP-02,Accounts Payable,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,8.03,Enterprise ERP
+P2P-000027,10,Invoice Duplicate Check,2025-11-30T17:56:24Z,AB-02,AP Bot,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,true,0.77,Workflow Orchestrator
+P2P-000027,11,Invoice Matched,2025-12-01T06:08:12Z,AP-09,Accounts Payable,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,40.23,Enterprise ERP
+P2P-000027,12,Payment Authorized,2025-12-01T18:20:56Z,TA-05,Treasury Analyst,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,false,14.73,Enterprise ERP
+P2P-000027,13,Payment Executed,2025-12-02T18:32:11Z,PB-02,Payment Bot,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,true,1.27,Workflow Orchestrator
+P2P-000027,14,Case Closed,2025-12-02T19:41:59Z,EB-01,ERP Bot,Industrial Systems,Information Technology,Türkiye,V-019,B,Professional Services,21892.30,Standard,ERP Portal,true,1.46,Workflow Orchestrator
+P2P-000028,1,Purchase Request Created,2026-01-10T19:29:17Z,R-16,Requester,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,true,16.09,Workflow Orchestrator
+P2P-000028,2,Manager Approval,2026-01-11T01:12:26Z,A-05,Approver,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,14.51,Enterprise ERP
+P2P-000028,3,Procurement Review,2026-01-11T10:35:35Z,B-08,Buyer,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,26.53,Enterprise ERP
+P2P-000028,4,Purchase Order Created,2026-01-11T13:59:37Z,B-09,Buyer,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,16.27,Enterprise ERP
+P2P-000028,5,Purchase Order Sent,2026-01-11T14:19:04Z,EB-01,ERP Bot,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,true,2.43,Workflow Orchestrator
+P2P-000028,6,Supplier Confirmation,2026-01-11T21:04:07Z,V-059,Supplier,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,10.50,Supplier Network
+P2P-000028,7,Goods Received,2026-01-17T23:33:36Z,RC-07,Receiving Clerk,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,25.25,Enterprise ERP
+P2P-000028,8,Invoice Received,2026-01-19T07:50:20Z,AP-07,Accounts Payable,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,13.44,Enterprise ERP
+P2P-000028,9,Invoice Duplicate Check,2026-01-19T08:05:09Z,AB-02,AP Bot,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,true,1.11,Workflow Orchestrator
+P2P-000028,10,Invoice Blocked,2026-01-20T04:49:45Z,AP-04,Accounts Payable,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,30.86,Enterprise ERP
+P2P-000028,11,Invoice Corrected,2026-01-21T06:55:27Z,V-059,Supplier,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,20.55,Supplier Network
+P2P-000028,12,Invoice Matched,2026-01-21T14:16:44Z,AP-01,Accounts Payable,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,36.46,Enterprise ERP
+P2P-000028,13,Payment Authorized,2026-01-22T15:38:53Z,TA-05,Treasury Analyst,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,false,20.11,Enterprise ERP
+P2P-000028,14,Payment Executed,2026-01-25T02:08:59Z,PB-01,Payment Bot,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,true,2.06,Workflow Orchestrator
+P2P-000028,15,Case Closed,2026-01-25T04:41:31Z,EB-02,ERP Bot,Consumer Products,Operations,Netherlands,V-059,C,Facilities,5907.49,Strategic,ERP Portal,true,1.36,Workflow Orchestrator
+P2P-000029,1,Purchase Request Created,2025-10-11T11:54:00Z,R-02,Requester,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,true,8.47,Workflow Orchestrator
+P2P-000029,2,Manager Approval,2025-10-11T17:04:18Z,A-12,Approver,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,11.36,Enterprise ERP
+P2P-000029,3,Procurement Review,2025-10-12T03:55:06Z,B-02,Buyer,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,37.88,Enterprise ERP
+P2P-000029,4,Purchase Order Created,2025-10-12T06:21:34Z,B-01,Buyer,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,42.35,Enterprise ERP
+P2P-000029,5,Purchase Order Sent,2025-10-12T06:41:59Z,EB-01,ERP Bot,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,true,1.31,Workflow Orchestrator
+P2P-000029,6,Supplier Confirmation,2025-10-12T11:07:41Z,V-018,Supplier,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,6.27,Supplier Network
+P2P-000029,7,Invoice Received,2025-10-13T12:47:27Z,AP-09,Accounts Payable,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,7.73,Enterprise ERP
+P2P-000029,8,Invoice Duplicate Check,2025-10-13T12:59:00Z,AB-02,AP Bot,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,true,0.75,Workflow Orchestrator
+P2P-000029,9,Three-Way Match Failed,2025-10-13T18:56:03Z,AP-06,Accounts Payable,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,26.63,Enterprise ERP
+P2P-000029,10,Goods Received,2025-10-16T12:49:08Z,RC-02,Receiving Clerk,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,17.00,Enterprise ERP
+P2P-000029,11,Invoice Matched,2025-10-16T20:34:38Z,AP-04,Accounts Payable,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,35.79,Enterprise ERP
+P2P-000029,12,Payment Authorized,2025-10-17T03:35:27Z,TA-05,Treasury Analyst,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,false,14.95,Enterprise ERP
+P2P-000029,13,Payment Executed,2025-10-17T12:01:29Z,PB-02,Payment Bot,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,true,1.43,Workflow Orchestrator
+P2P-000029,14,Case Closed,2025-10-17T13:27:57Z,EB-02,ERP Bot,Consumer Products,Information Technology,Netherlands,V-018,A,IT Equipment,3395.11,Urgent,Catalog,true,1.32,Workflow Orchestrator
+P2P-000030,1,Purchase Request Created,2025-12-22T10:53:48Z,R-07,Requester,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,true,8.04,Workflow Orchestrator
+P2P-000030,2,Manager Approval,2025-12-22T21:36:54Z,A-01,Approver,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,13.28,Enterprise ERP
+P2P-000030,3,Procurement Review,2025-12-23T06:42:08Z,B-09,Buyer,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,34.88,Enterprise ERP
+P2P-000030,4,Purchase Order Created,2025-12-23T14:32:02Z,B-05,Buyer,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,19.45,Enterprise ERP
+P2P-000030,5,Purchase Order Sent,2025-12-23T15:01:37Z,EB-02,ERP Bot,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,true,1.93,Workflow Orchestrator
+P2P-000030,6,Supplier Confirmation,2025-12-23T20:38:59Z,V-001,Supplier,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,10.57,Supplier Network
+P2P-000030,7,Goods Received,2025-12-26T14:26:24Z,RC-01,Receiving Clerk,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,21.44,Enterprise ERP
+P2P-000030,8,Invoice Received,2025-12-28T02:22:30Z,AP-04,Accounts Payable,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,11.84,Enterprise ERP
+P2P-000030,9,Invoice Duplicate Check,2025-12-28T02:35:30Z,AB-02,AP Bot,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,true,1.02,Workflow Orchestrator
+P2P-000030,10,Invoice Matched,2025-12-28T07:14:13Z,AP-03,Accounts Payable,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,51.20,Enterprise ERP
+P2P-000030,11,Payment Authorized,2025-12-28T14:45:08Z,TA-03,Treasury Analyst,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,24.34,Enterprise ERP
+P2P-000030,12,Payment Rejected,2025-12-29T03:12:53Z,TA-02,Treasury Analyst,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,18.49,Enterprise ERP
+P2P-000030,13,Invoice Matched,2025-12-29T14:32:26Z,AP-05,Accounts Payable,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,34.90,Enterprise ERP
+P2P-000030,14,Payment Authorized,2025-12-30T03:40:49Z,TA-01,Treasury Analyst,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,false,23.86,Enterprise ERP
+P2P-000030,15,Payment Executed,2025-12-31T00:26:54Z,PB-01,Payment Bot,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,true,2.39,Workflow Orchestrator
+P2P-000030,16,Case Closed,2025-12-31T03:22:34Z,EB-01,ERP Bot,Industrial Systems,Finance,Türkiye,V-001,A,Direct Materials,31113.61,Standard,ERP Portal,true,0.96,Workflow Orchestrator
+P2P-000031,1,Purchase Request Created,2026-05-05T13:07:47Z,R-02,Requester,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,true,5.66,Workflow Orchestrator
+P2P-000031,2,Manager Approval,2026-05-06T02:23:45Z,A-03,Approver,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,16.63,Enterprise ERP
+P2P-000031,3,Procurement Review,2026-05-06T12:11:37Z,B-10,Buyer,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,28.96,Enterprise ERP
+P2P-000031,4,Purchase Order Created,2026-05-06T15:41:15Z,B-02,Buyer,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,14.62,Enterprise ERP
+P2P-000031,5,Purchase Order Sent,2026-05-06T15:59:02Z,EB-02,ERP Bot,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,true,0.94,Workflow Orchestrator
+P2P-000031,6,Supplier Confirmation,2026-05-07T01:18:14Z,V-038,Supplier,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,13.43,Supplier Network
+P2P-000031,7,Goods Received,2026-05-10T03:49:30Z,RC-04,Receiving Clerk,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,19.31,Enterprise ERP
+P2P-000031,8,Invoice Received,2026-05-11T04:04:08Z,AP-09,Accounts Payable,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,10.58,Enterprise ERP
+P2P-000031,9,Invoice Duplicate Check,2026-05-11T04:10:48Z,AB-01,AP Bot,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,true,1.12,Workflow Orchestrator
+P2P-000031,10,Invoice Blocked,2026-05-11T20:47:52Z,AP-05,Accounts Payable,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,38.73,Enterprise ERP
+P2P-000031,11,Invoice Corrected,2026-05-12T19:47:51Z,V-038,Supplier,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,28.12,Supplier Network
+P2P-000031,12,Invoice Matched,2026-05-13T00:40:58Z,AP-09,Accounts Payable,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,18.02,Enterprise ERP
+P2P-000031,13,Payment Authorized,2026-05-13T14:50:57Z,TA-04,Treasury Analyst,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,false,11.14,Enterprise ERP
+P2P-000031,14,Payment Executed,2026-05-14T06:59:17Z,PB-02,Payment Bot,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,true,2.25,Workflow Orchestrator
+P2P-000031,15,Case Closed,2026-05-14T08:59:50Z,EB-02,ERP Bot,Consumer Products,Engineering,Türkiye,V-038,B,IT Equipment,16856.71,Urgent,Catalog,true,0.94,Workflow Orchestrator
+P2P-000032,1,Purchase Request Created,2025-05-27T20:51:42Z,R-07,Requester,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,true,8.60,Workflow Orchestrator
+P2P-000032,2,Manager Approval,2025-05-28T07:10:33Z,A-08,Approver,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,false,15.39,Enterprise ERP
+P2P-000032,3,Procurement Review,2025-05-28T20:59:39Z,B-03,Buyer,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,false,41.21,Enterprise ERP
+P2P-000032,4,Purchase Order Created,2025-05-29T05:09:38Z,B-05,Buyer,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,false,22.85,Enterprise ERP
+P2P-000032,5,Purchase Order Sent,2025-05-29T05:19:37Z,EB-02,ERP Bot,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,true,2.15,Workflow Orchestrator
+P2P-000032,6,Supplier Confirmation,2025-05-29T15:07:59Z,V-021,Supplier,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,false,15.33,Supplier Network
+P2P-000032,7,Goods Received,2025-06-01T02:28:36Z,RC-02,Receiving Clerk,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,false,23.19,Enterprise ERP
+P2P-000032,8,Invoice Received,2025-06-02T02:12:23Z,AP-04,Accounts Payable,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,false,8.84,Enterprise ERP
+P2P-000032,9,Invoice Duplicate Check,2025-06-02T02:18:46Z,AB-02,AP Bot,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,true,1.50,Workflow Orchestrator
+P2P-000032,10,Invoice Matched,2025-06-02T07:03:26Z,AP-04,Accounts Payable,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,false,34.53,Enterprise ERP
+P2P-000032,11,Payment Authorized,2025-06-02T12:19:02Z,TA-06,Treasury Analyst,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,false,17.15,Enterprise ERP
+P2P-000032,12,Payment Executed,2025-06-03T03:58:59Z,PB-02,Payment Bot,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,true,2.92,Workflow Orchestrator
+P2P-000032,13,Case Closed,2025-06-03T05:21:55Z,EB-01,ERP Bot,Industrial Systems,Operations,Türkiye,V-021,B,Direct Materials,17520.84,Urgent,ERP Portal,true,0.84,Workflow Orchestrator
+P2P-000033,1,Purchase Request Created,2025-06-17T12:07:21Z,R-07,Requester,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,true,8.91,Workflow Orchestrator
+P2P-000033,2,Procurement Review,2025-06-17T19:40:51Z,B-09,Buyer,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,false,34.39,Enterprise ERP
+P2P-000033,3,Purchase Order Created,2025-06-18T04:24:31Z,B-09,Buyer,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,false,16.24,Enterprise ERP
+P2P-000033,4,Purchase Order Sent,2025-06-18T04:33:40Z,EB-02,ERP Bot,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,true,1.74,Workflow Orchestrator
+P2P-000033,5,Supplier Confirmation,2025-06-18T15:59:49Z,V-075,Supplier,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,false,10.08,Supplier Network
+P2P-000033,6,Goods Received,2025-06-23T19:26:01Z,RC-08,Receiving Clerk,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,false,16.32,Enterprise ERP
+P2P-000033,7,Invoice Received,2025-06-25T00:26:04Z,AP-06,Accounts Payable,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,false,9.84,Enterprise ERP
+P2P-000033,8,Invoice Duplicate Check,2025-06-25T00:36:36Z,AB-01,AP Bot,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,true,1.96,Workflow Orchestrator
+P2P-000033,9,Invoice Matched,2025-06-26T00:28:22Z,AP-09,Accounts Payable,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,false,30.17,Enterprise ERP
+P2P-000033,10,Payment Authorized,2025-06-26T12:04:19Z,TA-01,Treasury Analyst,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,false,17.08,Enterprise ERP
+P2P-000033,11,Payment Executed,2025-06-27T02:19:49Z,PB-01,Payment Bot,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,true,2.11,Workflow Orchestrator
+P2P-000033,12,Case Closed,2025-06-27T03:59:09Z,EB-01,ERP Bot,Consumer Products,Operations,Türkiye,V-075,C,Direct Materials,19654.22,Standard,Catalog,true,0.68,Workflow Orchestrator
+P2P-000034,1,Purchase Request Created,2026-01-05T04:09:22Z,R-12,Requester,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,true,7.68,Workflow Orchestrator
+P2P-000034,2,Manager Approval,2026-01-06T03:33:11Z,A-10,Approver,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,false,21.59,Enterprise ERP
+P2P-000034,3,Procurement Review,2026-01-06T17:37:20Z,B-01,Buyer,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,false,29.09,Enterprise ERP
+P2P-000034,4,Purchase Order Created,2026-01-07T07:38:22Z,B-06,Buyer,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,false,31.66,Enterprise ERP
+P2P-000034,5,Purchase Order Sent,2026-01-07T08:01:31Z,EB-02,ERP Bot,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,true,1.41,Workflow Orchestrator
+P2P-000034,6,Supplier Confirmation,2026-01-07T17:00:26Z,V-029,Supplier,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,false,9.78,Supplier Network
+P2P-000034,7,Goods Received,2026-01-11T00:54:39Z,RC-08,Receiving Clerk,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,false,24.94,Enterprise ERP
+P2P-000034,8,Invoice Received,2026-01-12T01:16:02Z,AP-07,Accounts Payable,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,false,13.58,Enterprise ERP
+P2P-000034,9,Invoice Duplicate Check,2026-01-12T01:37:29Z,AB-01,AP Bot,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,true,1.34,Workflow Orchestrator
+P2P-000034,10,Invoice Matched,2026-01-12T08:27:53Z,AP-09,Accounts Payable,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,false,23.46,Enterprise ERP
+P2P-000034,11,Payment Authorized,2026-01-13T00:06:24Z,TA-06,Treasury Analyst,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,false,17.84,Enterprise ERP
+P2P-000034,12,Payment Executed,2026-01-14T08:12:00Z,PB-02,Payment Bot,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,true,2.44,Workflow Orchestrator
+P2P-000034,13,Case Closed,2026-01-14T09:19:48Z,EB-01,ERP Bot,Industrial Systems,Operations,Poland,V-029,B,MRO,4773.11,Standard,Catalog,true,0.56,Workflow Orchestrator
+P2P-000035,1,Purchase Request Created,2025-12-29T05:32:34Z,R-04,Requester,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,true,9.14,Workflow Orchestrator
+P2P-000035,2,Manager Approval,2025-12-29T23:37:03Z,A-06,Approver,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,14.57,Enterprise ERP
+P2P-000035,3,Procurement Review,2025-12-30T07:55:57Z,B-01,Buyer,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,34.59,Enterprise ERP
+P2P-000035,4,Purchase Order Created,2025-12-30T14:29:32Z,B-01,Buyer,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,27.96,Enterprise ERP
+P2P-000035,5,Purchase Order Sent,2025-12-30T14:37:45Z,EB-01,ERP Bot,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,true,1.40,Workflow Orchestrator
+P2P-000035,6,Supplier Confirmation,2025-12-31T03:22:05Z,V-032,Supplier,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,13.93,Supplier Network
+P2P-000035,7,Goods Received,2026-01-02T21:13:12Z,RC-06,Receiving Clerk,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,17.58,Enterprise ERP
+P2P-000035,8,Invoice Received,2026-01-03T19:39:12Z,AP-06,Accounts Payable,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,9.06,Enterprise ERP
+P2P-000035,9,Invoice Duplicate Check,2026-01-03T19:57:58Z,AB-02,AP Bot,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,true,0.93,Workflow Orchestrator
+P2P-000035,10,Invoice Matched,2026-01-03T23:47:55Z,AP-02,Accounts Payable,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,50.17,Enterprise ERP
+P2P-000035,11,Payment Authorized,2026-01-04T12:35:05Z,TA-06,Treasury Analyst,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,22.80,Enterprise ERP
+P2P-000035,12,Payment Rejected,2026-01-05T10:55:04Z,TA-01,Treasury Analyst,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,29.87,Enterprise ERP
+P2P-000035,13,Invoice Matched,2026-01-06T05:49:46Z,AP-04,Accounts Payable,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,30.86,Enterprise ERP
+P2P-000035,14,Payment Authorized,2026-01-06T21:45:38Z,TA-03,Treasury Analyst,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,false,18.94,Enterprise ERP
+P2P-000035,15,Payment Executed,2026-01-08T01:48:32Z,PB-02,Payment Bot,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,true,1.56,Workflow Orchestrator
+P2P-000035,16,Case Closed,2026-01-08T04:44:35Z,EB-01,ERP Bot,Corporate Services,Finance,Türkiye,V-032,B,MRO,13446.95,Standard,ERP Portal,true,0.81,Workflow Orchestrator
+P2P-000036,1,Purchase Request Created,2025-11-04T08:48:55Z,R-06,Requester,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,true,4.70,Workflow Orchestrator
+P2P-000036,2,Manager Approval,2025-11-04T15:44:20Z,A-07,Approver,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,18.61,Enterprise ERP
+P2P-000036,3,Procurement Review,2025-11-05T01:55:54Z,B-08,Buyer,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,29.77,Enterprise ERP
+P2P-000036,4,Purchase Order Created,2025-11-05T09:30:41Z,B-10,Buyer,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,30.90,Enterprise ERP
+P2P-000036,5,Purchase Order Sent,2025-11-05T09:54:11Z,EB-02,ERP Bot,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,true,1.58,Workflow Orchestrator
+P2P-000036,6,Supplier Confirmation,2025-11-05T23:52:19Z,V-053,Supplier,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,8.90,Supplier Network
+P2P-000036,7,Goods Received,2025-11-08T11:24:42Z,RC-05,Receiving Clerk,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,26.66,Enterprise ERP
+P2P-000036,8,Invoice Received,2025-11-10T05:01:47Z,AP-02,Accounts Payable,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,14.32,Enterprise ERP
+P2P-000036,9,Invoice Duplicate Check,2025-11-10T05:25:46Z,AB-01,AP Bot,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,true,0.84,Workflow Orchestrator
+P2P-000036,10,Duplicate Check Failed,2025-11-10T07:11:11Z,AP-01,Accounts Payable,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,13.37,Enterprise ERP
+P2P-000036,11,Invoice Rejected,2025-11-10T14:26:25Z,AP-05,Accounts Payable,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,9.83,Enterprise ERP
+P2P-000036,12,Corrected Invoice Received,2025-11-11T08:52:23Z,V-053,Supplier,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,11.90,Supplier Network
+P2P-000036,13,Invoice Duplicate Check,2025-11-11T09:18:02Z,AB-02,AP Bot,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,true,0.79,Workflow Orchestrator
+P2P-000036,14,Invoice Matched,2025-11-11T16:16:25Z,AP-09,Accounts Payable,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,50.20,Enterprise ERP
+P2P-000036,15,Payment Authorized,2025-11-12T00:42:50Z,TA-03,Treasury Analyst,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,false,12.40,Enterprise ERP
+P2P-000036,16,Payment Executed,2025-11-13T07:03:15Z,PB-02,Payment Bot,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,true,1.42,Workflow Orchestrator
+P2P-000036,17,Case Closed,2025-11-13T07:58:10Z,EB-01,ERP Bot,Industrial Systems,Operations,Netherlands,V-053,B,Direct Materials,8208.10,Standard,Email Intake,true,1.12,Workflow Orchestrator
+P2P-000037,1,Purchase Request Created,2026-03-19T10:53:07Z,R-02,Requester,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,true,7.10,Workflow Orchestrator
+P2P-000037,2,Manager Approval,2026-03-19T21:39:54Z,A-03,Approver,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,10.60,Enterprise ERP
+P2P-000037,3,Procurement Review,2026-03-20T12:41:44Z,B-09,Buyer,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,31.77,Enterprise ERP
+P2P-000037,4,Purchase Order Created,2026-03-20T19:12:33Z,B-09,Buyer,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,24.34,Enterprise ERP
+P2P-000037,5,Purchase Order Sent,2026-03-20T19:58:49Z,EB-01,ERP Bot,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,true,2.22,Workflow Orchestrator
+P2P-000037,6,Supplier Confirmation,2026-03-22T03:10:16Z,V-078,Supplier,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,12.85,Supplier Network
+P2P-000037,7,Goods Received,2026-03-24T07:18:10Z,RC-01,Receiving Clerk,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,31.95,Enterprise ERP
+P2P-000037,8,Invoice Received,2026-03-25T20:29:22Z,AP-04,Accounts Payable,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,14.23,Enterprise ERP
+P2P-000037,9,Invoice Duplicate Check,2026-03-25T20:57:06Z,AB-02,AP Bot,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,true,0.76,Workflow Orchestrator
+P2P-000037,10,Invoice Matched,2026-03-26T13:22:53Z,AP-03,Accounts Payable,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,31.54,Enterprise ERP
+P2P-000037,11,Payment Authorized,2026-03-27T16:03:33Z,TA-06,Treasury Analyst,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,22.18,Enterprise ERP
+P2P-000037,12,Payment Rejected,2026-03-28T17:37:07Z,TA-01,Treasury Analyst,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,33.26,Enterprise ERP
+P2P-000037,13,Invoice Matched,2026-03-29T14:13:06Z,AP-02,Accounts Payable,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,23.90,Enterprise ERP
+P2P-000037,14,Payment Authorized,2026-03-29T22:02:55Z,TA-01,Treasury Analyst,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,false,22.42,Enterprise ERP
+P2P-000037,15,Payment Executed,2026-03-30T20:16:08Z,PB-02,Payment Bot,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,true,1.51,Workflow Orchestrator
+P2P-000037,16,Case Closed,2026-03-30T23:01:06Z,EB-01,ERP Bot,Industrial Systems,Operations,Germany,V-078,C,Direct Materials,5353.30,Standard,Catalog,true,0.71,Workflow Orchestrator
+P2P-000038,1,Purchase Request Created,2025-01-18T10:41:53Z,R-18,Requester,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,true,5.82,Workflow Orchestrator
+P2P-000038,2,Procurement Review,2025-01-18T21:55:57Z,B-08,Buyer,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,false,23.67,Enterprise ERP
+P2P-000038,3,Purchase Order Created,2025-01-19T08:48:23Z,B-04,Buyer,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,false,27.51,Enterprise ERP
+P2P-000038,4,Purchase Order Sent,2025-01-19T09:28:04Z,EB-01,ERP Bot,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,true,2.52,Workflow Orchestrator
+P2P-000038,5,Supplier Confirmation,2025-01-20T17:54:19Z,V-068,Supplier,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,false,7.88,Supplier Network
+P2P-000038,6,Goods Received,2025-01-22T18:14:54Z,RC-07,Receiving Clerk,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,false,19.37,Enterprise ERP
+P2P-000038,7,Invoice Received,2025-01-23T09:20:52Z,AP-01,Accounts Payable,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,false,10.80,Enterprise ERP
+P2P-000038,8,Invoice Duplicate Check,2025-01-23T09:41:10Z,AB-01,AP Bot,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,true,1.45,Workflow Orchestrator
+P2P-000038,9,Invoice Matched,2025-01-23T18:40:26Z,AP-04,Accounts Payable,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,false,23.07,Enterprise ERP
+P2P-000038,10,Payment Authorized,2025-01-24T06:13:30Z,TA-03,Treasury Analyst,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,false,20.64,Enterprise ERP
+P2P-000038,11,Payment Executed,2025-01-25T19:01:06Z,PB-01,Payment Bot,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,true,1.46,Workflow Orchestrator
+P2P-000038,12,Case Closed,2025-01-25T20:48:12Z,EB-01,ERP Bot,Consumer Products,Finance,Poland,V-068,C,MRO,18249.74,Strategic,ERP Portal,true,1.46,Workflow Orchestrator
+P2P-000039,1,Purchase Request Created,2026-05-11T23:59:21Z,R-08,Requester,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,true,3.69,Workflow Orchestrator
+P2P-000039,2,Manager Approval,2026-05-12T14:26:02Z,A-09,Approver,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,false,25.76,Enterprise ERP
+P2P-000039,3,Procurement Review,2026-05-12T21:58:24Z,B-02,Buyer,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,false,44.45,Enterprise ERP
+P2P-000039,4,Purchase Order Created,2026-05-13T07:17:59Z,B-06,Buyer,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,false,21.88,Enterprise ERP
+P2P-000039,5,Purchase Order Sent,2026-05-13T08:08:04Z,EB-01,ERP Bot,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,true,1.78,Workflow Orchestrator
+P2P-000039,6,Supplier Confirmation,2026-05-13T13:37:09Z,V-071,Supplier,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,false,8.30,Supplier Network
+P2P-000039,7,Goods Received,2026-05-16T15:47:37Z,RC-05,Receiving Clerk,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,false,20.17,Enterprise ERP
+P2P-000039,8,Invoice Received,2026-05-19T04:28:12Z,AP-04,Accounts Payable,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,false,7.23,Enterprise ERP
+P2P-000039,9,Invoice Duplicate Check,2026-05-19T04:54:56Z,AB-02,AP Bot,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,true,1.37,Workflow Orchestrator
+P2P-000039,10,Invoice Matched,2026-05-19T13:51:17Z,AP-10,Accounts Payable,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,false,35.42,Enterprise ERP
+P2P-000039,11,Payment Authorized,2026-05-20T02:42:47Z,TA-05,Treasury Analyst,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,false,18.01,Enterprise ERP
+P2P-000039,12,Payment Executed,2026-05-21T09:17:30Z,PB-02,Payment Bot,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,true,1.89,Workflow Orchestrator
+P2P-000039,13,Case Closed,2026-05-21T12:23:46Z,EB-01,ERP Bot,Corporate Services,Operations,Türkiye,V-071,C,Professional Services,2783.57,Standard,ERP Portal,true,0.65,Workflow Orchestrator
+P2P-000040,1,Purchase Request Created,2025-05-29T03:59:30Z,R-05,Requester,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,true,7.35,Workflow Orchestrator
+P2P-000040,2,Manager Approval,2025-05-29T16:18:41Z,A-01,Approver,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,9.52,Enterprise ERP
+P2P-000040,3,Procurement Review,2025-05-30T00:24:08Z,B-06,Buyer,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,21.09,Enterprise ERP
+P2P-000040,4,Purchase Order Created,2025-05-30T08:06:52Z,B-07,Buyer,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,30.45,Enterprise ERP
+P2P-000040,5,Purchase Order Sent,2025-05-30T08:28:21Z,EB-02,ERP Bot,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,true,2.37,Workflow Orchestrator
+P2P-000040,6,Supplier Confirmation,2025-05-31T18:55:39Z,V-069,Supplier,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,10.28,Supplier Network
+P2P-000040,7,Goods Received,2025-06-08T14:41:26Z,RC-07,Receiving Clerk,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,23.12,Enterprise ERP
+P2P-000040,8,Invoice Received,2025-06-09T09:10:34Z,AP-10,Accounts Payable,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,9.62,Enterprise ERP
+P2P-000040,9,Invoice Duplicate Check,2025-06-09T09:19:50Z,AB-02,AP Bot,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,true,0.71,Workflow Orchestrator
+P2P-000040,10,Invoice Blocked,2025-06-10T23:04:29Z,AP-06,Accounts Payable,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,32.39,Enterprise ERP
+P2P-000040,11,Invoice Corrected,2025-06-12T16:22:18Z,V-069,Supplier,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,15.55,Supplier Network
+P2P-000040,12,Invoice Matched,2025-06-13T21:20:43Z,AP-01,Accounts Payable,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,28.65,Enterprise ERP
+P2P-000040,13,Payment Authorized,2025-06-14T19:27:10Z,TA-02,Treasury Analyst,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,false,12.55,Enterprise ERP
+P2P-000040,14,Payment Executed,2025-06-15T15:25:02Z,PB-02,Payment Bot,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,true,2.59,Workflow Orchestrator
+P2P-000040,15,Case Closed,2025-06-15T16:48:12Z,EB-02,ERP Bot,Consumer Products,Information Technology,Netherlands,V-069,C,MRO,6798.56,Standard,ERP Portal,true,0.95,Workflow Orchestrator
+P2P-000041,1,Purchase Request Created,2025-12-11T20:02:09Z,R-01,Requester,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,true,8.09,Workflow Orchestrator
+P2P-000041,2,Manager Approval,2025-12-11T22:42:42Z,A-05,Approver,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,false,22.62,Enterprise ERP
+P2P-000041,3,Procurement Review,2025-12-12T04:16:24Z,B-09,Buyer,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,false,24.76,Enterprise ERP
+P2P-000041,4,Purchase Order Created,2025-12-12T09:39:14Z,B-07,Buyer,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,false,29.08,Enterprise ERP
+P2P-000041,5,Purchase Order Sent,2025-12-12T10:09:12Z,EB-01,ERP Bot,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,true,1.94,Workflow Orchestrator
+P2P-000041,6,Supplier Confirmation,2025-12-12T16:35:15Z,V-055,Supplier,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,false,7.42,Supplier Network
+P2P-000041,7,Goods Received,2025-12-15T01:19:28Z,RC-05,Receiving Clerk,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,false,33.69,Enterprise ERP
+P2P-000041,8,Invoice Received,2025-12-15T16:10:32Z,AP-01,Accounts Payable,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,false,8.47,Enterprise ERP
+P2P-000041,9,Invoice Duplicate Check,2025-12-15T16:19:09Z,AB-02,AP Bot,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,true,1.21,Workflow Orchestrator
+P2P-000041,10,Invoice Matched,2025-12-16T00:57:05Z,AP-05,Accounts Payable,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,false,25.20,Enterprise ERP
+P2P-000041,11,Payment Authorized,2025-12-16T12:43:31Z,TA-03,Treasury Analyst,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,false,12.62,Enterprise ERP
+P2P-000041,12,Payment Executed,2025-12-16T19:53:37Z,PB-02,Payment Bot,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,true,3.57,Workflow Orchestrator
+P2P-000041,13,Case Closed,2025-12-16T20:54:55Z,EB-02,ERP Bot,Industrial Systems,Information Technology,Türkiye,V-055,B,Direct Materials,8092.84,Urgent,ERP Portal,true,1.30,Workflow Orchestrator
+P2P-000042,1,Purchase Request Created,2025-01-02T21:42:33Z,R-13,Requester,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,true,6.50,Workflow Orchestrator
+P2P-000042,2,Manager Approval,2025-01-03T16:48:32Z,A-05,Approver,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,15.65,Enterprise ERP
+P2P-000042,3,Procurement Review,2025-01-04T09:42:16Z,B-05,Buyer,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,30.39,Enterprise ERP
+P2P-000042,4,Purchase Order Created,2025-01-04T13:33:49Z,B-03,Buyer,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,25.04,Enterprise ERP
+P2P-000042,5,Purchase Order Sent,2025-01-04T13:50:56Z,EB-02,ERP Bot,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,true,2.92,Workflow Orchestrator
+P2P-000042,6,Supplier Confirmation,2025-01-05T02:31:51Z,V-005,Supplier,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,8.28,Supplier Network
+P2P-000042,7,Goods Received,2025-01-06T11:28:33Z,RC-08,Receiving Clerk,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,19.62,Enterprise ERP
+P2P-000042,8,Invoice Received,2025-01-08T18:32:40Z,AP-10,Accounts Payable,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,7.65,Enterprise ERP
+P2P-000042,9,Invoice Duplicate Check,2025-01-08T18:49:57Z,AB-02,AP Bot,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,true,1.00,Workflow Orchestrator
+P2P-000042,10,Invoice Matched,2025-01-08T22:23:07Z,AP-01,Accounts Payable,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,39.72,Enterprise ERP
+P2P-000042,11,Payment Authorized,2025-01-09T07:31:05Z,TA-05,Treasury Analyst,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,31.64,Enterprise ERP
+P2P-000042,12,Payment Rejected,2025-01-10T05:10:58Z,TA-05,Treasury Analyst,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,28.34,Enterprise ERP
+P2P-000042,13,Invoice Matched,2025-01-10T12:37:07Z,AP-09,Accounts Payable,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,31.84,Enterprise ERP
+P2P-000042,14,Payment Authorized,2025-01-10T18:51:06Z,TA-05,Treasury Analyst,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,false,15.57,Enterprise ERP
+P2P-000042,15,Payment Executed,2025-01-11T22:29:13Z,PB-01,Payment Bot,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,true,1.78,Workflow Orchestrator
+P2P-000042,16,Case Closed,2025-01-12T01:06:36Z,EB-02,ERP Bot,Industrial Systems,Operations,Poland,V-005,A,IT Equipment,12154.15,Strategic,ERP Portal,true,0.75,Workflow Orchestrator
+P2P-000043,1,Purchase Request Created,2025-09-24T07:44:02Z,R-01,Requester,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,true,9.73,Workflow Orchestrator
+P2P-000043,2,Procurement Review,2025-09-24T15:18:40Z,B-06,Buyer,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,false,20.70,Enterprise ERP
+P2P-000043,3,Purchase Order Created,2025-09-25T05:23:04Z,B-07,Buyer,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,false,13.38,Enterprise ERP
+P2P-000043,4,Purchase Order Sent,2025-09-25T05:46:10Z,EB-02,ERP Bot,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,true,1.51,Workflow Orchestrator
+P2P-000043,5,Supplier Confirmation,2025-09-25T10:19:43Z,V-016,Supplier,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,false,11.48,Supplier Network
+P2P-000043,6,Goods Received,2025-09-27T16:28:51Z,RC-06,Receiving Clerk,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,false,18.33,Enterprise ERP
+P2P-000043,7,Invoice Received,2025-09-29T09:17:06Z,AP-05,Accounts Payable,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,false,11.96,Enterprise ERP
+P2P-000043,8,Invoice Duplicate Check,2025-09-29T09:33:46Z,AB-01,AP Bot,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,true,1.51,Workflow Orchestrator
+P2P-000043,9,Invoice Matched,2025-09-29T15:31:50Z,AP-01,Accounts Payable,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,false,32.89,Enterprise ERP
+P2P-000043,10,Payment Authorized,2025-09-29T23:48:03Z,TA-04,Treasury Analyst,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,false,13.84,Enterprise ERP
+P2P-000043,11,Payment Executed,2025-10-01T18:12:07Z,PB-01,Payment Bot,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,true,2.24,Workflow Orchestrator
+P2P-000043,12,Case Closed,2025-10-01T19:46:03Z,EB-01,ERP Bot,Industrial Systems,Facilities,Türkiye,V-016,A,Direct Materials,3648.10,Standard,ERP Portal,true,0.72,Workflow Orchestrator
+P2P-000044,1,Purchase Request Created,2026-06-16T06:19:48Z,R-06,Requester,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,true,6.47,Workflow Orchestrator
+P2P-000044,2,Manager Approval,2026-06-16T16:23:45Z,A-05,Approver,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,18.37,Enterprise ERP
+P2P-000044,3,Procurement Review,2026-06-17T00:56:16Z,B-02,Buyer,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,40.95,Enterprise ERP
+P2P-000044,4,Purchase Order Created,2026-06-17T06:56:13Z,B-04,Buyer,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,23.53,Enterprise ERP
+P2P-000044,5,Purchase Order Sent,2026-06-17T07:18:41Z,EB-02,ERP Bot,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,true,2.14,Workflow Orchestrator
+P2P-000044,6,Supplier Confirmation,2026-06-17T23:50:13Z,V-046,Supplier,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,15.63,Supplier Network
+P2P-000044,7,Delivery Delayed,2026-06-22T06:57:11Z,V-046,Supplier,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,27.56,Supplier Network
+P2P-000044,8,Goods Received,2026-06-24T03:44:52Z,RC-06,Receiving Clerk,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,22.55,Enterprise ERP
+P2P-000044,9,Invoice Received,2026-06-25T12:31:02Z,AP-05,Accounts Payable,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,9.13,Enterprise ERP
+P2P-000044,10,Invoice Duplicate Check,2026-06-25T12:44:25Z,AB-02,AP Bot,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,true,1.14,Workflow Orchestrator
+P2P-000044,11,Invoice Matched,2026-06-25T20:22:57Z,AP-10,Accounts Payable,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,35.17,Enterprise ERP
+P2P-000044,12,Payment Authorized,2026-06-26T06:37:04Z,TA-03,Treasury Analyst,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,false,19.45,Enterprise ERP
+P2P-000044,13,Payment Executed,2026-06-27T13:19:15Z,PB-02,Payment Bot,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,true,1.30,Workflow Orchestrator
+P2P-000044,14,Case Closed,2026-06-27T14:53:31Z,EB-01,ERP Bot,Industrial Systems,Operations,Netherlands,V-046,B,Facilities,4803.47,Standard,ERP Portal,true,0.77,Workflow Orchestrator
+P2P-000045,1,Purchase Request Created,2025-04-30T08:56:46Z,R-11,Requester,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,true,7.91,Workflow Orchestrator
+P2P-000045,2,Manager Approval,2025-04-30T16:53:49Z,A-01,Approver,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,false,16.11,Enterprise ERP
+P2P-000045,3,Procurement Review,2025-05-01T02:11:39Z,B-07,Buyer,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,false,34.94,Enterprise ERP
+P2P-000045,4,Purchase Order Created,2025-05-01T08:17:59Z,B-09,Buyer,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,false,24.08,Enterprise ERP
+P2P-000045,5,Purchase Order Sent,2025-05-01T08:24:42Z,EB-02,ERP Bot,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,true,1.64,Workflow Orchestrator
+P2P-000045,6,Supplier Confirmation,2025-05-01T16:26:34Z,V-067,Supplier,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,false,7.69,Supplier Network
+P2P-000045,7,Goods Received,2025-05-04T18:22:00Z,RC-07,Receiving Clerk,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,false,20.83,Enterprise ERP
+P2P-000045,8,Invoice Received,2025-05-05T14:05:50Z,AP-02,Accounts Payable,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,false,13.17,Enterprise ERP
+P2P-000045,9,Invoice Duplicate Check,2025-05-05T14:14:27Z,AB-02,AP Bot,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,true,0.62,Workflow Orchestrator
+P2P-000045,10,Invoice Matched,2025-05-05T22:57:08Z,AP-01,Accounts Payable,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,false,39.71,Enterprise ERP
+P2P-000045,11,Payment Authorized,2025-05-06T10:30:36Z,TA-02,Treasury Analyst,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,false,10.42,Enterprise ERP
+P2P-000045,12,Payment Executed,2025-05-06T19:19:33Z,PB-01,Payment Bot,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,true,1.52,Workflow Orchestrator
+P2P-000045,13,Case Closed,2025-05-06T20:35:23Z,EB-02,ERP Bot,Consumer Products,Engineering,Türkiye,V-067,C,Facilities,5643.86,Urgent,ERP Portal,true,1.45,Workflow Orchestrator
+P2P-000046,1,Purchase Request Created,2025-01-31T06:37:13Z,R-17,Requester,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,true,8.71,Workflow Orchestrator
+P2P-000046,2,Manager Approval,2025-01-31T15:46:23Z,A-05,Approver,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,13.86,Enterprise ERP
+P2P-000046,3,Request Reworked,2025-02-01T09:47:35Z,R-08,Requester,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,23.70,Enterprise ERP
+P2P-000046,4,Manager Approval,2025-02-02T12:23:38Z,A-07,Approver,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,8.09,Enterprise ERP
+P2P-000046,5,Procurement Review,2025-02-02T22:27:39Z,B-07,Buyer,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,36.38,Enterprise ERP
+P2P-000046,6,Purchase Order Created,2025-02-03T01:55:53Z,B-10,Buyer,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,20.33,Enterprise ERP
+P2P-000046,7,Purchase Order Sent,2025-02-03T02:11:29Z,EB-02,ERP Bot,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,true,1.62,Workflow Orchestrator
+P2P-000046,8,Supplier Confirmation,2025-02-03T05:49:54Z,V-034,Supplier,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,15.51,Supplier Network
+P2P-000046,9,Goods Received,2025-02-05T03:53:37Z,RC-08,Receiving Clerk,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,17.50,Enterprise ERP
+P2P-000046,10,Invoice Received,2025-02-06T09:47:22Z,AP-07,Accounts Payable,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,7.45,Enterprise ERP
+P2P-000046,11,Invoice Duplicate Check,2025-02-06T09:53:41Z,AB-01,AP Bot,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,true,0.72,Workflow Orchestrator
+P2P-000046,12,Invoice Matched,2025-02-06T15:52:00Z,AP-05,Accounts Payable,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,25.25,Enterprise ERP
+P2P-000046,13,Payment Authorized,2025-02-06T22:32:40Z,TA-04,Treasury Analyst,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,false,13.84,Enterprise ERP
+P2P-000046,14,Payment Executed,2025-02-07T18:18:08Z,PB-01,Payment Bot,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,true,1.74,Workflow Orchestrator
+P2P-000046,15,Case Closed,2025-02-07T19:15:15Z,EB-02,ERP Bot,Corporate Services,Facilities,Poland,V-034,B,IT Equipment,24478.92,Urgent,ERP Portal,true,0.94,Workflow Orchestrator
+P2P-000047,1,Purchase Request Created,2025-03-03T20:27:38Z,R-01,Requester,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,true,4.83,Workflow Orchestrator
+P2P-000047,2,Manager Approval,2025-03-04T22:22:05Z,A-07,Approver,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,13.46,Enterprise ERP
+P2P-000047,3,Procurement Review,2025-03-05T07:01:39Z,B-06,Buyer,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,30.00,Enterprise ERP
+P2P-000047,4,Purchase Order Created,2025-03-05T16:13:41Z,B-02,Buyer,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,26.57,Enterprise ERP
+P2P-000047,5,Purchase Order Sent,2025-03-05T16:44:45Z,EB-01,ERP Bot,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,true,1.20,Workflow Orchestrator
+P2P-000047,6,Supplier Confirmation,2025-03-06T00:38:40Z,V-067,Supplier,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,11.27,Supplier Network
+P2P-000047,7,Invoice Received,2025-03-07T10:56:49Z,AP-06,Accounts Payable,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,9.70,Enterprise ERP
+P2P-000047,8,Invoice Duplicate Check,2025-03-07T11:25:21Z,AB-01,AP Bot,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,true,1.60,Workflow Orchestrator
+P2P-000047,9,Three-Way Match Failed,2025-03-07T17:56:23Z,AP-02,Accounts Payable,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,33.39,Enterprise ERP
+P2P-000047,10,Goods Received,2025-03-12T03:13:24Z,RC-05,Receiving Clerk,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,30.17,Enterprise ERP
+P2P-000047,11,Invoice Matched,2025-03-12T14:25:16Z,AP-09,Accounts Payable,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,28.28,Enterprise ERP
+P2P-000047,12,Payment Authorized,2025-03-14T08:06:57Z,TA-05,Treasury Analyst,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,false,14.52,Enterprise ERP
+P2P-000047,13,Payment Executed,2025-03-15T10:20:21Z,PB-01,Payment Bot,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,true,2.67,Workflow Orchestrator
+P2P-000047,14,Case Closed,2025-03-15T12:07:57Z,EB-01,ERP Bot,Industrial Systems,Operations,Netherlands,V-067,C,Professional Services,94890.30,Standard,Catalog,true,1.21,Workflow Orchestrator
+P2P-000048,1,Purchase Request Created,2025-02-08T06:07:28Z,R-01,Requester,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,true,9.41,Workflow Orchestrator
+P2P-000048,2,Procurement Review,2025-02-08T12:49:19Z,B-08,Buyer,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,false,23.73,Enterprise ERP
+P2P-000048,3,Purchase Order Created,2025-02-08T18:42:23Z,B-05,Buyer,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,false,19.52,Enterprise ERP
+P2P-000048,4,Purchase Order Sent,2025-02-08T19:10:13Z,EB-01,ERP Bot,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,true,3.56,Workflow Orchestrator
+P2P-000048,5,Supplier Confirmation,2025-02-09T09:11:50Z,V-057,Supplier,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,false,10.12,Supplier Network
+P2P-000048,6,Goods Received,2025-02-12T21:58:22Z,RC-04,Receiving Clerk,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,false,30.20,Enterprise ERP
+P2P-000048,7,Invoice Received,2025-02-14T04:24:37Z,AP-10,Accounts Payable,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,false,9.96,Enterprise ERP
+P2P-000048,8,Invoice Duplicate Check,2025-02-14T04:47:28Z,AB-02,AP Bot,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,true,0.70,Workflow Orchestrator
+P2P-000048,9,Invoice Matched,2025-02-14T12:34:44Z,AP-07,Accounts Payable,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,false,31.44,Enterprise ERP
+P2P-000048,10,Payment Authorized,2025-02-15T04:47:01Z,TA-04,Treasury Analyst,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,false,22.55,Enterprise ERP
+P2P-000048,11,Payment Executed,2025-02-15T22:33:13Z,PB-02,Payment Bot,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,true,1.83,Workflow Orchestrator
+P2P-000048,12,Case Closed,2025-02-16T00:05:52Z,EB-02,ERP Bot,Consumer Products,Engineering,Türkiye,V-057,B,IT Equipment,22148.35,Standard,Email Intake,true,0.94,Workflow Orchestrator
+P2P-000049,1,Purchase Request Created,2025-03-29T23:15:20Z,R-07,Requester,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,true,5.83,Workflow Orchestrator
+P2P-000049,2,Manager Approval,2025-03-31T08:21:36Z,A-06,Approver,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,false,14.74,Enterprise ERP
+P2P-000049,3,Procurement Review,2025-04-01T01:13:33Z,B-09,Buyer,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,false,28.30,Enterprise ERP
+P2P-000049,4,Purchase Order Created,2025-04-01T08:02:38Z,B-10,Buyer,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,false,18.33,Enterprise ERP
+P2P-000049,5,Purchase Order Sent,2025-04-01T08:29:46Z,EB-01,ERP Bot,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,true,2.07,Workflow Orchestrator
+P2P-000049,6,Supplier Confirmation,2025-04-01T20:00:08Z,V-025,Supplier,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,false,10.67,Supplier Network
+P2P-000049,7,Goods Received,2025-04-04T15:27:21Z,RC-06,Receiving Clerk,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,false,26.55,Enterprise ERP
+P2P-000049,8,Invoice Received,2025-04-06T11:08:58Z,AP-06,Accounts Payable,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,false,17.52,Enterprise ERP
+P2P-000049,9,Invoice Duplicate Check,2025-04-06T11:23:37Z,AB-02,AP Bot,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,true,1.08,Workflow Orchestrator
+P2P-000049,10,Invoice Matched,2025-04-06T16:08:05Z,AP-10,Accounts Payable,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,false,53.85,Enterprise ERP
+P2P-000049,11,Payment Authorized,2025-04-06T23:17:18Z,TA-06,Treasury Analyst,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,false,34.28,Enterprise ERP
+P2P-000049,12,Payment Executed,2025-04-09T00:48:54Z,PB-02,Payment Bot,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,true,2.19,Workflow Orchestrator
+P2P-000049,13,Case Closed,2025-04-09T03:08:17Z,EB-01,ERP Bot,Industrial Systems,Operations,Poland,V-025,B,Direct Materials,103387.46,Strategic,Catalog,true,1.18,Workflow Orchestrator
+P2P-000050,1,Purchase Request Created,2026-03-07T17:24:33Z,R-06,Requester,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,true,11.85,Workflow Orchestrator
+P2P-000050,2,Manager Approval,2026-03-08T12:48:00Z,A-08,Approver,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,false,15.09,Enterprise ERP
+P2P-000050,3,Procurement Review,2026-03-08T23:49:29Z,B-04,Buyer,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,false,31.10,Enterprise ERP
+P2P-000050,4,Purchase Order Created,2026-03-09T03:53:53Z,B-08,Buyer,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,false,19.30,Enterprise ERP
+P2P-000050,5,Purchase Order Sent,2026-03-09T04:07:28Z,EB-01,ERP Bot,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,true,1.78,Workflow Orchestrator
+P2P-000050,6,Supplier Confirmation,2026-03-09T20:36:07Z,V-075,Supplier,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,false,12.47,Supplier Network
+P2P-000050,7,Goods Received,2026-03-11T17:42:13Z,RC-08,Receiving Clerk,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,false,17.94,Enterprise ERP
+P2P-000050,8,Invoice Received,2026-03-12T21:55:56Z,AP-06,Accounts Payable,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,false,14.98,Enterprise ERP
+P2P-000050,9,Invoice Duplicate Check,2026-03-12T22:15:05Z,AB-02,AP Bot,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,true,1.26,Workflow Orchestrator
+P2P-000050,10,Invoice Matched,2026-03-13T03:59:12Z,AP-01,Accounts Payable,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,false,41.19,Enterprise ERP
+P2P-000050,11,Payment Authorized,2026-03-13T17:14:12Z,TA-01,Treasury Analyst,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,false,13.09,Enterprise ERP
+P2P-000050,12,Payment Executed,2026-03-14T14:24:21Z,PB-02,Payment Bot,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,true,2.72,Workflow Orchestrator
+P2P-000050,13,Case Closed,2026-03-14T15:56:22Z,EB-01,ERP Bot,Corporate Services,Facilities,Türkiye,V-075,C,Facilities,9097.00,Standard,Email Intake,true,0.47,Workflow Orchestrator
+P2P-000051,1,Purchase Request Created,2026-05-15T02:15:24Z,R-02,Requester,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,true,4.91,Workflow Orchestrator
+P2P-000051,2,Manager Approval,2026-05-15T09:15:29Z,A-02,Approver,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,false,13.68,Enterprise ERP
+P2P-000051,3,Procurement Review,2026-05-16T03:01:02Z,B-06,Buyer,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,false,52.18,Enterprise ERP
+P2P-000051,4,Purchase Order Created,2026-05-16T05:44:30Z,B-09,Buyer,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,false,23.31,Enterprise ERP
+P2P-000051,5,Purchase Order Sent,2026-05-16T06:06:54Z,EB-01,ERP Bot,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,true,1.86,Workflow Orchestrator
+P2P-000051,6,Supplier Confirmation,2026-05-16T12:51:30Z,V-044,Supplier,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,false,13.79,Supplier Network
+P2P-000051,7,Goods Received,2026-05-22T21:00:21Z,RC-08,Receiving Clerk,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,false,13.24,Enterprise ERP
+P2P-000051,8,Invoice Received,2026-05-25T23:34:58Z,AP-10,Accounts Payable,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,false,9.33,Enterprise ERP
+P2P-000051,9,Invoice Duplicate Check,2026-05-25T23:53:47Z,AB-01,AP Bot,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,true,0.98,Workflow Orchestrator
+P2P-000051,10,Invoice Matched,2026-05-26T07:12:30Z,AP-09,Accounts Payable,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,false,40.22,Enterprise ERP
+P2P-000051,11,Payment Authorized,2026-05-27T00:26:43Z,TA-01,Treasury Analyst,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,false,17.73,Enterprise ERP
+P2P-000051,12,Payment Executed,2026-05-28T05:39:59Z,PB-01,Payment Bot,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,true,3.83,Workflow Orchestrator
+P2P-000051,13,Case Closed,2026-05-28T09:00:51Z,EB-02,ERP Bot,Industrial Systems,Operations,Poland,V-044,B,Direct Materials,28301.19,Standard,Email Intake,true,0.94,Workflow Orchestrator
+P2P-000052,1,Purchase Request Created,2026-04-05T22:22:16Z,R-12,Requester,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,true,6.65,Workflow Orchestrator
+P2P-000052,2,Manager Approval,2026-04-06T10:17:25Z,A-01,Approver,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,13.31,Enterprise ERP
+P2P-000052,3,Request Reworked,2026-04-06T20:15:36Z,R-14,Requester,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,22.30,Enterprise ERP
+P2P-000052,4,Manager Approval,2026-04-07T04:43:20Z,A-12,Approver,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,16.43,Enterprise ERP
+P2P-000052,5,Procurement Review,2026-04-07T12:42:27Z,B-07,Buyer,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,43.43,Enterprise ERP
+P2P-000052,6,Purchase Order Created,2026-04-07T18:28:51Z,B-07,Buyer,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,16.77,Enterprise ERP
+P2P-000052,7,Purchase Order Sent,2026-04-07T18:52:47Z,EB-02,ERP Bot,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,true,1.78,Workflow Orchestrator
+P2P-000052,8,Supplier Confirmation,2026-04-08T06:57:35Z,V-079,Supplier,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,11.40,Supplier Network
+P2P-000052,9,Goods Received,2026-04-14T09:37:26Z,RC-04,Receiving Clerk,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,21.65,Enterprise ERP
+P2P-000052,10,Invoice Received,2026-04-15T05:11:33Z,AP-10,Accounts Payable,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,9.65,Enterprise ERP
+P2P-000052,11,Invoice Duplicate Check,2026-04-15T05:46:59Z,AB-01,AP Bot,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,true,0.73,Workflow Orchestrator
+P2P-000052,12,Invoice Matched,2026-04-15T21:04:34Z,AP-07,Accounts Payable,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,33.52,Enterprise ERP
+P2P-000052,13,Payment Authorized,2026-04-16T06:41:34Z,TA-05,Treasury Analyst,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,false,24.92,Enterprise ERP
+P2P-000052,14,Payment Executed,2026-04-16T22:34:16Z,PB-01,Payment Bot,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,true,1.49,Workflow Orchestrator
+P2P-000052,15,Case Closed,2026-04-17T00:11:27Z,EB-01,ERP Bot,Industrial Systems,Information Technology,Germany,V-079,C,MRO,26350.07,Standard,ERP Portal,true,0.76,Workflow Orchestrator
+P2P-000053,1,Purchase Request Created,2025-07-17T16:27:18Z,R-03,Requester,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,true,7.18,Workflow Orchestrator
+P2P-000053,2,Procurement Review,2025-07-18T10:17:45Z,B-04,Buyer,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,false,26.84,Enterprise ERP
+P2P-000053,3,Purchase Order Created,2025-07-18T14:23:46Z,B-02,Buyer,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,false,26.32,Enterprise ERP
+P2P-000053,4,Purchase Order Sent,2025-07-18T14:32:04Z,EB-01,ERP Bot,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,true,2.23,Workflow Orchestrator
+P2P-000053,5,Supplier Confirmation,2025-07-18T19:01:14Z,V-061,Supplier,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,false,13.26,Supplier Network
+P2P-000053,6,Goods Received,2025-07-19T20:58:35Z,RC-02,Receiving Clerk,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,false,16.66,Enterprise ERP
+P2P-000053,7,Invoice Received,2025-07-20T12:48:27Z,AP-08,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,false,10.13,Enterprise ERP
+P2P-000053,8,Invoice Duplicate Check,2025-07-20T12:55:40Z,AB-02,AP Bot,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,true,1.30,Workflow Orchestrator
+P2P-000053,9,Invoice Matched,2025-07-20T17:10:40Z,AP-09,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,false,38.91,Enterprise ERP
+P2P-000053,10,Payment Authorized,2025-07-21T06:25:14Z,TA-06,Treasury Analyst,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,false,13.88,Enterprise ERP
+P2P-000053,11,Payment Executed,2025-07-21T22:16:21Z,PB-02,Payment Bot,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,true,1.45,Workflow Orchestrator
+P2P-000053,12,Case Closed,2025-07-21T23:06:31Z,EB-01,ERP Bot,Industrial Systems,Engineering,Türkiye,V-061,C,Professional Services,44184.97,Urgent,ERP Portal,true,1.02,Workflow Orchestrator
+P2P-000054,1,Purchase Request Created,2025-08-22T14:46:54Z,R-04,Requester,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,true,9.12,Workflow Orchestrator
+P2P-000054,2,Procurement Review,2025-08-22T23:56:18Z,B-06,Buyer,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,false,35.08,Enterprise ERP
+P2P-000054,3,Purchase Order Created,2025-08-23T06:56:22Z,B-01,Buyer,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,false,35.31,Enterprise ERP
+P2P-000054,4,Purchase Order Sent,2025-08-23T07:25:26Z,EB-01,ERP Bot,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,true,1.49,Workflow Orchestrator
+P2P-000054,5,Supplier Confirmation,2025-08-23T11:43:02Z,V-011,Supplier,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,false,16.92,Supplier Network
+P2P-000054,6,Goods Received,2025-08-26T09:29:04Z,RC-08,Receiving Clerk,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,false,23.86,Enterprise ERP
+P2P-000054,7,Invoice Received,2025-08-27T16:25:40Z,AP-05,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,false,17.02,Enterprise ERP
+P2P-000054,8,Invoice Duplicate Check,2025-08-27T16:43:55Z,AB-01,AP Bot,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,true,0.80,Workflow Orchestrator
+P2P-000054,9,Invoice Matched,2025-08-28T08:26:46Z,AP-09,Accounts Payable,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,false,31.12,Enterprise ERP
+P2P-000054,10,Payment Authorized,2025-08-28T17:35:57Z,TA-02,Treasury Analyst,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,false,14.62,Enterprise ERP
+P2P-000054,11,Payment Executed,2025-08-29T07:45:39Z,PB-01,Payment Bot,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,true,1.97,Workflow Orchestrator
+P2P-000054,12,Case Closed,2025-08-29T10:07:16Z,EB-01,ERP Bot,Industrial Systems,Engineering,Türkiye,V-011,A,Direct Materials,36743.00,Standard,ERP Portal,true,1.26,Workflow Orchestrator

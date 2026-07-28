@@ -1,0 +1,33 @@
+table SimulationScenarios
+	column scenario
+		dataType: string
+		summarizeBy: none
+		sourceColumn: scenario
+	column mean_cycle_hours
+		dataType: double
+		formatString: 0.0
+		summarizeBy: average
+		sourceColumn: mean_cycle_hours
+	column sla_adherence
+		dataType: double
+		formatString: 0.0%
+		summarizeBy: average
+		sourceColumn: sla_adherence
+	column estimated_annual_value_usd
+		dataType: double
+		formatString: "$"#,0
+		summarizeBy: sum
+		sourceColumn: estimated_annual_value_usd
+	column first_year_roi
+		dataType: double
+		formatString: 0.0x
+		summarizeBy: average
+		sourceColumn: first_year_roi
+	partition SimulationScenarios = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("../reports/tables/simulation_scenarios.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+				in
+				    Promoted

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL"
+  xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI"
+  xmlns:dc="http://www.omg.org/spec/DD/20100524/DC"
+  xmlns:di="http://www.omg.org/spec/DD/20100524/DI"
+  id="Definitions_P2P"
+  targetNamespace="https://github.com/muratmiracg-dev/enterprise-process-mining">
+  <bpmn:process id="Process_PurchaseToPay" name="Purchase-to-Pay Reference Process" isExecutable="false">
+    <bpmn:documentation>Governed target process for conformance checking. Exceptions return to controlled human review.</bpmn:documentation>
+    <bpmn:laneSet id="LaneSet_P2P">
+      <bpmn:lane id="Lane_Requester" name="Requester and Approver">
+        <bpmn:flowNodeRef>StartEvent_Request</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Request</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Approval</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Procurement" name="Procurement">
+        <bpmn:flowNodeRef>Task_Review</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_POCreate</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_POSend</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Supplier" name="Supplier and Receiving">
+        <bpmn:flowNodeRef>Task_Confirmation</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Goods</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Invoice</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_Finance" name="Accounts Payable and Treasury">
+        <bpmn:flowNodeRef>Task_Duplicate</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Gateway_Duplicate</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Exception</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Match</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Authorize</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Pay</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Task_Close</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>EndEvent_Closed</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+
+    <bpmn:startEvent id="StartEvent_Request" name="Purchase need identified"/>
+    <bpmn:task id="Task_Request" name="Purchase Request Created"/>
+    <bpmn:userTask id="Task_Approval" name="Manager Approval"/>
+    <bpmn:userTask id="Task_Review" name="Procurement Review"/>
+    <bpmn:userTask id="Task_POCreate" name="Purchase Order Created"/>
+    <bpmn:serviceTask id="Task_POSend" name="Purchase Order Sent"/>
+    <bpmn:receiveTask id="Task_Confirmation" name="Supplier Confirmation"/>
+    <bpmn:userTask id="Task_Goods" name="Goods Received"/>
+    <bpmn:receiveTask id="Task_Invoice" name="Invoice Received"/>
+    <bpmn:serviceTask id="Task_Duplicate" name="Invoice Duplicate Check"/>
+    <bpmn:exclusiveGateway id="Gateway_Duplicate" name="Duplicate found?" default="Flow_NoDuplicate"/>
+    <bpmn:userTask id="Task_Exception" name="Controlled Exception Review"/>
+    <bpmn:userTask id="Task_Match" name="Invoice Matched"/>
+    <bpmn:userTask id="Task_Authorize" name="Payment Authorized"/>
+    <bpmn:serviceTask id="Task_Pay" name="Payment Executed"/>
+    <bpmn:serviceTask id="Task_Close" name="Case Closed"/>
+    <bpmn:endEvent id="EndEvent_Closed" name="Case completed"/>
+
+    <bpmn:sequenceFlow id="Flow_01" sourceRef="StartEvent_Request" targetRef="Task_Request"/>
+    <bpmn:sequenceFlow id="Flow_02" sourceRef="Task_Request" targetRef="Task_Approval"/>
+    <bpmn:sequenceFlow id="Flow_03" sourceRef="Task_Approval" targetRef="Task_Review"/>
+    <bpmn:sequenceFlow id="Flow_04" sourceRef="Task_Review" targetRef="Task_POCreate"/>
+    <bpmn:sequenceFlow id="Flow_05" sourceRef="Task_POCreate" targetRef="Task_POSend"/>
+    <bpmn:sequenceFlow id="Flow_06" sourceRef="Task_POSend" targetRef="Task_Confirmation"/>
+    <bpmn:sequenceFlow id="Flow_07" sourceRef="Task_Confirmation" targetRef="Task_Goods"/>
+    <bpmn:sequenceFlow id="Flow_08" sourceRef="Task_Goods" targetRef="Task_Invoice"/>
+    <bpmn:sequenceFlow id="Flow_09" sourceRef="Task_Invoice" targetRef="Task_Duplicate"/>
+    <bpmn:sequenceFlow id="Flow_10" sourceRef="Task_Duplicate" targetRef="Gateway_Duplicate"/>
+    <bpmn:sequenceFlow id="Flow_Duplicate" name="Yes" sourceRef="Gateway_Duplicate" targetRef="Task_Exception">
+      <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">duplicate = true</bpmn:conditionExpression>
+    </bpmn:sequenceFlow>
+    <bpmn:sequenceFlow id="Flow_Retry" sourceRef="Task_Exception" targetRef="Task_Invoice"/>
+    <bpmn:sequenceFlow id="Flow_NoDuplicate" name="No" sourceRef="Gateway_Duplicate" targetRef="Task_Match"/>
+    <bpmn:sequenceFlow id="Flow_11" sourceRef="Task_Match" targetRef="Task_Authorize"/>
+    <bpmn:sequenceFlow id="Flow_12" sourceRef="Task_Authorize" targetRef="Task_Pay"/>
+    <bpmn:sequenceFlow id="Flow_13" sourceRef="Task_Pay" targetRef="Task_Close"/>
+    <bpmn:sequenceFlow id="Flow_14" sourceRef="Task_Close" targetRef="EndEvent_Closed"/>
+  </bpmn:process>
+
+  <bpmndi:BPMNDiagram id="BPMNDiagram_P2P">
+    <bpmndi:BPMNPlane id="BPMNPlane_P2P" bpmnElement="Process_PurchaseToPay">
+      <bpmndi:BPMNShape id="Shape_Start" bpmnElement="StartEvent_Request"><dc:Bounds x="70" y="142" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Request" bpmnElement="Task_Request"><dc:Bounds x="140" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Approval" bpmnElement="Task_Approval"><dc:Bounds x="300" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Review" bpmnElement="Task_Review"><dc:Bounds x="460" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_POCreate" bpmnElement="Task_POCreate"><dc:Bounds x="620" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_POSend" bpmnElement="Task_POSend"><dc:Bounds x="780" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Confirm" bpmnElement="Task_Confirmation"><dc:Bounds x="940" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Goods" bpmnElement="Task_Goods"><dc:Bounds x="1100" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Invoice" bpmnElement="Task_Invoice"><dc:Bounds x="1260" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Duplicate" bpmnElement="Task_Duplicate"><dc:Bounds x="1420" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Gateway" bpmnElement="Gateway_Duplicate" isMarkerVisible="true"><dc:Bounds x="1580" y="135" width="50" height="50"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Exception" bpmnElement="Task_Exception"><dc:Bounds x="1420" y="250" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Match" bpmnElement="Task_Match"><dc:Bounds x="1670" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Authorize" bpmnElement="Task_Authorize"><dc:Bounds x="1830" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Pay" bpmnElement="Task_Pay"><dc:Bounds x="1990" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_Close" bpmnElement="Task_Close"><dc:Bounds x="2150" y="120" width="120" height="80"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Shape_End" bpmnElement="EndEvent_Closed"><dc:Bounds x="2310" y="142" width="36" height="36"/></bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Edge_01" bpmnElement="Flow_01"><di:waypoint x="106" y="160"/><di:waypoint x="140" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_02" bpmnElement="Flow_02"><di:waypoint x="260" y="160"/><di:waypoint x="300" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_03" bpmnElement="Flow_03"><di:waypoint x="420" y="160"/><di:waypoint x="460" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_04" bpmnElement="Flow_04"><di:waypoint x="580" y="160"/><di:waypoint x="620" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_05" bpmnElement="Flow_05"><di:waypoint x="740" y="160"/><di:waypoint x="780" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_06" bpmnElement="Flow_06"><di:waypoint x="900" y="160"/><di:waypoint x="940" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_07" bpmnElement="Flow_07"><di:waypoint x="1060" y="160"/><di:waypoint x="1100" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_08" bpmnElement="Flow_08"><di:waypoint x="1220" y="160"/><di:waypoint x="1260" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_09" bpmnElement="Flow_09"><di:waypoint x="1380" y="160"/><di:waypoint x="1420" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_10" bpmnElement="Flow_10"><di:waypoint x="1540" y="160"/><di:waypoint x="1580" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Duplicate" bpmnElement="Flow_Duplicate"><di:waypoint x="1605" y="185"/><di:waypoint x="1605" y="290"/><di:waypoint x="1540" y="290"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_Retry" bpmnElement="Flow_Retry"><di:waypoint x="1420" y="290"/><di:waypoint x="1320" y="290"/><di:waypoint x="1320" y="200"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_NoDuplicate" bpmnElement="Flow_NoDuplicate"><di:waypoint x="1630" y="160"/><di:waypoint x="1670" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_11" bpmnElement="Flow_11"><di:waypoint x="1790" y="160"/><di:waypoint x="1830" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_12" bpmnElement="Flow_12"><di:waypoint x="1950" y="160"/><di:waypoint x="1990" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_13" bpmnElement="Flow_13"><di:waypoint x="2110" y="160"/><di:waypoint x="2150" y="160"/></bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Edge_14" bpmnElement="Flow_14"><di:waypoint x="2270" y="160"/><di:waypoint x="2310" y="160"/></bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

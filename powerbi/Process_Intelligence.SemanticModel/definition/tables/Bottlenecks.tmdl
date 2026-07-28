@@ -1,0 +1,26 @@
+table Bottlenecks
+	column activity
+		dataType: string
+		summarizeBy: none
+		sourceColumn: activity
+	column total_wait_hours
+		dataType: double
+		summarizeBy: sum
+		sourceColumn: total_wait_hours
+	column p90_wait_hours
+		dataType: double
+		summarizeBy: average
+		sourceColumn: p90_wait_hours
+	column bottleneck_score
+		dataType: double
+		formatString: 0.000
+		summarizeBy: average
+		sourceColumn: bottleneck_score
+	partition Bottlenecks = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("../reports/tables/bottlenecks.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+				in
+				    Promoted

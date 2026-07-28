@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="600" viewBox="0 0 1800 600">
+  <style>.h{font:700 30px 'Segoe UI',Arial;fill:#111827}.t{font:700 15px 'Segoe UI',Arial;fill:#111827}.s{font:400 12px 'Segoe UI',Arial;fill:#64748B}.w{font:700 15px 'Segoe UI',Arial;fill:#fff}</style>
+  <rect width="1800" height="600" fill="#F4F7FB"/>
+  <text x="60" y="62" class="h">Purchase-to-Pay reference path and exception loops</text>
+  <text x="60" y="90" class="s">13 governed activities · conformance target · BPMN 2.0.2 source in /bpmn</text>
+  <g>
+    <rect x="60" y="154" width="140" height="74" rx="12" fill="#EAF1FF"/><text x="78" y="186" class="t">Purchase Request</text><text x="78" y="207" class="s">Created</text>
+    <rect x="232" y="154" width="140" height="74" rx="12" fill="#EAF1FF"/><text x="250" y="186" class="t">Manager</text><text x="250" y="207" class="s">Approval</text>
+    <rect x="404" y="154" width="140" height="74" rx="12" fill="#EAF1FF"/><text x="422" y="186" class="t">Procurement</text><text x="422" y="207" class="s">Review</text>
+    <rect x="576" y="154" width="140" height="74" rx="12" fill="#EAF1FF"/><text x="594" y="186" class="t">Purchase Order</text><text x="594" y="207" class="s">Created</text>
+    <rect x="748" y="154" width="140" height="74" rx="12" fill="#EEF4FF"/><text x="766" y="186" class="t">PO Sent</text><text x="766" y="207" class="s">Automated</text>
+    <rect x="920" y="154" width="140" height="74" rx="12" fill="#FFF7E6"/><text x="938" y="186" class="t">Supplier</text><text x="938" y="207" class="s">Confirmation</text>
+    <rect x="1092" y="154" width="140" height="74" rx="12" fill="#FFF7E6"/><text x="1110" y="186" class="t">Goods</text><text x="1110" y="207" class="s">Received</text>
+    <rect x="1264" y="154" width="140" height="74" rx="12" fill="#F4EEFF"/><text x="1282" y="186" class="t">Invoice</text><text x="1282" y="207" class="s">Received</text>
+    <rect x="1436" y="154" width="140" height="74" rx="12" fill="#F4EEFF"/><text x="1454" y="186" class="t">Duplicate</text><text x="1454" y="207" class="s">Check</text>
+    <rect x="1608" y="154" width="140" height="74" rx="12" fill="#F4EEFF"/><text x="1626" y="186" class="t">Invoice</text><text x="1626" y="207" class="s">Matched</text>
+    <path d="M200 191H226M372 191H398M544 191H570M716 191H742M888 191H914M1060 191H1086M1232 191H1258M1404 191H1430M1576 191H1602" stroke="#165DFF" stroke-width="4"/>
+  </g>
+  <g>
+    <rect x="420" y="322" width="220" height="74" rx="12" fill="#FFF1F1"/><text x="446" y="354" class="t">Approval rework loop</text><text x="446" y="376" class="s">Request Reworked → Approval</text>
+    <path d="M302 228V359H414" fill="none" stroke="#DC2626" stroke-width="3" stroke-dasharray="7 6"/>
+    <rect x="788" y="322" width="220" height="74" rx="12" fill="#FFF1F1"/><text x="814" y="354" class="t">Delivery exception</text><text x="814" y="376" class="s">Delivery Delayed</text>
+    <path d="M990 228V312" stroke="#DC2626" stroke-width="3" stroke-dasharray="7 6"/>
+    <rect x="1156" y="322" width="250" height="74" rx="12" fill="#FFF1F1"/><text x="1182" y="354" class="t">Invoice correction loop</text><text x="1182" y="376" class="s">Blocked / duplicate / match failure</text>
+    <path d="M1506 228V282H1281V312" fill="none" stroke="#DC2626" stroke-width="3" stroke-dasharray="7 6"/>
+  </g>
+  <g>
+    <rect x="920" y="466" width="210" height="68" rx="12" fill="#13213C"/><text x="944" y="496" class="w">Payment Authorized</text><text x="944" y="518" class="s" fill="#B8C6E4">Human control</text>
+    <rect x="1162" y="466" width="210" height="68" rx="12" fill="#13213C"/><text x="1186" y="496" class="w">Payment Executed</text><text x="1186" y="518" class="s" fill="#B8C6E4">Automated</text>
+    <rect x="1404" y="466" width="210" height="68" rx="12" fill="#13213C"/><text x="1428" y="496" class="w">Case Closed</text><text x="1428" y="518" class="s" fill="#B8C6E4">Audit complete</text>
+    <path d="M1678 228V438H1025V460M1130 500H1156M1372 500H1398" fill="none" stroke="#165DFF" stroke-width="4"/>
+  </g>
+</svg>

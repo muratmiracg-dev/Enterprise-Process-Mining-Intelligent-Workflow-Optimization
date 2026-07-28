@@ -1,0 +1,26 @@
+table RiskPredictions
+	column case_id
+		dataType: string
+		summarizeBy: none
+		sourceColumn: case_id
+	column risk_score
+		dataType: double
+		formatString: 0.0%
+		summarizeBy: average
+		sourceColumn: risk_score
+	column risk_band
+		dataType: string
+		summarizeBy: none
+		sourceColumn: risk_band
+	column predicted_breach
+		dataType: boolean
+		summarizeBy: none
+		sourceColumn: predicted_breach
+	partition RiskPredictions = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("../reports/tables/risk_predictions.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Promoted = Table.PromoteHeaders(Source, [PromoteAllScalars=true])
+				in
+				    Promoted

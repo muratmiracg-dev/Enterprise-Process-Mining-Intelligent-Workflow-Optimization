@@ -1,0 +1,9 @@
+fastapi>=0.115,<1
+numpy>=1.26,<3
+pandas>=2.2,<4
+pm4py>=2.7.22,<3
+prometheus-client>=0.21,<1
+psycopg[binary]>=3.2,<4
+pydantic>=2.9,<3
+scikit-learn>=1.5,<2
+uvicorn[standard]>=0.30,<1

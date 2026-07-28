@@ -1,0 +1,10 @@
+.git
+.github
+.venv
+tmp
+output
+presentation
+*.pdf
+*.pptx
+*.xlsx
+coverage.xml
