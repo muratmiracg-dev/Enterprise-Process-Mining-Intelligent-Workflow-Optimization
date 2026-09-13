@@ -58,6 +58,23 @@ def _missing(columns: Iterable[str], required: tuple[str, ...]) -> list[str]:
     return sorted(column for column in required if column not in present)
 
 
+def _normalize_boolean(series: pd.Series, field_name: str) -> pd.Series:
+    """Normalize only explicit boolean representations and reject ambiguous values."""
+
+    if pd.api.types.is_bool_dtype(series):
+        return series.astype(bool)
+    if pd.api.types.is_numeric_dtype(series):
+        numeric = pd.to_numeric(series, errors="coerce")
+        if numeric.isna().any() or not numeric.isin({0, 1}).all():
+            raise ContractError(f"{field_name} contains invalid boolean values")
+        return numeric.astype(bool)
+
+    normalized = series.astype("string").str.strip().str.lower()
+    if normalized.isna().any() or not normalized.isin({"true", "false", "1", "0"}).all():
+        raise ContractError(f"{field_name} contains invalid boolean values")
+    return normalized.isin({"true", "1"})
+
+
 def validate_event_log(events: pd.DataFrame) -> pd.DataFrame:
     """Validate and normalize an event log."""
 
@@ -86,13 +103,7 @@ def validate_event_log(events: pd.DataFrame) -> pd.DataFrame:
     if (frame["amount_usd"] < 0).any() or (frame["processing_minutes"] < 0).any():
         raise ContractError("numeric event fields cannot be negative")
 
-    if frame["automated"].dtype == object:
-        normalized = frame["automated"].astype(str).str.lower()
-        if not normalized.isin({"true", "false", "1", "0"}).all():
-            raise ContractError("automated contains invalid boolean values")
-        frame["automated"] = normalized.isin({"true", "1"})
-    else:
-        frame["automated"] = frame["automated"].astype(bool)
+    frame["automated"] = _normalize_boolean(frame["automated"], "automated")
     frame = frame.sort_values(["case_id", "timestamp", "event_index"]).reset_index(drop=True)
 
     order_check = frame.groupby("case_id", sort=False)["timestamp"].apply(
@@ -135,13 +146,7 @@ def validate_cases(cases: pd.DataFrame) -> pd.DataFrame:
         raise ContractError("case numeric fields contain invalid values")
     if (frame[list(numeric)] < 0).any().any():
         raise ContractError("case numeric fields cannot be negative")
-    if frame["sla_breached"].dtype == object:
-        normalized = frame["sla_breached"].astype(str).str.lower()
-        if not normalized.isin({"true", "false", "1", "0"}).all():
-            raise ContractError("sla_breached contains invalid boolean values")
-        frame["sla_breached"] = normalized.isin({"true", "1"})
-    else:
-        frame["sla_breached"] = frame["sla_breached"].astype(bool)
+    frame["sla_breached"] = _normalize_boolean(frame["sla_breached"], "sla_breached")
     return frame.sort_values("case_id").reset_index(drop=True)
 
 

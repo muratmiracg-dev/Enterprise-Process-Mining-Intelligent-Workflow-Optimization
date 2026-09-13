@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import numpy as np
 import pandas as pd
 import pytest
 
@@ -88,7 +89,8 @@ def _event_frame() -> pd.DataFrame:
 
 def test_validate_event_log_normalizes_types() -> None:
     result = validate_event_log(_event_frame().iloc[::-1])
-    assert str(result["timestamp"].dtype) == "datetime64[ns, UTC]"
+    assert isinstance(result["timestamp"].dtype, pd.DatetimeTZDtype)
+    assert str(result["timestamp"].dt.tz) == "UTC"
     assert result["automated"].tolist() == [False, True]
     assert result["event_index"].tolist() == [1, 2]
 
@@ -103,6 +105,8 @@ def test_validate_event_log_normalizes_types() -> None:
         (lambda frame: frame.assign(event_index="bad"), "event_index"),
         (lambda frame: frame.assign(amount_usd=-1), "cannot be negative"),
         (lambda frame: frame.assign(automated="maybe"), "boolean"),
+        (lambda frame: frame.assign(automated=2), "boolean"),
+        (lambda frame: frame.assign(automated=np.nan), "boolean"),
     ],
 )
 def test_validate_event_log_rejects_invalid_inputs(mutation, message: str) -> None:
@@ -140,6 +144,8 @@ def test_validate_cases_normalizes_types() -> None:
         (lambda frame: frame.assign(event_count="bad"), "numeric"),
         (lambda frame: frame.assign(cycle_time_hours=-1), "cannot be negative"),
         (lambda frame: frame.assign(sla_breached="maybe"), "boolean"),
+        (lambda frame: frame.assign(sla_breached=2), "boolean"),
+        (lambda frame: frame.assign(sla_breached=np.nan), "boolean"),
     ],
 )
 def test_validate_cases_rejects_invalid_inputs(mutation, message: str) -> None:

@@ -17,7 +17,7 @@ Primary key: `(case_id, event_index)`.
 | `material_category` | string | Spend category |
 | `amount_usd` | decimal | Nonnegative |
 | `priority`, `channel` | string | Workflow dimensions |
-| `automated` | boolean | Normalized from true/false/1/0 |
+| `automated` | boolean | Only explicit true/false/1/0 values are accepted |
 | `processing_minutes` | decimal | Nonnegative |
 | `source_system` | string | Synthetic lineage label |
 
@@ -33,7 +33,7 @@ Primary key: `case_id`.
 | `rework_count` | integer | Nonnegative |
 | `cycle_time_hours` | decimal | Nonnegative |
 | `sla_target_hours` | decimal | Urgent 120, Standard 240, Strategic 336 |
-| `sla_breached` | boolean | Cycle time exceeds target |
+| `sla_breached` | boolean | Cycle time exceeds target; only true/false/1/0 are accepted |
 
 ## Quality gates
 
@@ -43,4 +43,5 @@ Primary key: `case_id`.
 - valid UTC timestamps;
 - monotonic event timestamps per case;
 - nonnegative amounts and durations;
+- no null, non-binary, or ambiguous boolean values;
 - declared and observed event counts reconcile.
