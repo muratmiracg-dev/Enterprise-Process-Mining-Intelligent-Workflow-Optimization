@@ -368,9 +368,10 @@ def check_delivery_controls() -> str:
     for action in [
         "actions/checkout@v7.0.1",
         "actions/setup-python@v7.0.0",
-        "github/codeql-action/init@v3.37.1",
-        "github/codeql-action/analyze@v3.37.1",
-        "aquasecurity/trivy-action@0.36.0",
+        "github/codeql-action/init@v4",
+        "github/codeql-action/analyze@v4",
+        "github/codeql-action/upload-sarif@v4",
+        "aquasecurity/trivy-action@v0.36.0",
     ]:
         require(action in workflows, f"Missing pinned workflow action: {action}")
     dockerfile = (ROOT / "Dockerfile").read_text(encoding="utf-8")
