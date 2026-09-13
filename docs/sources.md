@@ -17,7 +17,7 @@ Accessed 2026-07-28.
 | Prometheus configuration | https://prometheus.io/docs/prometheus/latest/configuration/configuration/ | Metrics collection |
 | Grafana provisioning | https://grafana.com/docs/grafana/latest/administration/provisioning/ | Dashboard provisioning |
 | GitHub setup-python v7 | https://github.com/actions/setup-python/releases/tag/v7.0.0 | CI runtime |
-| CodeQL Action v3.37.1 | https://github.com/github/codeql-action/releases/tag/v3.37.1 | Static analysis |
+| CodeQL Action v4 | https://github.com/github/codeql-action | Static analysis and SARIF upload |
 | Trivy Action v0.36.0 | https://github.com/aquasecurity/trivy-action/releases/tag/0.36.0 | Filesystem vulnerability scan |
 
 No result in this repository is copied from a proprietary dataset or presented
