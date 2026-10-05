@@ -179,12 +179,25 @@ def simulate_capacity(
 ) -> pd.DataFrame:
     """Run replicated capacity scenarios and quantify operational value."""
 
+    integer_inputs = {
+        "replications": replications,
+        "cases_per_replication": cases_per_replication,
+        "seed": seed,
+        "annual_volume": annual_volume,
+    }
+    for name, value in integer_inputs.items():
+        if isinstance(value, bool) or not isinstance(value, int):
+            raise TypeError(f"{name} must be an integer")
     if replications < 2 or cases_per_replication < 100:
         raise ValueError("simulation requires at least 2 replications and 100 cases")
-    if arrival_rate_per_hour <= 0:
-        raise ValueError("arrival_rate_per_hour must be positive")
+    if annual_volume <= 0:
+        raise ValueError("annual_volume must be positive")
+    if not np.isfinite(arrival_rate_per_hour) or arrival_rate_per_hour <= 0:
+        raise ValueError("arrival_rate_per_hour must be finite and positive")
+    if scenarios is not None and not scenarios:
+        raise ValueError("scenarios must not be empty")
 
-    catalog = scenarios or default_scenarios()
+    catalog = scenarios if scenarios is not None else default_scenarios()
     rows: list[dict[str, float | str]] = []
     for scenario in catalog:
         outcomes = [

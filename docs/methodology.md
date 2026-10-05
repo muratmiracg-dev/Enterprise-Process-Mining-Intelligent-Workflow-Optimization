@@ -58,8 +58,11 @@ latest 20% form an untouched temporal holdout. See the model card.
 ## 7. Capacity simulation
 
 Four scenarios use the same replication seeds to reduce comparison noise.
-Results represent modeled interventions, not causal proof. See the simulation
-methodology for queue capacities, service assumptions, and value formula.
+Results represent modeled interventions, not causal proof.
+
+Simulation controls fail closed: replication count, cases, seed and annual
+volume must be integers; volume and arrival rate must be positive; arrival rate
+must be finite; and an explicitly supplied scenario catalog cannot be empty.
 
 ## 8. Reproducibility
 

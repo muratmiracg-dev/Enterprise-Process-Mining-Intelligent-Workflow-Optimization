@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import numpy as np
 import pandas as pd
 import pytest
 
@@ -96,8 +97,20 @@ def test_capacity_simulation_ranks_combined_scenario() -> None:
         {"replications": 1, "cases_per_replication": 120},
         {"replications": 2, "cases_per_replication": 99},
         {"replications": 2, "cases_per_replication": 120, "arrival_rate_per_hour": 0},
+        {"replications": 2, "cases_per_replication": 120, "arrival_rate_per_hour": np.nan},
+        {"replications": 2, "cases_per_replication": 120, "annual_volume": 0},
+        {"replications": 2, "cases_per_replication": 120, "scenarios": ()},
     ],
 )
 def test_capacity_simulation_validates_inputs(kwargs: dict[str, float]) -> None:
     with pytest.raises(ValueError):
+        simulate_capacity(**kwargs)
+
+
+@pytest.mark.parametrize(
+    "field", ["replications", "cases_per_replication", "seed", "annual_volume"]
+)
+def test_capacity_simulation_rejects_non_integer_controls(field: str) -> None:
+    kwargs = {"replications": 2, "cases_per_replication": 120, field: 2.5}
+    with pytest.raises(TypeError, match=field):
         simulate_capacity(**kwargs)
