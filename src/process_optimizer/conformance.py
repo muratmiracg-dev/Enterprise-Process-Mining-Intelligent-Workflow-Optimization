@@ -40,6 +40,10 @@ def sequence_fitness(observed: Sequence[str], ideal: Sequence[str]) -> float:
 def conformance_table(events: pd.DataFrame, ideal: Sequence[str]) -> pd.DataFrame:
     """Score every case and explain missing, unexpected, and repeated steps."""
 
+    if not ideal or any(
+        not isinstance(activity, str) or not activity.strip() for activity in ideal
+    ):
+        raise ValueError("ideal process must contain non-blank activity names")
     ideal_counts = Counter(ideal)
     rows: list[dict[str, object]] = []
     for case_id, sequence in case_sequences(events).items():
