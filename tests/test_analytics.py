@@ -79,6 +79,12 @@ def test_conformance_explains_repetition(ideal_events: pd.DataFrame) -> None:
     ]
 
 
+@pytest.mark.parametrize("ideal", [(), ("Start", ""), ("Start", None)])
+def test_conformance_rejects_invalid_ideal_process(ideal_events, ideal) -> None:
+    with pytest.raises(ValueError, match="non-blank"):
+        conformance_table(ideal_events, ideal)
+
+
 def test_deviation_summary_handles_empty() -> None:
     frame = pd.DataFrame(
         [
