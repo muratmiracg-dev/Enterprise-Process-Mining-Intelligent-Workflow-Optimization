@@ -51,6 +51,8 @@ coverage (15%). Weights are a management prioritization heuristic.
 
 ## 6. SLA prediction
 
+Feature construction enforces one row per case, rejects orphan events, and requires populated event and case timestamps before temporal model training.
+
 Features are cut at Purchase Order creation to avoid future leakage. Cases are
 sorted chronologically; the first 80% train the logistic regression and the
 latest 20% form an untouched temporal holdout. See the model card.
