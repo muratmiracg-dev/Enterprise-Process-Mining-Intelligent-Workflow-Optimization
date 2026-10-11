@@ -30,6 +30,17 @@ def test_prediction_feature_contract(
     assert frame["early_event_count"].ge(1).all()
 
 
+def test_prediction_features_reject_orphan_events_and_duplicate_cases(
+    sample_frames: tuple[pd.DataFrame, pd.DataFrame],
+) -> None:
+    events, cases = sample_frames
+    with pytest.raises(ValueError, match="unique, non-null"):
+        build_prediction_features(events, pd.concat([cases, cases.iloc[[0]]], ignore_index=True))
+    orphan = events.iloc[[0]].assign(case_id="UNKNOWN")
+    with pytest.raises(ValueError, match="unknown case_id"):
+        build_prediction_features(pd.concat([events, orphan], ignore_index=True), cases)
+
+
 def test_temporal_sla_model_is_explainable(
     sample_frames: tuple[pd.DataFrame, pd.DataFrame],
 ) -> None:

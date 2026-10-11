@@ -54,6 +54,16 @@ class PredictionResult:
 def build_prediction_features(events: pd.DataFrame, cases: pd.DataFrame) -> pd.DataFrame:
     """Build features available by purchase-order creation time."""
 
+    if cases["case_id"].isna().any() or not cases["case_id"].is_unique:
+        raise ValueError("cases must contain unique, non-null case_id values")
+    unknown_cases = sorted(set(events["case_id"].dropna()) - set(cases["case_id"]))
+    if unknown_cases:
+        raise ValueError(
+            "events reference unknown case_id values: " + ", ".join(map(str, unknown_cases))
+        )
+    if events["timestamp"].isna().any() or cases["created_at"].isna().any():
+        raise ValueError("event timestamps and case creation times must be populated")
+
     ordered = events.sort_values(["case_id", "timestamp", "event_index"]).copy()
     po_time = (
         ordered[ordered["activity"] == "Purchase Order Created"]
@@ -145,7 +155,12 @@ def train_sla_model(
 ) -> PredictionResult:
     """Train and evaluate a temporal SLA-breach classifier."""
 
-    if not 0.10 <= holdout_share <= 0.40:
+    if (
+        isinstance(holdout_share, bool)
+        or not isinstance(holdout_share, (int, float))
+        or not np.isfinite(holdout_share)
+        or not 0.10 <= holdout_share <= 0.40
+    ):
         raise ValueError("holdout_share must be between 0.10 and 0.40")
 
     frame = build_prediction_features(events, cases).sort_values(["created_at", "case_id"])
