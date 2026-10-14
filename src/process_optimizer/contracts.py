@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 
+import numpy as np
 import pandas as pd
 
 EVENT_COLUMNS = (
@@ -91,14 +92,16 @@ def validate_event_log(events: pd.DataFrame) -> pd.DataFrame:
     if frame["timestamp"].isna().any():
         raise ContractError("timestamp contains invalid values")
     frame["event_index"] = pd.to_numeric(frame["event_index"], errors="coerce")
-    if frame["event_index"].isna().any():
+    if not np.isfinite(frame["event_index"].to_numpy(dtype=float)).all():
         raise ContractError("event_index contains invalid values")
+    if (frame["event_index"] <= 0).any() or (frame["event_index"] % 1 != 0).any():
+        raise ContractError("event_index must contain positive integers")
     if frame.duplicated(["case_id", "event_index"]).any():
         raise ContractError("case_id and event_index must be unique")
 
     frame["amount_usd"] = pd.to_numeric(frame["amount_usd"], errors="coerce")
     frame["processing_minutes"] = pd.to_numeric(frame["processing_minutes"], errors="coerce")
-    if frame[["amount_usd", "processing_minutes"]].isna().any().any():
+    if not np.isfinite(frame[["amount_usd", "processing_minutes"]].to_numpy(dtype=float)).all():
         raise ContractError("numeric event fields contain invalid values")
     if (frame["amount_usd"] < 0).any() or (frame["processing_minutes"] < 0).any():
         raise ContractError("numeric event fields cannot be negative")
@@ -142,10 +145,16 @@ def validate_cases(cases: pd.DataFrame) -> pd.DataFrame:
     )
     for column in numeric:
         frame[column] = pd.to_numeric(frame[column], errors="coerce")
-    if frame[list(numeric)].isna().any().any():
+    if not np.isfinite(frame[list(numeric)].to_numpy(dtype=float)).all():
         raise ContractError("case numeric fields contain invalid values")
     if (frame[list(numeric)] < 0).any().any():
         raise ContractError("case numeric fields cannot be negative")
+    if (frame["event_count"] <= 0).any() or (frame["event_count"] % 1 != 0).any():
+        raise ContractError("event_count must contain positive integers")
+    if (frame["rework_count"] % 1 != 0).any():
+        raise ContractError("rework_count must contain non-negative integers")
+    if (frame["rework_count"] > frame["event_count"]).any():
+        raise ContractError("rework_count cannot exceed event_count")
     frame["sla_breached"] = _normalize_boolean(frame["sla_breached"], "sla_breached")
     return frame.sort_values("case_id").reset_index(drop=True)
 

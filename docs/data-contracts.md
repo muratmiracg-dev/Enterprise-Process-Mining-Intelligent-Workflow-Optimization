@@ -7,7 +7,7 @@ Primary key: `(case_id, event_index)`.
 | Field | Type | Rule |
 |---|---|---|
 | `case_id` | string | Required, reconciles to case master |
-| `event_index` | integer | Required, unique within case |
+| `event_index` | positive integer | Required, finite, unique within case |
 | `activity` | string | Required |
 | `timestamp` | UTC datetime | Required, monotonic within case |
 | `resource_id` | string | Synthetic actor or bot |
