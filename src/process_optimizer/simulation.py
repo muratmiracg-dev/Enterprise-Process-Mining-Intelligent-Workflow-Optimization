@@ -3,6 +3,8 @@
 from __future__ import annotations
 
 import heapq
+import math
+import numbers
 from dataclasses import dataclass, replace
 
 import numpy as np
@@ -168,6 +170,55 @@ def _simulate_replication(
     }
 
 
+def _validate_scenarios(scenarios: tuple[Scenario, ...]) -> None:
+    names = [scenario.name.strip() for scenario in scenarios]
+    if any(not name for name in names) or len(names) != len(set(names)):
+        raise ValueError("Scenario names must be populated and unique")
+    for scenario in scenarios:
+        if not scenario.stages:
+            raise ValueError(f"Scenario {scenario.name} must contain at least one stage")
+        stage_names = [stage.name.strip() for stage in scenario.stages]
+        if any(not name for name in stage_names) or len(stage_names) != len(set(stage_names)):
+            raise ValueError(f"Scenario {scenario.name} stage names must be populated and unique")
+        for stage in scenario.stages:
+            if (
+                isinstance(stage.capacity, bool)
+                or not isinstance(stage.capacity, int)
+                or stage.capacity <= 0
+            ):
+                raise ValueError(
+                    f"Scenario {scenario.name} stage capacity must be a positive integer"
+                )
+            for value in (stage.mean_service_hours, stage.variability):
+                if (
+                    isinstance(value, bool)
+                    or not isinstance(value, numbers.Real)
+                    or not math.isfinite(float(value))
+                    or value <= 0
+                ):
+                    raise ValueError(
+                        f"Scenario {scenario.name} service assumptions must be positive"
+                    )
+        controls = (
+            scenario.external_lead_time_multiplier,
+            scenario.one_time_investment_usd,
+            scenario.invoice_rework_probability,
+        )
+        if any(
+            isinstance(value, bool)
+            or not isinstance(value, numbers.Real)
+            or not math.isfinite(float(value))
+            for value in controls
+        ):
+            raise ValueError(f"Scenario {scenario.name} controls must be finite numeric values")
+        if scenario.external_lead_time_multiplier <= 0 or scenario.one_time_investment_usd < 0:
+            raise ValueError(f"Scenario {scenario.name} controls are outside the permitted range")
+        if not 0 <= scenario.invoice_rework_probability <= 1:
+            raise ValueError(
+                f"Scenario {scenario.name} rework probability must be between zero and one"
+            )
+
+
 def simulate_capacity(
     scenarios: tuple[Scenario, ...] | None = None,
     *,
@@ -198,6 +249,7 @@ def simulate_capacity(
         raise ValueError("scenarios must not be empty")
 
     catalog = scenarios if scenarios is not None else default_scenarios()
+    _validate_scenarios(catalog)
     rows: list[dict[str, float | str]] = []
     for scenario in catalog:
         outcomes = [
