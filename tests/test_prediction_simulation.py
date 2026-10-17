@@ -119,6 +119,21 @@ def test_capacity_simulation_validates_inputs(kwargs: dict[str, float]) -> None:
 
 
 @pytest.mark.parametrize(
+    "scenario",
+    [
+        Scenario("", "test", (Stage("Review", 1, 1.0),)),
+        Scenario("Invalid", "test", (Stage("Review", True, 1.0),)),
+        Scenario("Invalid", "test", (Stage("Review", 1, np.nan),)),
+        Scenario("Invalid", "test", (Stage("Review", 1, 1.0),), invoice_rework_probability=1.1),
+        Scenario("Invalid", "test", (Stage("Review", 1, 1.0),), one_time_investment_usd=-1),
+    ],
+)
+def test_capacity_simulation_rejects_invalid_scenario_contract(scenario: Scenario) -> None:
+    with pytest.raises(ValueError):
+        simulate_capacity((scenario,), replications=2, cases_per_replication=100)
+
+
+@pytest.mark.parametrize(
     "field", ["replications", "cases_per_replication", "seed", "annual_volume"]
 )
 def test_capacity_simulation_rejects_non_integer_controls(field: str) -> None:

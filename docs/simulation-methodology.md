@@ -18,6 +18,11 @@ Capacity-constrained stages:
 Service times are lognormal. External supplier/transit lead time enters after
 Purchase Order creation. Invoice rework is a scenario-specific probability.
 
+Before simulation, scenario and stage names must be populated and unique, capacities must be
+positive integers, service assumptions must be finite and positive, rework probabilities must
+remain in `[0, 1]`, and investment/lead-time controls must remain in their permitted domains.
+Invalid scenario definitions fail closed before random sampling begins.
+
 ## Scenarios
 
 | Scenario | Intervention | Investment |
