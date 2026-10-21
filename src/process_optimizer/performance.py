@@ -2,12 +2,32 @@
 
 from __future__ import annotations
 
+import numpy as np
 import pandas as pd
+
+
+def _validate_performance_events(events: pd.DataFrame) -> None:
+    required = {
+        "case_id",
+        "event_index",
+        "activity",
+        "timestamp",
+        "processing_minutes",
+        "automated",
+    }
+    missing = sorted(required - set(events.columns))
+    if events.empty or missing:
+        detail = ": " + ", ".join(missing) if missing else ""
+        raise ValueError("performance events must be non-empty with required columns" + detail)
+    processing = pd.to_numeric(events["processing_minutes"], errors="coerce")
+    if processing.isna().any() or (processing < 0).any() or not np.isfinite(processing).all():
+        raise ValueError("processing_minutes must be finite and non-negative")
 
 
 def transition_waits(events: pd.DataFrame) -> pd.DataFrame:
     """Return case-level transition waits."""
 
+    _validate_performance_events(events)
     ordered = events.sort_values(["case_id", "timestamp", "event_index"]).copy()
     ordered["previous_activity"] = ordered.groupby("case_id")["activity"].shift(1)
     ordered["previous_timestamp"] = ordered.groupby("case_id")["timestamp"].shift(1)
@@ -60,6 +80,7 @@ def bottleneck_table(events: pd.DataFrame) -> pd.DataFrame:
 def case_performance(events: pd.DataFrame) -> pd.DataFrame:
     """Compute case-level cycle, touch, wait, rework, and automation metrics."""
 
+    _validate_performance_events(events)
     ordered = events.sort_values(["case_id", "timestamp", "event_index"])
     grouped = ordered.groupby("case_id", sort=True)
     result = grouped.agg(
@@ -113,6 +134,7 @@ def rework_summary(events: pd.DataFrame) -> pd.DataFrame:
 def resource_workload(events: pd.DataFrame) -> pd.DataFrame:
     """Summarize work concentration and manual workload by resource."""
 
+    _validate_performance_events(events)
     result = (
         events.groupby(["resource_id", "resource_role"], as_index=False)
         .agg(
