@@ -12,6 +12,7 @@ An end-to-end, portfolio-grade Purchase-to-Pay process intelligence platform
 that discovers how work actually flows, measures conformance against a governed
 BPMN target, predicts SLA risk early, and quantifies capacity interventions
 before implementation.
+Performance analytics fail closed on empty schemas and negative or non-finite processing durations, protecting cycle-time and workload evidence from malformed events.
 
 **Türkçe dokümantasyon:** [README_TR.md](README_TR.md)
 

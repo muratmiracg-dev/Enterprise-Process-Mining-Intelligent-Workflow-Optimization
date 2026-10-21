@@ -133,3 +133,11 @@ def test_resource_workload(ideal_events: pd.DataFrame) -> None:
 def test_resource_workload_zero_hours(ideal_events: pd.DataFrame) -> None:
     result = resource_workload(ideal_events.assign(processing_minutes=0))
     assert result["workload_share"].eq(0).all()
+
+
+@pytest.mark.parametrize("minutes", [-1, float("nan"), float("inf")])
+def test_performance_rejects_invalid_processing_minutes(ideal_events, minutes) -> None:
+    malformed = ideal_events.copy()
+    malformed.loc[0, "processing_minutes"] = minutes
+    with pytest.raises(ValueError, match="finite and non-negative"):
+        case_performance(malformed)
