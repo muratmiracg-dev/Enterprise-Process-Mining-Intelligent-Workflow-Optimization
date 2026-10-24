@@ -50,7 +50,10 @@ def test_prediction_features_reject_cases_without_po_creation(
         ~((events["case_id"] == case_id) & (events["activity"] == "Purchase Order Created"))
     ].copy()
 
-    with pytest.raises(ValueError, match="every case must contain a Purchase Order Created event"):
+    with pytest.raises(
+        ValueError,
+        match="every case must contain a Purchase Order Created event",
+    ):
         build_prediction_features(without_po, cases)
 
 
