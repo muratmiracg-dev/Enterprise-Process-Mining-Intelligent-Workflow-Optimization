@@ -71,10 +71,13 @@ def build_prediction_features(events: pd.DataFrame, cases: pd.DataFrame) -> pd.D
         .min()
         .rename("po_created_at")
     )
+    missing_po_cases = set(cases["case_id"]) - set(po_time.index)
+    if missing_po_cases:
+        raise ValueError(
+            "every case must contain a Purchase Order Created event for post-PO SLA scoring"
+        )
     early = ordered.merge(po_time, on="case_id", how="left")
-    early = early[
-        early["po_created_at"].isna() | (early["timestamp"] <= early["po_created_at"])
-    ].copy()
+    early = early[early["timestamp"] <= early["po_created_at"]].copy()
     early["is_approval"] = early["activity"].eq("Manager Approval").astype(int)
     early["is_rework"] = early["activity"].eq("Request Reworked").astype(int)
     early["manual_minutes"] = early["processing_minutes"].where(~early["automated"], 0)
@@ -91,7 +94,6 @@ def build_prediction_features(events: pd.DataFrame, cases: pd.DataFrame) -> pd.D
     frame["elapsed_to_po_hours"] = (
         frame["po_created_at"] - frame["created_at"]
     ).dt.total_seconds() / 3600
-    frame["elapsed_to_po_hours"] = frame["elapsed_to_po_hours"].fillna(frame["cycle_time_hours"])
     for column in (
         "early_event_count",
         "approval_count",

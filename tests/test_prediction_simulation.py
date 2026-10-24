@@ -41,6 +41,22 @@ def test_prediction_features_reject_orphan_events_and_duplicate_cases(
         build_prediction_features(pd.concat([events, orphan], ignore_index=True), cases)
 
 
+def test_prediction_features_reject_cases_without_po_creation(
+    sample_frames: tuple[pd.DataFrame, pd.DataFrame],
+) -> None:
+    events, cases = sample_frames
+    case_id = cases.iloc[0]["case_id"]
+    without_po = events.loc[
+        ~((events["case_id"] == case_id) & (events["activity"] == "Purchase Order Created"))
+    ].copy()
+
+    with pytest.raises(
+        ValueError,
+        match="every case must contain a Purchase Order Created event",
+    ):
+        build_prediction_features(without_po, cases)
+
+
 def test_temporal_sla_model_is_explainable(
     sample_frames: tuple[pd.DataFrame, pd.DataFrame],
 ) -> None:
