@@ -3,7 +3,7 @@
 ## Intended use
 
 Prioritize analyst review of Purchase-to-Pay cases after Purchase Order creation.
-The score must not approve/reject a request, block a vendor, or authorize payment.
+The score must not approve/reject a request, block a vendor, or authorize payment. Cases without a recorded Purchase Order Created event are rejected; full cycle time is never substituted for an unavailable post-PO feature.
 
 ## Model
 
