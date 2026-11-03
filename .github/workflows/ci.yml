@@ -48,8 +48,5 @@ jobs:
       - run: python scripts/generate_demo_data.py --output "${{ runner.temp }}/regenerated"
         env:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
-      - name: Verify byte-for-byte data reproducibility
-        run: |
-          sha256sum data/demo/p2p_event_log.csv.gz "${{ runner.temp }}/regenerated/p2p_event_log.csv.gz"
-          cmp data/demo/p2p_event_log.csv.gz "${{ runner.temp }}/regenerated/p2p_event_log.csv.gz"
-          cmp data/demo/case_master.csv.gz "${{ runner.temp }}/regenerated/case_master.csv.gz"
+      - name: Verify regenerated data matches the committed benchmark
+        run: python scripts/compare_demo_data.py "${{ runner.temp }}/regenerated"

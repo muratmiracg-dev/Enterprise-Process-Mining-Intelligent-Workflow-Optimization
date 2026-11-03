@@ -69,5 +69,6 @@ must be finite; and an explicitly supplied scenario catalog cannot be empty.
 ## 8. Reproducibility
 
 CSV field order, row order, random seed, timestamps, numerical formatting, and
-gzip metadata are fixed. CI regenerates and compares the compressed event and
-case files byte-for-byte.
+gzip metadata are fixed. CI regenerates the demo data and compares every file with
+the committed benchmark: plain files byte-for-byte, and gzip files on their decompressed
+content and header metadata, since compressed bytes depend on the zlib build.

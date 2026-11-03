@@ -131,9 +131,11 @@ make quality        # Ruff formatting and lint checks
 make verify         # repository-level acceptance checks
 ```
 
-The event and case files are compressed with a fixed gzip timestamp, making
-regeneration byte-for-byte reproducible. CI compares regenerated files with the
-committed benchmark.
+The event and case files are compressed with a fixed gzip timestamp and no embedded
+file name, so their content is byte-for-byte reproducible. CI regenerates all five demo
+files and compares them with the committed benchmark (`scripts/compare_demo_data.py`).
+Gzip files are compared on their decompressed bytes, because deflate output can differ
+between zlib builds (for example zlib-ng) even when the data are identical.
 
 ## API
 
