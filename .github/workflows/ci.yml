@@ -50,3 +50,21 @@ jobs:
           MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
       - name: Verify regenerated data matches the committed benchmark
         run: python scripts/compare_demo_data.py "${{ runner.temp }}/regenerated"
+
+  reproducible-analysis:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - uses: actions/setup-python@v7.0.0
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: python -m pip install -e .
+      - name: Snapshot committed reports
+        run: cp -r reports "${{ runner.temp }}/committed-reports"
+      - name: Rerun the analytical pipeline
+        run: python scripts/run_demo.py
+        env:
+          MPLCONFIGDIR: ${{ runner.temp }}/matplotlib
+      - name: Verify regenerated analysis matches the committed reports
+        run: python scripts/compare_reports.py "${{ runner.temp }}/committed-reports" reports
