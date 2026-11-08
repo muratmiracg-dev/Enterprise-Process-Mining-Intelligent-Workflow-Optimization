@@ -72,3 +72,10 @@ CSV field order, row order, random seed, timestamps, numerical formatting, and
 gzip metadata are fixed. CI regenerates the demo data and compares every file with
 the committed benchmark: plain files byte-for-byte, and gzip files on their decompressed
 content and header metadata, since compressed bytes depend on the zlib build.
+
+CI also reruns the analytical pipeline on the committed data and compares the regenerated
+`reports/demo-analysis.json` and `reports/tables/*.csv` with the committed copies
+(`scripts/compare_reports.py`): text exactly, numbers within a relative tolerance of 1e-9,
+ignoring only the recorded PM4Py version. A code or dependency change that moves a KPI,
+model metric or decision table therefore fails until `make analyze` is rerun and the
+reports are committed with it.
