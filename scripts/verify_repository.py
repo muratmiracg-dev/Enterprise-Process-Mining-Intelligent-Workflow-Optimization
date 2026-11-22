@@ -198,7 +198,8 @@ def check_analysis() -> str:
     require(model["holdout_cases"] == 2_400, "Holdout population drifted")
     close(float(model["roc_auc"]), 0.8220036618, tolerance=1e-8)
     close(float(model["average_precision"]), 0.7546884529, tolerance=1e-8)
-    close(float(model["brier_score"]), 0.1693245062, tolerance=1e-8)
+    close(float(model["brier_score"]), 0.1612789168, tolerance=1e-8)
+    close(float(model["mean_predicted_risk_holdout"]), 0.3699102102, tolerance=1e-8)
 
     simulation = report["capacity_simulation"]
     require(

@@ -142,6 +142,21 @@ def _model_pipeline() -> Pipeline:
     )
 
 
+def prior_corrected_probability(balanced_score: np.ndarray, training_rate: float) -> np.ndarray:
+    """Map a class-balanced logistic score back to the training outcome rate.
+
+    ``class_weight="balanced"`` fits the model as if both classes were equally common, which
+    shifts the logit by ``-log(pi / (1 - pi))`` for training breach rate ``pi``. Adding the
+    shift back (King and Zeng's prior correction) restores probabilities on the observed
+    scale without changing the ranking: the balanced 0.50 cut-off becomes ``pi``.
+    """
+    if not 0 < training_rate < 1:
+        raise ValueError("training_rate must be strictly between 0 and 1")
+    clipped = np.clip(np.asarray(balanced_score, dtype=float), 1e-12, 1 - 1e-12)
+    logit = np.log(clipped / (1 - clipped)) + np.log(training_rate / (1 - training_rate))
+    return 1 / (1 + np.exp(-logit))
+
+
 def _metric_or_default(function, y_true, score, default: float = 0.5) -> float:
     try:
         return float(function(y_true, score))
@@ -175,8 +190,12 @@ def train_sla_model(
     feature_columns = NUMERIC_FEATURES + CATEGORICAL_FEATURES
     model = _model_pipeline()
     model.fit(train[feature_columns], train["sla_breached"].astype(int))
-    scores = model.predict_proba(holdout[feature_columns])[:, 1]
-    predictions = scores >= 0.50
+    balanced_scores = model.predict_proba(holdout[feature_columns])[:, 1]
+    training_rate = float(train["sla_breached"].astype(int).mean())
+    # Risk scores and bands are read as breach probabilities, so undo the class weighting.
+    # The review decision keeps the balanced 0.50 cut-off, i.e. calibrated risk >= training_rate.
+    scores = prior_corrected_probability(balanced_scores, training_rate)
+    predictions = balanced_scores >= 0.50
     actual = holdout["sla_breached"].astype(int).to_numpy()
     matrix = confusion_matrix(actual, predictions, labels=[0, 1])
 
@@ -186,6 +205,9 @@ def train_sla_model(
         "train_cases": int(len(train)),
         "holdout_cases": int(len(holdout)),
         "positive_rate_holdout": float(actual.mean()),
+        "positive_rate_train": training_rate,
+        "mean_predicted_risk_holdout": float(scores.mean()),
+        "decision_threshold_risk": training_rate,
         "roc_auc": _metric_or_default(roc_auc_score, actual, scores),
         "average_precision": _metric_or_default(
             average_precision_score, actual, scores, default=float(actual.mean())

@@ -8,6 +8,7 @@ from process_optimizer.prediction import (
     CATEGORICAL_FEATURES,
     NUMERIC_FEATURES,
     build_prediction_features,
+    prior_corrected_probability,
     train_sla_model,
 )
 from process_optimizer.simulation import (
@@ -65,6 +66,39 @@ def test_temporal_sla_model_is_explainable(
     assert 0.5 <= result.metrics["roc_auc"] <= 1
     assert set(result.predictions["risk_band"]).issubset({"Low", "Medium", "High", "Critical"})
     assert result.feature_importance["absolute_importance"].is_monotonic_decreasing
+
+
+def test_prior_correction_maps_balanced_cutoff_to_training_rate() -> None:
+    scores = np.array([0.05, 0.3, 0.5, 0.7, 0.95])
+    corrected = prior_corrected_probability(scores, 0.2)
+    # Balanced 0.50 becomes the training breach rate; the ranking is preserved.
+    assert corrected[2] == pytest.approx(0.2)
+    assert np.all(np.diff(corrected) > 0)
+    # Odds scale by pi / (1 - pi): 0.7 -> (0.7/0.3) * 0.25 = 0.5833 odds.
+    assert corrected[3] == pytest.approx(0.5833333 / 1.5833333)
+    assert np.allclose(prior_corrected_probability(scores, 0.5), scores)
+    assert np.isfinite(prior_corrected_probability(np.array([0.0, 1.0]), 0.3)).all()
+
+
+@pytest.mark.parametrize("rate", [0.0, 1.0, -0.1, 1.2])
+def test_prior_correction_rejects_degenerate_rates(rate: float) -> None:
+    with pytest.raises(ValueError, match="training_rate"):
+        prior_corrected_probability(np.array([0.5]), rate)
+
+
+def test_risk_scores_are_calibrated_and_decisions_unchanged(
+    sample_frames: tuple[pd.DataFrame, pd.DataFrame],
+) -> None:
+    result = train_sla_model(*sample_frames)
+    metrics = result.metrics
+    predictions = result.predictions
+    threshold = metrics["decision_threshold_risk"]
+    assert threshold == pytest.approx(metrics["positive_rate_train"])
+    # Review decisions are the balanced 0.50 cut-off, i.e. calibrated risk >= training rate.
+    assert (
+        predictions["predicted_breach"] == (predictions["risk_score"] >= threshold - 1e-12)
+    ).all()
+    assert metrics["mean_predicted_risk_holdout"] == pytest.approx(predictions["risk_score"].mean())
 
 
 @pytest.mark.parametrize("share", [0.09, 0.41])
@@ -156,3 +190,19 @@ def test_capacity_simulation_rejects_non_integer_controls(field: str) -> None:
     kwargs = {"replications": 2, "cases_per_replication": 120, field: 2.5}
     with pytest.raises(TypeError, match=field):
         simulate_capacity(**kwargs)
+
+
+def test_demo_risk_scores_match_observed_breach_rate(
+    full_frames: tuple[pd.DataFrame, pd.DataFrame],
+) -> None:
+    # The class-weighted scores averaged 0.451 against a 0.369 holdout breach rate, and
+    # the "High" band (0.60-0.80) breached only 56% of the time.
+    predictions = train_sla_model(*full_frames).predictions
+    assert predictions["risk_score"].mean() == pytest.approx(
+        predictions["sla_breached"].mean(), abs=0.02
+    )
+    bands = pd.cut(predictions["risk_score"], [0, 0.3, 0.6, 0.8, 1.0])
+    by_band = predictions.groupby(bands, observed=True).agg(
+        predicted=("risk_score", "mean"), observed=("sla_breached", "mean")
+    )
+    assert (by_band["predicted"] - by_band["observed"]).abs().max() < 0.05
