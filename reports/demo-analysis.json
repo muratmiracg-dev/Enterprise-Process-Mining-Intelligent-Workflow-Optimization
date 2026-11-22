@@ -516,7 +516,7 @@
       }
     ],
     "pm4py_reference": {
-      "pm4py_version": "2.7.22",
+      "pm4py_version": "2.7.23.13",
       "sample_cases": 2000,
       "dfg_edges": 31,
       "start_activities": {
@@ -922,13 +922,16 @@
       "train_cases": 9600,
       "holdout_cases": 2400,
       "positive_rate_holdout": 0.36916666666666664,
+      "positive_rate_train": 0.38166666666666665,
+      "mean_predicted_risk_holdout": 0.36991021020398274,
+      "decision_threshold_risk": 0.38166666666666665,
       "roc_auc": 0.8220036618349132,
       "average_precision": 0.7546884528983372,
       "accuracy": 0.7558333333333334,
       "precision": 0.6616379310344828,
       "recall": 0.6930022573363431,
       "f1": 0.6769570011025359,
-      "brier_score": 0.16932450616108782,
+      "brier_score": 0.16127891678253112,
       "confusion_matrix": {
         "true_negative": 1200,
         "false_positive": 314,
@@ -939,23 +942,23 @@
     "risk_distribution": [
       {
         "risk_band": "Low",
-        "case_count": 880,
-        "case_share": 0.3667
+        "case_count": 1280,
+        "case_share": 0.5333
       },
       {
         "risk_band": "Medium",
-        "case_count": 708,
-        "case_share": 0.295
+        "case_count": 540,
+        "case_share": 0.225
       },
       {
         "risk_band": "High",
-        "case_count": 446,
-        "case_share": 0.1858
+        "case_count": 386,
+        "case_share": 0.1608
       },
       {
         "risk_band": "Critical",
-        "case_count": 366,
-        "case_share": 0.1525
+        "case_count": 194,
+        "case_share": 0.0808
       }
     ],
     "top_drivers": [
